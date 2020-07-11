@@ -1,0 +1,157 @@
+* {
+  padding: 0 40;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Domine", serif;
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-family: "Domine", serif;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: aliceblue;
+  width: 100%;
+  height: auto;
+  /* padding: 0 20px; */
+}
+
+nav ul {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: end;
+}
+
+nav li {
+  padding: 10px;
+  width: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  height: 200px;
+  padding-top: 20px;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100px;
+}
+
+footer a {
+
+  color: aliceblue;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#hero {
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.7);
+  padding: 40px;
+  
+ 
+}
+
+#about {
+  margin: 10px 20px 100px 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.1);
+  max-width: 1000px;
+  min-width: 500px;
+  min-height: 300px;
+  max-height: 500px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#projects {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  height: 500px;
+  /* width: 90vw; */
+}
+
+#projects ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#projects li {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#projects h2 {
+  font-size: 30px;
+}
+
+#projects a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about-obj {
+  height: auto;
+  margin-bottom: 100px;
+}
+.about-obj p {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.about-obj h2 {
+  margin: 30px;
+}
+
+.about-obj ul {
+  margin-left: 40px;
+}
+s
