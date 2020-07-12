@@ -89,24 +89,21 @@ section {
   background-color: rgba(128, 128, 128, 0.1);
   max-width: 1000px;
   min-width: 500px;
-  min-height: 300px;
-  max-height: 500px;
+  max-height: 400px;
   font-size: 20px;
   line-height: 1.5;
+  transition: 1s;
 }
 
 #projects {
-  /* background-image: url("./img/scale_brightness.jpg");
-  background-size: 100% 400%;
-  background-repeat: no-repeat; */
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   height: 500px;
-  /* width: 90vw; */
+  transition: 2s;
 }
 
 #projects ul {
@@ -136,6 +133,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  transition: 1s;
 }
 
 .about-obj {
@@ -153,4 +151,12 @@ section {
 
 .about-obj ul {
   margin-left: 40px;
+}
+
+.fadeBlue:hover {
+  background-color: rgba(31, 136, 221, 0.2);
+}
+
+.fadeGreen:hover {
+  background-color: rgba(31, 221, 180, 0.2);
 }
