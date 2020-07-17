@@ -29,10 +29,6 @@ img {
   border-radius: 2px;
 }
 
-input:focus {
-  border: none;
-}
-
 nav {
   display: flex;
   padding-right: 20px;
@@ -54,6 +50,18 @@ nav li {
   font-size: 20px;
   padding: 10px;
   width: auto;
+}
+
+/* Lord Vader, former handle, Anakin */
+a:link {
+}
+a:visited {
+}
+a:focus {
+}
+a:hover {
+}
+a:active {
 }
 
 footer {
@@ -105,7 +113,7 @@ section {
   max-height: 400px;
   font-size: 20px;
   line-height: 1.5;
-  transition: 1s;
+  transition: 1.5s;
 }
 
 #projects {
@@ -117,7 +125,7 @@ section {
 
   min-height: 350px;
   max-height: 400px;
-  transition: 2s;
+  transition: 1.5s;
   border: 1px solid black;
 }
 
@@ -171,7 +179,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  transition: 1s;
+  transition: 1.5s;
   padding-top: 65px;
 }
 
@@ -194,9 +202,10 @@ section {
 }
 
 .fadeBlue:hover {
-  background-color: rgba(31, 136, 221, 0.2);
+  background-color: #4e94bf;
+  color: white;
 }
 
 .fadeGreen:hover {
-  background-color: rgba(31, 221, 180, 0.2);
+  background-color: #5fb6d9;
 }
