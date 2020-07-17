@@ -97,9 +97,9 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  color: white;
   flex-direction: row;
-  background-color: rgba(128, 128, 128, 0.7);
+  background-color: #274259;
   padding: 40px;
 }
 
