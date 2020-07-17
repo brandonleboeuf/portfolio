@@ -6,11 +6,11 @@
 
 h1 {
   font-family: "Domine", serif;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 p {
@@ -25,7 +25,8 @@ ul {
 }
 
 img {
-  border: 2px rgba(0, 0, 0, 0.5) solid;
+  border: 4px rgba(0, 0, 0, 0.5) solid;
+  border-radius: 2px;
 }
 
 nav {
@@ -109,9 +110,11 @@ section {
   justify-content: center;
   flex-direction: column;
   justify-content: space-around;
-  /* margin-bottom: 100px; */
-  height: 500px;
+
+  min-height: 350px;
+  max-height: 400px;
   transition: 2s;
+  border: 1px solid black;
 }
 
 #projects ul {
@@ -121,12 +124,16 @@ section {
 }
 
 #projects li {
-  font-size: 30px;
+  font-size: 1.4rem;
   text-decoration: none;
 }
 
+#projects li:hover {
+  font-size: 2.2rem;
+}
+
 #projects h2 {
-  font-size: 30px;
+  font-size: 1.9rem;
 }
 
 #projects a {
@@ -167,7 +174,7 @@ section {
 .about-obj {
   height: auto;
   max-width: 90vw;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 .about-obj p {
   margin-top: 20px;
