@@ -213,12 +213,14 @@ section {
   padding: 0 20px 45px 20px;
   /* border: 2px purple solid; */
   border-radius: 80px;
+  box-shadow: 5.5px 5px 2px rgba(136, 136, 136, 0.5);
 }
 
 /* .about-obj:hover {
   opacity: 0.5;
   color: black;
 } */
+
 .about-obj p {
   /* margin: 0 auto; */
   /* margin-top: 20px; */
