@@ -1,6 +1,7 @@
 /* colors from https://color.adobe.com/explore */
 
 * {
+  box-sizing: border-box;
   padding: 0 40;
   margin: auto;
   font-family: "Roboto", sans-serif;
@@ -18,12 +19,6 @@ h2 {
 p {
   font-family: "Domine", serif;
   font-weight: 400;
-}
-
-img {
-  border: 4px rgba(0, 0, 0, 0.5) solid;
-  border-radius: 2px;
-  margin-right: 100px;
 }
 
 nav {
@@ -100,6 +95,12 @@ footer h5:hover {
   transform: scale(1.1);
 }
 
+.content img {
+  border: 4px rgba(0, 0, 0, 0.5) solid;
+  border-radius: 2px;
+  margin-right: 100px;
+}
+
 section {
   display: flex;
   justify-content: center;
@@ -126,22 +127,25 @@ section {
 }
 
 #projects {
-  text-align: center;
+  padding: 50px 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
   justify-content: space-around;
   height: auto;
-  min-height: 65vh;
+  height: 110vh;
   transition: 1.5s;
   border: 1px solid black;
 }
 
 #projects ul {
+  margin: 50px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 100px;
 }
 
 #projects li {
@@ -157,6 +161,7 @@ section {
 
 #projects h2 {
   font-size: 1.9rem;
+  margin: 0 50px;
 }
 
 #projects a {
@@ -244,7 +249,56 @@ section {
   background-color: rgb(95, 182, 217);
 }
 
-/* .wrapper {
-  width: 80%;
-  margin: 0 auto;
-} */
+.gallery-img {
+  display: none;
+  max-height: 600px;
+}
+
+.active {
+  display: block;
+}
+.image-gallery {
+  width: 100%;
+  /* margin-top: 500px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btns {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  width: 150px;
+  background-color: #274259;
+  color: white;
+  font-size: 1rem;
+  padding: 5px 20px;
+
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev {
+  margin-right: 15px;
+}
+
+.btn:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+img {
+  height: 600px;
+}
