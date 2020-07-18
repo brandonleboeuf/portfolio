@@ -20,39 +20,41 @@ p {
   font-weight: 400;
 }
 
-ul {
-  list-style-type: none;
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
-
 img {
   border: 4px rgba(0, 0, 0, 0.5) solid;
   border-radius: 2px;
-  margin-left: 100px;
+  margin-right: 100px;
 }
 
 nav {
-  display: flex;
-  padding-right: 20px;
-  flex-direction: row-reverse;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.87);
-  color: aliceblue;
-  height: auto;
-  /* padding: 0 20px; */
+  height: 70px;
 }
 
 nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  padding-right: 30px;
+  text-align: right;
+  height: 50px;
 }
 
 nav li {
-  font-size: 20px;
-  padding: 10px;
-  width: auto;
+  display: inline-block;
+  font-size: 1.2rem;
+  transition: all 0.6s ease-in-out;
+  padding: 10px 20px;
+  line-height: 40px;
+}
+
+nav li:hover {
+  transform: scale(1.1);
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+  line-height: 40px;
 }
 
 /* Lord Vader, former handle, Anakin */
@@ -90,6 +92,14 @@ footer a {
   text-decoration: none;
 }
 
+footer h5 {
+  transition: all 0.6s ease-in-out;
+}
+
+footer h5:hover {
+  transform: scale(1.1);
+}
+
 section {
   display: flex;
   justify-content: center;
@@ -107,11 +117,10 @@ section {
 }
 
 #about {
-  margin-top: 125px;
+  margin: 125px auto;
   text-align: center;
   max-width: 1000px;
   min-width: 500px;
-  max-height: 400px;
   font-size: 20px;
   line-height: 1.5;
 }
@@ -122,9 +131,8 @@ section {
   justify-content: center;
   flex-direction: column;
   justify-content: space-around;
-
-  min-height: 350px;
-  max-height: 400px;
+  height: auto;
+  min-height: 65vh;
   transition: 1.5s;
   border: 1px solid black;
 }
@@ -132,16 +140,19 @@ section {
 #projects ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
 #projects li {
   font-size: 1.4rem;
   text-decoration: none;
+  margin: 0 35px;
+  transition: all 0.6s ease-in-out;
 }
 
 #projects li:hover {
-  font-size: 2.2rem;
+  transform: scale(1.4);
 }
 
 #projects h2 {
@@ -154,18 +165,22 @@ section {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   padding: 10px 15px;
-  transition: 0.5s;
+  line-height: 40px;
+  transition: all 0.6s ease-in-out;
 }
 
 #projects a:hover {
   background-color: rgba(0, 0, 0, 0.7);
-  transform: scale(5);
+  /* transform: scale(0.2); */
   outline: thin;
 }
 
-/* #resuem {
+#resuem {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-} */
+  margin: 0;
+}
 
 #d_and_d {
   display: none;
@@ -177,26 +192,41 @@ section {
 }
 
 .content {
+  /* position: ;
+  top: 200px; */
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   transition: 1.5s;
-  padding-top: 150px;
+  padding-top: 100px;
   height: 100vh;
 }
 
-.about-obj {
-  height: auto;
-  max-width: 90vw;
-  padding-bottom: 60px;
+.row {
+  flex-direction: row;
 }
+
+.about-obj {
+  background-color: rgba(255, 255, 255, 0.959);
+  color: black;
+  margin: 20px auto;
+  padding: 0 20px 45px 20px;
+  /* border: 2px purple solid; */
+  border-radius: 80px;
+}
+
+/* .about-obj:hover {
+  opacity: 0.5;
+  color: black;
+} */
 .about-obj p {
-  margin-top: 20px;
+  /* margin: 0 auto; */
+  /* margin-top: 20px; */
   margin-left: 30px;
 }
 
 .about-obj h2 {
-  margin: 30px;
+  padding: 30px;
 }
 
 .about-obj ul {
@@ -204,10 +234,15 @@ section {
 }
 
 .fadeBlue:hover {
-  background-color: #4e94bf;
+  background-color: rgb(78, 148, 191);
   color: white;
 }
 
 .fadeGreen:hover {
-  background-color: #5fb6d9;
+  background-color: rgb(95, 182, 217);
 }
+
+/* .wrapper {
+  width: 80%;
+  margin: 0 auto;
+} */
