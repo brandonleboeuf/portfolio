@@ -4,41 +4,42 @@
 }
 
 // script taken from https://github.com/MarkHjorth/nedry
-{
-  /* <script>
-  ahahah = new Audio("./styles/jarasicPark/ahahah.mp3"); 
-  ahahah.addEventListener('ended', function() {
-    this.play();
-  }, false);
-  ahahah.play();
-</script> */
-}
+
+//    <script>
+//   ahahah = new Audio("./styles/jarasicPark/ahahah.mp3");
+//   ahahah.addEventListener('ended', function() {
+//     this.play();
+//   }, false);
+//   ahahah.play();
+// </script>
 
 // creat toggel access hidden pages if password is valid
 
 const input = document.querySelector("input");
-input.addEventListener("input", updateValue);
-
-// const dimensions = document.getElementById("dimensions").childNodes;
+input.addEventListener("input", changePage);
 
 let currentDisplaied = document.getElementById("resume");
+const dimensions = document.getElementsByClassName("dimensions");
+console.log(dimensions[1]);
 
-console.log(currentDisplaied);
-
-function updateValue(e) {
+function changePage(e) {
   let pw = e.target.value;
-  // console.log(pw);
-  if (pw === "d&d") {
-    console.log("it worked!");
+
+  if (
+    pw === "d&d" ||
+    pw === "dungeons and dragons" ||
+    pw === "dungeons & dragons"
+  ) {
+    currentDisplaied.classList.add("hidden");
+    currentDisplaied = document.getElementById("d_and_d");
+    currentDisplaied.classList.remove("hidden");
+    document.getElementById("dimensions").classList.remove("fadeBlue");
+    document.getElementById("dimensions").classList.add("dandd");
+  } else if (pw === "resume") {
+    currentDisplaied.classList.add("hidden");
+    currentDisplaied = document.getElementById("resume");
+    currentDisplaied.classList.remove("hidden");
+    document.getElementById("dimensions").classList.add("fadeBlue");
+    document.getElementById("dimensions").classList.remove("dandd");
   }
 }
-
-// console.log(input);
-// const handleInput = function (e) {
-//   if (
-//     input === "d&d" ||
-//     input === "dungeons and dragons" ||
-//     input === "dungeons & dragons"
-//   ) {
-//   }
-// };

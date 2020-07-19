@@ -1,7 +1,7 @@
 // My img gallery (replaced with the swiper script)
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
-const galleryImgs = document.querySelectorAll(".gallery-img ");
+const galleryImgs = document.querySelectorAll(".gallery-img");
 let currentlySelected = 0;
 
 prevBtn.addEventListener("click", function () {

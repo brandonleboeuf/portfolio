@@ -262,6 +262,10 @@ section {
   max-height: 600px;
 }
 
+.dandd {
+  background-color: rgba(231, 65, 65, 0.5);
+}
+
 .active {
   display: block;
 }
