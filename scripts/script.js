@@ -24,10 +24,14 @@ function changePage(e) {
     isSelected.classList.add("hidden");
     isSelected = document.getElementById("donut");
     isSelected.classList.remove("hidden");
-  } else if (pw === "jurassic park") {
+  } else if (pw === "jurassic park" || pw.length === 15) {
     isSelected.classList.add("hidden");
     isSelected = document.getElementById("jurassicPark");
     isSelected.classList.remove("hidden");
+    let audio = new Audio(
+      "/Users/bleb/DEV/personal/portfolio/styles/jarasicPark/ahahah.mp3"
+    );
+    audio.play();
   } else {
     isSelected.classList.add("hidden");
     isSelected = document.getElementById("resume");
