@@ -203,7 +203,23 @@ section {
   display: flex;
   flex-direction: column;
 }
+#donut {
+  height: 100vh;
+  padding-bottom: 100px;
+  justify-content: space-around;
+  text-align: center;
+}
 
+#donut h2 {
+  margin: 20px auto;
+}
+
+.donut {
+  height: 600px;
+  background-image: url(./img/parallel-universes-in-fiction-world-android-red-chocolate.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .content {
   /* position: ;
   top: 200px; */
