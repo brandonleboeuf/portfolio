@@ -18,28 +18,31 @@
 const input = document.querySelector("input");
 input.addEventListener("input", changePage);
 
-let currentDisplaied = document.getElementById("resume");
-const dimensions = document.getElementsByClassName("dimensions");
-console.log(dimensions[1]);
+let isSelected = document.getElementById("resume");
+
+// const dimensions = document.getElementsByClassName("dimensions");
+// console.log(dimensions[1]);
 
 function changePage(e) {
-  let pw = e.target.value;
+  let pw = e.target.value.toLowerCase();
+  let prev = isSelected;
 
   if (
     pw === "d&d" ||
     pw === "dungeons and dragons" ||
     pw === "dungeons & dragons"
   ) {
-    currentDisplaied.classList.add("hidden");
-    currentDisplaied = document.getElementById("d_and_d");
-    currentDisplaied.classList.remove("hidden");
-    document.getElementById("dimensions").classList.remove("fadeBlue");
-    document.getElementById("dimensions").classList.add("dandd");
+    // class change
+    isSelected.classList.add("hidden");
+    isSelected = document.getElementById("d_and_d");
+    isSelected.classList.remove("hidden");
   } else if (pw === "resume") {
-    currentDisplaied.classList.add("hidden");
-    currentDisplaied = document.getElementById("resume");
-    currentDisplaied.classList.remove("hidden");
-    document.getElementById("dimensions").classList.add("fadeBlue");
-    document.getElementById("dimensions").classList.remove("dandd");
+    isSelected.classList.add("hidden");
+    isSelected = document.getElementById("resume");
+    isSelected.classList.remove("hidden");
+  } else if (pw === "donut") {
+    isSelected.classList.add("hidden");
+    isSelected = document.getElementById("donut");
+    isSelected.classList.remove("hidden");
   }
 }

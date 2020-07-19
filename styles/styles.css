@@ -53,7 +53,7 @@ nav a {
 }
 
 /* Lord Vader, former handle, Anakin */
-a:link {
+/* a:link {
 }
 a:visited {
 }
@@ -62,7 +62,7 @@ a:focus {
 a:hover {
 }
 a:active {
-}
+} */
 
 footer {
   display: flex;
@@ -94,17 +94,16 @@ footer h5 {
 footer h5:hover {
   transform: scale(1.1);
 }
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .content img {
   border: 4px rgba(0, 0, 0, 0.5) solid;
   border-radius: 2px;
   margin-right: 100px;
-}
-
-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 #hero {
@@ -124,6 +123,10 @@ section {
   min-width: 500px;
   font-size: 20px;
   line-height: 1.5;
+}
+
+#about p {
+  max-width: 80vw;
 }
 
 #projects {
@@ -189,10 +192,17 @@ section {
 }
 
 #d_and_d {
+  background-color: red;
   /* display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0; */
+  flex-direction: row;
+  justify-content: center; */
+}
+
+#d_and_d img {
+  max-height: 900px;
+  min-height: 400;
+  max-width: 400px;
+  min-width: 150px;
 }
 
 .hidden {
@@ -221,14 +231,12 @@ section {
   background-position: center;
 }
 .content {
-  /* position: ;
-  top: 200px; */
-  margin: 0 auto;
-  display: flex;
+  /* margin: 0 auto; */
+  /* display: flex;
   justify-content: center;
+  align-items: center; */
   transition: 1.5s;
-  padding-top: 100px;
-  height: 100vh;
+  padding: 100px 0;
 }
 
 .row {
@@ -279,7 +287,10 @@ section {
 }
 
 .dandd {
-  background-color: rgba(231, 65, 65, 0.5);
+  display: block;
+  /* justify-content: space-between; */
+  /* flex-direction: row; */
+  background-color: rgba(231, 65, 65, 0.9);
 }
 
 .active {
