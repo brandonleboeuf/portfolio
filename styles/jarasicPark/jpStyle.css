@@ -1,7 +1,7 @@
 .nedry {
   position: relative;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 20%;
 }
 
 .body {
@@ -16,7 +16,7 @@
   left: 140px;
 }
 
-.hand{
+.hand {
   position: absolute;
   top: 155px;
   left: 265px;
@@ -28,15 +28,14 @@
   -webkit-transform-origin: 50% 100%;
 }
 
-@keyframes handFrames{
+@keyframes handFrames {
   0% {
-    transform:  rotate(-10deg) ;
+    transform: rotate(-10deg);
   }
   50% {
-    transform:  rotate(14deg) ;
+    transform: rotate(14deg);
   }
   100% {
-    transform:  rotate(-10deg) ;
+    transform: rotate(-10deg);
   }
 }
-

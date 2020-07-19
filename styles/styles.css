@@ -192,10 +192,10 @@ section {
 }
 
 #d_and_d {
-  background-color: red;
-  /* display: flex;
+  background-color: rgba(255, 102, 0, 0.801);
+  /* display: flex; */
   flex-direction: row;
-  justify-content: center; */
+  /* justify-content: center; */
 }
 
 #d_and_d img {
@@ -203,6 +203,7 @@ section {
   min-height: 400;
   max-width: 400px;
   min-width: 150px;
+  margin: 20px auto;
 }
 
 .hidden {
@@ -215,10 +216,16 @@ section {
 }
 #donut {
   height: 100vh;
-  padding-bottom: 100px;
+  padding: 50px 100px;
+  margin-bottom: 100px;
   justify-content: space-around;
   text-align: center;
 }
+
+/* #jurassicPark {
+  height: 540px;
+  width: 440px;
+} */
 
 #donut h2 {
   margin: 20px auto;
@@ -339,6 +346,6 @@ section {
   text-align: center;
 }
 
-img {
+/* img {
   height: 600px;
-}
+} */
