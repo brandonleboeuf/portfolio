@@ -16,15 +16,29 @@
 
 // creat toggel access hidden pages if password is valid
 
-const password = document.getElementById("passwordInput");
+const input = document.querySelector("input");
+input.addEventListener("input", updateValue);
 
-const handleInput = function (e) {
-  const input = password.onchange.tolowercase;
+// const dimensions = document.getElementById("dimensions").childNodes;
 
-  if (
-    input === "d&d" ||
-    input === "dungeons and dragons" ||
-    input === "dungeons & dragons"
-  ) {
+let currentDisplaied = document.getElementById("resume");
+
+console.log(currentDisplaied);
+
+function updateValue(e) {
+  let pw = e.target.value;
+  // console.log(pw);
+  if (pw === "d&d") {
+    console.log("it worked!");
   }
-};
+}
+
+// console.log(input);
+// const handleInput = function (e) {
+//   if (
+//     input === "d&d" ||
+//     input === "dungeons and dragons" ||
+//     input === "dungeons & dragons"
+//   ) {
+//   }
+// };

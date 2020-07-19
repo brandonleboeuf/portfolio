@@ -182,17 +182,17 @@ section {
 
 #resuem {
   /* display: none; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   height: 100vh;
-  margin: 0;
+  margin: 0; */
 }
 
 #d_and_d {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   height: 100vh;
-  margin: 0;
+  margin: 0; */
 }
 
 .hidden {
