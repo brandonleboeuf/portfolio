@@ -28,10 +28,7 @@ function changePage(e) {
     isSelected.classList.add("hidden");
     isSelected = document.getElementById("jurassicPark");
     isSelected.classList.remove("hidden");
-    // let audio = new Audio("../styles/jurassicPark/ahahah.mp3");
-    let audio = new Audio(
-      "https://github.com/brandonleboeuf/portfolio/blob/master/styles/jurassicPark/ahahah.mp3"
-    );
+    let audio = new Audio("/audio/ahahah.mp3");
     audio.play();
   } else {
     isSelected.classList.add("hidden");
