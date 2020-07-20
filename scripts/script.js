@@ -8,6 +8,9 @@ let isSelected = document.getElementById("resume");
 // const dimensions = document.getElementsByClassName("dimensions");
 // console.log(dimensions[1]);
 
+// Keeps JurassicPark audio from firing more than once every 30seconds
+let readyToPlay = true;
+
 function changePage(e) {
   let pw = e.target.value.toLowerCase();
 
@@ -29,7 +32,17 @@ function changePage(e) {
     isSelected = document.getElementById("jurassicPark");
     isSelected.classList.remove("hidden");
     let audio = new Audio("./public/audio/ahahah.mp3");
-    audio.play();
+    // Sets timeout to only allow the audio to play once every 30 seconds
+    let timmer = setTimeout(function () {
+      readyToPlay = true;
+    }, 30000);
+
+    if (readyToPlay) {
+      audio.play();
+      readyToPlay = false;
+    }
+
+    timmer();
   } else {
     isSelected.classList.add("hidden");
     isSelected = document.getElementById("resume");
