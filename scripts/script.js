@@ -38,3 +38,47 @@ function changePage(e) {
     isSelected.classList.remove("hidden");
   }
 }
+
+// popmotion pysics for navigation
+
+const { styler, spring, listen, pointer, value } = window.popmotion;
+
+const ball = document.querySelector(".grab");
+const divStyler = styler(ball);
+const ballXY = value({ x: 0, y: 0 }, divStyler.set);
+
+listen(ball, "mousedown touchstart").start((e) => {
+  e.preventDefault();
+  pointer(ballXY.get()).start(ballXY);
+});
+
+listen(document, "mouseup touchend").start(() => {
+  spring({
+    from: ballXY.get(),
+    velocity: ballXY.getVelocity(),
+    to: { x: 0, y: 0 },
+    stiffness: 200,
+    mass: 5,
+    damping: 10,
+  }).start(ballXY);
+});
+
+const name = document.querySelector(".name");
+const nameStyler = styler(name);
+const nameXY = value({ x: 0, y: 0 }, nameStyler.set);
+
+listen(name, "mousedown touchstart").start((e) => {
+  e.preventDefault();
+  pointer(nameXY.get()).start(nameXY);
+});
+
+listen(document, "mouseup touchend").start(() => {
+  spring({
+    from: nameXY.get(),
+    velocity: nameXY.getVelocity(),
+    to: { x: 0, y: 0 },
+    stiffness: 200,
+    mass: 5,
+    damping: 10,
+  }).start(nameXY);
+});
