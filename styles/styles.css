@@ -54,18 +54,6 @@ nav a {
   line-height: 40px;
 }
 
-/* Lord Vader, former handle, Anakin */
-/* a:link {
-}
-a:visited {
-}
-a:focus {
-}
-a:hover {
-}
-a:active {
-} */
-
 footer {
   display: flex;
   justify-content: center;
@@ -185,12 +173,13 @@ section {
   outline: thin;
 }
 
-#resuem {
-  /* display: none; */
-  /* display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0; */
+#resume img {
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  width: 350px;
+  border: none;
+  border-radius: 100%;
 }
 
 #d_and_d {
@@ -199,9 +188,33 @@ section {
     rgba(0, 0, 0, 0.8),
     rgba(255, 102, 0, 0.9)
   );
+}
 
+.d_and_d {
+  display: flex;
   flex-direction: row;
-  height: 80vh;
+  height: fit-content;
+  padding: 50px 0;
+}
+
+.recap {
+  display: flex;
+  margin: 0 auto;
+}
+
+.recap h2 {
+  padding-bottom: 10px;
+  text-emphasis: bold;
+}
+
+.recap p {
+  font-family: "Domine", serif;
+  max-width: 50vw;
+  margin: 50px 0;
+  line-height: 1.5rem;
+  background-color: rgba(245, 245, 245, 0.8);
+  border-radius: 10px;
+  padding: 20px;
 }
 
 #d_and_d img {
@@ -210,6 +223,7 @@ section {
   max-width: 400px;
   min-width: 150px;
   margin: 20px auto;
+  border-radius: 10px;
 }
 
 .hidden {
@@ -228,10 +242,6 @@ section {
   text-align: center;
 }
 
-#donut h2 {
-  margin: 20px auto;
-}
-
 .donut {
   height: 600px;
   background-image: url(./img/parallel-universes-in-fiction-world-android-red-chocolate.jpg);
@@ -239,10 +249,6 @@ section {
   background-position: center;
 }
 .content {
-  /* margin: 0 auto; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   transition: 1.5s;
   padding: 100px 0;
 }
@@ -256,14 +262,12 @@ section {
   color: black;
   margin: 20px auto;
   padding: 0 20px 45px 20px;
-  /* border: 2px purple solid; */
+  height: fit-content;
   border-radius: 50px;
   box-shadow: 5.5px 5px 2px rgba(136, 136, 136, 0.5);
 }
 
 .about-obj p {
-  /* margin: 0 auto; */
-  /* margin-top: 20px; */
   margin-left: 30px;
 }
 
@@ -289,16 +293,6 @@ section {
   max-height: 600px;
 }
 
-.dandd {
-  display: block;
-  /* justify-content: space-between; */
-  /* flex-direction: row; */
-  background-color: rgba(231, 65, 65, 0.9);
-}
-
-.active {
-  display: block;
-}
 .image-gallery {
   width: 100%;
   /* margin-top: 500px; */
