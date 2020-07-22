@@ -34,7 +34,8 @@ nav ul {
   height: 50px;
 }
 
-nav li {
+nav li,
+footer li {
   display: inline-block;
   font-size: 1.2rem;
   transition: all 0.6s ease-in-out;
@@ -42,11 +43,14 @@ nav li {
   line-height: 40px;
 }
 
-nav li:hover {
+nav li:hover,
+footer li:hover,
+footer a:hover {
   transform: scale(1.1);
 }
 
-nav a {
+nav a,
+footer a {
   display: inline-block;
   text-decoration: none;
   color: white;
@@ -61,15 +65,13 @@ footer {
   text-align: center;
   background-color: #2a558c;
   color: white;
-  height: 200px;
-  padding-top: 20px;
+  height: fit-content;
+  padding: 20px 0;
 }
 
 footer div {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 100px;
+  display: block;
+  padding-bottom: 10px;
 }
 
 footer a {
@@ -78,11 +80,27 @@ footer a {
 }
 
 footer h5 {
+  display: inline-block;
+  font-weight: thin;
+  padding: 0 20px;
   transition: all 0.6s ease-in-out;
 }
 
 footer h5:hover {
   transform: scale(1.1);
+}
+
+footer h6 {
+  font-size: 0.5rem;
+  color: rgb(209, 209, 209);
+}
+
+#copyright {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  max-width: 80vw;
+  padding: 20px 30px 0 30px;
+  border-top: 1px rgb(209, 209, 209) solid;
 }
 section {
   display: flex;
@@ -199,7 +217,10 @@ section {
 
 .recap {
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
+
+  padding: 50px;
 }
 
 .recap h2 {
@@ -207,13 +228,15 @@ section {
   text-emphasis: bold;
 }
 
-.recap p {
+.recap-content {
   font-family: "Domine", serif;
   max-width: 50vw;
   margin: 50px 0;
   line-height: 1.5rem;
   background-color: rgba(245, 245, 245, 0.8);
   border-radius: 10px;
+}
+.recap-content p {
   padding: 20px;
 }
 
@@ -244,7 +267,7 @@ section {
 
 .donut {
   height: 600px;
-  background-image: url(./img/parallel-universes-in-fiction-world-android-red-chocolate.jpg);
+  background-image: url(./img/parallel-universes-in-fiction-world-android-red-chocolate.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
