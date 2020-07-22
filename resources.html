@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link href="./styles/reset.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./styles/jurassicPark/jpStyle.css" />
     <link href="./styles/styles.css" rel="stylesheet" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
@@ -9,60 +10,225 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resources</title>
+
+    <title>Hello World</title>
   </head>
   <body>
     <nav>
       <ul>
         <li><a href="./index.html">Home</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Playlist</a></li>
+        <li><a href="./resources.html">Resources</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="wrapper">
-      <div id="hero">
-        <div>
-          <h1>Brandon LeBoeuf</h1>
-          <h2>Software Engineer</h2>
-        </div>
-        <div id="password">
-          <label for="passwordInput">PASSWORD</label>
-          <input type="text" id="passwordInput" name="passwordInput" placeholder="||">
-        </div>
-      </div>
 
-    <section id='functions'>
+    <div id="hero">
+      <div class="name">
+        <h1>Brandon LeBoeuf</h1>
+        <h2>Software Engineer</h2>
+      </div>
+      <div id="password">
+        <label for="passwordInput">PASSWORD</label>
+        <input
+          type="text"
+          id="passwordInput"
+          name="passwordInput"
+          placeholder="||"
+        />
+      </div>
+    </div>
+
+    <main>
+      <section id="dimensions">
+        <section id="resume" class="content fadeBlue hidden">
+          <img
+            src="./styles/img/rsz_3profile_pic.jpg"
+            alt="picture of Brandon LeBoeuf"
+          />
+          <div class="about-obj grab">
+            <h2>About Me</h2>
+            <p>{</p>
+            <ul>
+              <li>name: 'Brandon LeBoeuf',</li>
+              <li>age: 34,</li>
+              <li>ocupation: 'Software Engineer',</li>
+              <li>location: 'Portland, OR'</li>
+            </ul>
+            <p>}</p>
+          </div>
+          <div id="about">
+            <p>
+              The thing I love about software engineering is that it allows me
+              to be creative, solve puzzles, articulate vission, and build
+              reality's.
+            </p>
+
+            <p>
+              There is a thrill in seeing things 'become' and a reward for
+              pushing through discomfort to gain understanding. I work with
+              people to help their vision become a reality and I am constantly
+              learning and pushing myself to grow. Please reach out if you have
+              questions about my work, my process, or are interested in possibly
+              working together.
+            </p>
+          </div>
+        </section>
+
+        <section id="d_and_d" class="dimensions hidden">
+          <div class="d_and_d">
+            <div class="about-obj">
+              <h2>Dungeons and Dragons</h2>
+              <p>{</p>
+              <ul>
+                <li>name: 'Seoul',</li>
+                <li>age: 34,</li>
+                <li>ocupation: 'Sea Captain',</li>
+                <li>ship: 'Sea Captain',</li>
+                <li>location: 'unknown,</li>
+                <li>__d&d class__: ranger,</li>
+                <li>__d&d race__: Tabaxi</li>
+              </ul>
+              <p>}</p>
+            </div>
+
+            <img src="./styles/img/seoul.png" alt="Tabaxi named Seoul" />
+          </div>
+          <div class="recap">
+            <div>
+              <h2>8 Highsun 1493</h2>
+              <h3>The Unblinking Eye</h3>
+            </div>
+            <div class="recap-content">
+              <p>
+                Great evil lies before and beyond The Veil, and Erekose
+                Wavewalker may be the only one living who can cross the magical
+                barrier to stop their apocalyptic reunion. Erekose approaches
+                his trusted friend, Ryu, to form a crew to take him beyond The
+                Veil and stop the calamity. Ryu has spent months searching for
+                the shadowy figures in the vision sent by his goddess, Elhonna.
+                At long last, Ryu, Seoul, Ki-smo, Shaedra, and Jess gather in
+                the Karnosean port city of Nyaru to begin their journey across
+                The Veil.
+              </p>
+
+              <p>
+                However, the party's movements have not gone unnoticed, and
+                members of the Unblinking Eye follow our heroes as they set out
+                to rendezvous with Erekose at the docks. By the skilled blade of
+                Shaedra, silver tongue of Jess, and a feeble attempt at
+                intimidation from Ki-smo the party is able to escape and
+                interrogate a poor young lackey (Trevor) of the Unblinking Eye.
+                Seoul "takes care of" the boy, and the group scouts out the
+                Eye's impressive flagship: the Whitecrest.
+              </p>
+
+              <p>
+                Deciding they have met their match, our heroes retreat to the
+                docks and find Erekose standing by with his boat, the Lookfar,
+                magically folded up in a convenient, ornate wooden box. Two
+                uneventful days pass as Erekose speeds their voyage by calling
+                upon Kord, the god of Storms, to fill their sails. Erekose tells
+                his crew about the evil creature Ralakor and his plan to use the
+                Heart of the Swarm to wrest control of Shinar's mind flayers
+                (illithid) from their Elder Brains. With such an army, Ralakor
+                would enslave all sentient beings of Shinar and launch an
+                invasion of the stars.
+              </p>
+            </div>
+
+            <div>
+              <div>
+                <h2>12 Highsun 1493</h2>
+                <h3>How Many are We?</h3>
+              </div>
+              <div class="recap-content">
+                <p>
+                  Great evil lies before and beyond The Veil, and Erekose
+                  Wavewalker may be the only one living who can cross the
+                  magical barrier to stop their apocalyptic reunion. Erekose
+                  approaches his trusted friend, Ryu, to form a crew to take him
+                  beyond The Veil and stop the calamity. Ryu has spent months
+                  searching for the shadowy figures in the vision sent by his
+                  goddess, Elhonna. At long last, Ryu, Seoul, Ki-smo, Shaedra,
+                  and Jess gather in the Karnosean port city of Nyaru to begin
+                  their journey across The Veil.
+                </p>
+                <p>
+                  However, the party's movements have not gone unnoticed, and
+                  members of the Unblinking Eye follow our heroes as they set
+                  out to rendezvous with Erekose at the docks. By the skilled
+                  blade of Shaedra, silver tongue of Jess, and a feeble attempt
+                  at intimidation from Ki-smo the party is able to escape and
+                  interrogate a poor young lackey (Trevor) of the Unblinking
+                  Eye. Seoul "takes care of" the boy, and the group scouts out
+                  the Eye's impressive flagship: the Whitecrest.
+                </p>
+                <p>
+                  Deciding they have met their match, our heroes retreat to the
+                  docks and find Erekose standing by with his boat, the Lookfar,
+                  magically folded up in a convenient, ornate wooden box. Two
+                  uneventful days pass as Erekose speeds their voyage by calling
+                  upon Kord, the god of Storms, to fill their sails. Erekose
+                  tells his crew about the evil creature Ralakor and his plan to
+                  use the Heart of the Swarm to wrest control of Shinar's mind
+                  flayers (illithid) from their Elder Brains. With such an army,
+                  Ralakor would enslave all sentient beings of Shinar and launch
+                  an invasion of the stars.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="donut" class="dimensions hidden">
+          <div>
+            <div class="donut"></div>
+          </div>
+          <h2>passwords</h2>
+          <ul>
+            <li>d&d</li>
+            <li>jurassic park</li>
+          </ul>
+        </section>
+        <section id="jurassicPark" class="dimensions hidden">
+          <div class="nedry">
+            <!-- credit goes to Mark Hjorth for this little gem! https://github.com/MarkHjorth/nedry -->
+            <img class="body" src="./styles/jurassicPark/body.png" />
+            <img class="head" src="./styles/jurassicPark/head.png" />
+            <img class="hand" src="./styles/jurassicPark/hand.png" />
+            <!--   -->
+          </div>
+        </section>
+      </section>
+
+    <section id="functions">
       <div>
         <h2>Functions</h2>
-      <ul>
-        <li><a href="">.map()</a></li>
-        <li><a href="">.reduce()</a></li>
-        <li><a href="">.forEach()</a></li>
-        <li><a href="">.forEach()</a></li>
-      </ul></div>
-      
+        <ul>
+          <li><a href="">.map()</a></li>
+          <li><a href="">.reduce()</a></li>
+          <li><a href="">.forEach()</a></li>
+          <li><a href="">.forEach()</a></li>
+        </ul>
+      </div>
 
       <div>
         <h2>Flex</h2>
-      <ul>
-        <li><a href="">container vs children</a></li>
-        <li><a href="">flex-direction</a></li>
-      </ul>
+        <ul>
+          <li><a href="">container vs children</a></li>
+          <li><a href="">flex-direction</a></li>
+        </ul>
       </div>
-      
-      
+
       <div>
         <h2>Flexbox</h2>
         <ul>
           <li><a href=""></a></li>
         </ul>
       </div>
-      
-
     </section>
 
-    <section id='links'>
+    <section id="links">
       <h2>links</h2>
       <ul>
         <li><a href="">CSS-Tricks</a></li>
@@ -73,7 +239,7 @@
       </ul>
     </section>
 
-    <section id='tech'>
+    <section id="tech">
       <h2>Tech</h2>
       <ul>
         <li><a href="">React</a></li>
@@ -89,7 +255,7 @@
       </ul>
     </section>
 
-    <section id='teachers'>
+    <section id="teachers">
       <h2>Teachers</h2>
       <ul>
         <li><a href="">FrontEnd Happy Hour</a></li>
@@ -100,6 +266,40 @@
         <li><a href="">CodeCademy</a></li>
       </ul>
     </section>
-    <a href="https://twitter.com/intent/tweet?button_hashtag=brandoneleboeuf&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #brandoneleboeuf</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a
+      href="https://twitter.com/intent/tweet?button_hashtag=brandoneleboeuf&ref_src=twsrc%5Etfw"
+      class="twitter-hashtag-button"
+      data-show-count="false"
+      >Tweet #brandoneleboeuf</a
+    >
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+    <footer>
+      <div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./resources.html">Resources</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>
+          <a href="mailto:Brandon.LeBoeuf@gmail.com"
+            >Brandon.LeBoeuf@gmail.com</a
+          >
+        </h5>
+        <h5>
+          <a href="https://twitter.com/brandoneleboeuf">@BrandonELeBoeuf</a>
+        </h5>
+      </div>
+      <div id="copyright">
+        <h6>Copyright © 2020 Brandon Eugene LeBoeuf. All rights reserved.</h6>
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

@@ -44,6 +44,7 @@ function changePage(e) {
 
     timmer();
   } else {
+    // TODO: need to make this unique to each page
     isSelected.classList.add("hidden");
     isSelected = document.getElementById("resume");
     isSelected.classList.remove("hidden");
