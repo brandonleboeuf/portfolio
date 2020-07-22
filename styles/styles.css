@@ -219,7 +219,6 @@ section {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-
   padding: 50px;
 }
 
@@ -228,8 +227,16 @@ section {
   text-emphasis: bold;
 }
 
+.campaign-title {
+  font-family: "Rowdies", cursive;
+}
+
+.campaign {
+  display: flex;
+  flex-direction: row;
+}
+
 .recap-content {
-  font-family: "Domine", serif;
   max-width: 50vw;
   margin: 50px 0;
   line-height: 1.5rem;
@@ -237,6 +244,8 @@ section {
   border-radius: 10px;
 }
 .recap-content p {
+  font-family: "Rowdies", cursive;
+  font-weight: 300;
   padding: 20px;
 }
 
