@@ -369,6 +369,12 @@ section {
   text-align: center;
 }
 
+.swiper-width {
+  margin: auto;
+  padding: 10px;
+  width: 100vw;
+}
+
 .grab {
   cursor: grab;
   z-index: 10;
