@@ -58,6 +58,14 @@ footer a {
   line-height: 40px;
 }
 
+#hero a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+  /* line-height: 40px; */
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -383,7 +391,7 @@ section {
 .name {
   cursor: grab;
   z-index: 10;
-  padding: 0.5px;
   background-color: #274259;
+  padding: 0.5px;
   border-radius: 5px;
 }
