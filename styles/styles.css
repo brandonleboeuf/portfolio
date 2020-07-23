@@ -35,7 +35,8 @@ nav ul {
 }
 
 nav li,
-footer li {
+footer li,
+button {
   display: inline-block;
   font-size: 1.2rem;
   transition: all 0.6s ease-in-out;
@@ -294,8 +295,13 @@ section {
   padding: 100px 0;
 }
 
+.resources {
+  background-color: rgba(0, 128, 128, 0.5);
+}
+
 .row {
   flex-direction: row;
+  flex-flow: wrap;
 }
 
 .about-obj {
