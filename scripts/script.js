@@ -3,7 +3,7 @@
 const input = document.querySelector("input");
 input.addEventListener("input", changePage);
 
-let isSelected = document.getElementById("resume");
+let isSelected = document.getElementById("main");
 
 // const dimensions = document.getElementsByClassName("dimensions");
 // console.log(dimensions[1]);
@@ -44,9 +44,8 @@ function changePage(e) {
 
     timmer();
   } else {
-    // TODO: need to make this unique to each page
     isSelected.classList.add("hidden");
-    isSelected = document.getElementById("resume");
+    isSelected = document.getElementById("main");
     isSelected.classList.remove("hidden");
   }
 }

@@ -191,7 +191,7 @@ section {
   outline: thin;
 }
 
-#resume img {
+.resume img {
   position: absolute;
   top: 25%;
   right: 50%;
