@@ -314,6 +314,7 @@ section {
 .resources {
   background-color: rgb(39, 66, 89);
   padding: 50px;
+
   height: fit-content;
 }
 
@@ -336,7 +337,7 @@ section {
 .resources-obj {
   background-color: rgba(255, 255, 255, 0.959);
   color: black;
-  margin: 30px auto;
+  margin: 30px 10px;
   padding: 0 30px 30px 30px;
   height: fit-content;
   border-radius: 40px;
