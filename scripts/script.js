@@ -27,6 +27,10 @@ function changePage(e) {
     isSelected.classList.add("hidden");
     isSelected = document.getElementById("donut");
     isSelected.classList.remove("hidden");
+  } else if (pw === "calc" || pw === "calculator") {
+    isSelected.classList.add("hidden");
+    isSelected = document.getElementById("calc");
+    isSelected.classList.remove("hidden");
   } else if (pw === "jurassic park" || pw.length === 15) {
     isSelected.classList.add("hidden");
     isSelected = document.getElementById("jurassicPark");
