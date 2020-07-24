@@ -1,8 +1,11 @@
 let runningTotal = 0;
 let buffer = "0";
+let display = "0";
 let previousOperator = null;
+let opSym = "";
 
-const screen = document.querySelector(".screen");
+const mathSymbol = document.querySelector(".math-symbol");
+const screen = document.querySelector(".number");
 
 function buttonClick(value) {
   if (isNaN(value)) {
@@ -11,16 +14,19 @@ function buttonClick(value) {
   } else {
     // this is a number
     handleNumber(value);
+    screen.innerText = buffer;
   }
 
-  screen.innerText = buffer;
+  mathSymbol.innerText = opSym;
 }
 
 function handleSymbol(symbol) {
   switch (symbol) {
     case "C":
       buffer = "0";
+      opSym = "";
       runningTotal = 0;
+      screen.innerText = runningTotal;
       break;
     case "=":
       if (previousOperator === null) {
@@ -29,20 +35,26 @@ function handleSymbol(symbol) {
       }
       flushOpperation(parseInt(buffer));
       previousOperator = null;
+      opSym = "";
+      screen.innerText = runningTotal;
       buffer = runningTotal;
       runningTotal = 0;
       break;
     case "←":
+      opSym = "";
       if (buffer.length === 1) {
         buffer = "0";
+        screen.innerText = buffer;
       } else {
         buffer = buffer.substring(0, buffer.length - 1);
+        screen.innerText = buffer;
       }
       break;
     case "+":
     case "−":
     case "×":
     case "÷":
+      opSym = symbol;
       handleMath(symbol);
       break;
   }
@@ -62,8 +74,8 @@ function handleMath(symbol) {
   }
 
   previousOperator = symbol;
-
-  buffer = runningTotal + symbol;
+  opSym = symbol;
+  buffer = "0";
 }
 
 function flushOpperation(intBuffer) {
@@ -84,8 +96,6 @@ function handleNumber(numberString) {
   } else {
     buffer += numberString;
   }
-  // screen.innerText = `${buffer} ${symbol}`;
-  screen.innerText = buffer;
 }
 
 function init() {

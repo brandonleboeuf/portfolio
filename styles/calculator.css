@@ -1,8 +1,15 @@
 .screen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   text-align: right;
   font-family: "Courier New", Courier, monospace;
   padding: 20px 5px;
   font-size: 40px;
+}
+
+.math-symbol {
+  padding-left: 1rem;
 }
 
 #calc {
