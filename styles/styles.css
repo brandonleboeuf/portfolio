@@ -70,6 +70,7 @@ footer a {
 
 #hero {
   position: relative;
+  margin-top: ;
   top: 70px;
   display: flex;
   flex-direction: row;
@@ -166,15 +167,15 @@ section {
   justify-content: center;
   flex-direction: column;
   justify-content: space-around;
-  height: auto;
-  height: 50vh;
   transition: 1.5s;
   border: 1px solid black;
+  overflow: hidden;
 }
 
 #projects ul {
   margin: 50px 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 }
@@ -182,7 +183,7 @@ section {
 #projects li {
   font-size: 1.4rem;
   text-decoration: none;
-  margin: 0 35px;
+  margin: 35px;
   transition: all 0.6s ease-in-out;
 }
 
@@ -213,6 +214,7 @@ section {
 
 .resume img {
   position: absolute;
+  margin-top: 10px;
   top: 25%;
   right: 50%;
   width: 350px;

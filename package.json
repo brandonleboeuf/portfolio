@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/brandonleboeuf/portfolio#readme",
   "dependencies": {
-    "popmotion": "^8.7.3"
+    "popmotion": "^8.7.3",
+    "swiper": "^6.0.4"
   }
 }
