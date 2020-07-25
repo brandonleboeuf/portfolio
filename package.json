@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonleboeuf/portfolio.git"
+  },
+  "author": "Brandon LeBoeuf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonleboeuf/portfolio/issues"
+  },
+  "homepage": "https://github.com/brandonleboeuf/portfolio#readme",
+  "dependencies": {
+    "popmotion": "^8.7.3"
+  }
+}

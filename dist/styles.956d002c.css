@@ -1,0 +1,461 @@
+/* colors from https://color.adobe.com/explore */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 40;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+}
+
+h1 {
+  font-family: "Domine", serif;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Domine", serif;
+  font-weight: 400;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  padding: 0 20px;
+  text-align: center;
+  background-color: rgb(12, 12, 12);
+  height: 70px;
+  z-index: 100;
+}
+
+nav ul {
+  text-align: right;
+  margin: 0 auto;
+  height: 50px;
+}
+
+nav li,
+footer li {
+  display: inline-block;
+  font-size: 1.2rem;
+  transition: all 0.6s ease-in-out;
+  padding: 10px 20px;
+  line-height: 40px;
+}
+
+nav li:hover,
+footer li:hover,
+footer a:hover {
+  transform: scale(1.1);
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+nav a,
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+  line-height: 40px;
+}
+
+#hero {
+  position: relative;
+  top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  flex-direction: row;
+  background-color: #274259;
+  padding: 60px;
+}
+
+#hero a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+  /* line-height: 40px; */
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #2a558c;
+  color: white;
+  height: fit-content;
+  padding: 20px 0;
+}
+
+footer div {
+  display: block;
+  padding-bottom: 10px;
+}
+
+footer a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+footer h5 {
+  display: inline-block;
+  font-weight: thin;
+  padding: 0 20px;
+  transition: all 0.6s ease-in-out;
+}
+
+footer h5:hover {
+  transform: scale(1.1);
+}
+
+footer h6 {
+  font-size: 0.5rem;
+  color: rgb(209, 209, 209);
+}
+
+#copyright {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  max-width: 80vw;
+  padding: 20px 30px 0 30px;
+  border-top: 1px rgb(209, 209, 209) solid;
+}
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content img {
+  border: 4px rgba(0, 0, 0, 0.5) solid;
+  border-radius: 2px;
+  margin-right: 100px;
+}
+
+#about {
+  margin: 125px auto;
+  text-align: center;
+  max-width: 1000px;
+  min-width: 500px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#about p {
+  max-width: 80vw;
+}
+
+#projects {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  height: 50vh;
+  transition: 1.5s;
+  border: 1px solid black;
+}
+
+#projects ul {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#projects li {
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin: 0 35px;
+  transition: all 0.6s ease-in-out;
+}
+
+#projects li:hover {
+  transform: scale(1.4);
+}
+
+#projects h2 {
+  font-size: 1.9rem;
+  margin: 0 50px;
+}
+
+#projects a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px 15px;
+  line-height: 40px;
+  transition: all 0.6s ease-in-out;
+}
+
+#projects a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  /* transform: scale(0.2); */
+  outline: thin;
+}
+
+.resume img {
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  width: 350px;
+  border: none;
+  border-radius: 100%;
+}
+
+#d_and_d {
+  background-image: linear-gradient(
+    -80deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(255, 102, 0, 0.9)
+  );
+  padding-top: 50px;
+}
+
+.d_and_d {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  padding: 50px 0;
+}
+
+.recap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.recap h2 {
+  padding-bottom: 10px;
+  text-emphasis: bold;
+}
+
+.campaign-title {
+  font-family: "Rowdies", cursive;
+}
+
+.campaign {
+  display: flex;
+  flex-direction: row;
+}
+
+.recap-content {
+  max-width: 50vw;
+  margin: 50px 0;
+  line-height: 1.5rem;
+  background-color: rgba(245, 245, 245, 0.8);
+  border-radius: 10px;
+}
+.recap-content p {
+  font-family: "Rowdies", cursive;
+  font-weight: 300;
+
+  padding: 20px;
+}
+
+#d_and_d img {
+  max-height: 900px;
+  min-height: 400;
+  max-width: 400px;
+  min-width: 150px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#password {
+  display: flex;
+  flex-direction: column;
+}
+#donut {
+  height: 100vh;
+  padding: 50px 100px;
+  margin-bottom: 100px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.donut {
+  height: 600px;
+  background-image: url(/parallel-universes-in-fiction-world-android-red-chocolate.8b97cc18.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content {
+  transition: 1.5s;
+  padding: 100px 0;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.resources {
+  background-color: rgb(39, 66, 89);
+  padding: 50px;
+
+  height: fit-content;
+}
+
+.resource-blocks {
+  display: flex;
+  margin: 20px auto;
+  background-image: url("/23676_352003081110_7191527_n.ed5d966c.jpg");
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 400px;
+
+  overflow: show;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  height: fit-content;
+  justify-content: space-around;
+  border-radius: 300px;
+}
+
+.resources-obj {
+  background-color: rgba(255, 255, 255, 0.959);
+  color: black;
+  margin: 30px 10px;
+  padding: 0 30px 30px 30px;
+  height: fit-content;
+  border-radius: 40px;
+  box-shadow: 5.5px 5px 2px rgba(136, 136, 136, 0.5);
+}
+.about-obj {
+  background-color: rgba(255, 255, 255, 0.959);
+  color: black;
+  margin: 20px auto;
+  padding: 0 20px 45px 20px;
+  height: fit-content;
+  border-radius: 50px;
+  box-shadow: 5.5px 5px 2px rgba(136, 136, 136, 0.5);
+}
+
+.resources-obj li {
+  padding-top: 0.5rem;
+}
+
+.about-obj p {
+  margin-left: 30px;
+}
+
+.about-obj h2,
+.resources-obj h2 {
+  padding: 30px;
+}
+
+.about-obj ul {
+  margin-left: 40px;
+}
+.resources-obj a {
+  color: black;
+  text-decoration: none;
+}
+.resources-obj a:hover {
+  text-decoration: underline;
+}
+
+.resources h2 {
+  text-align: center;
+}
+
+.fadeBlue:hover {
+  background-color: rgb(78, 148, 191);
+  color: white;
+}
+
+.fadeGreen:hover {
+  background-color: rgb(95, 182, 217);
+}
+
+.gallery-img {
+  display: none;
+  max-height: 600px;
+}
+
+.image-gallery {
+  width: 100%;
+  /* margin-top: 500px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btns {
+  /* width: 100%; */
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  width: 150px;
+  background-color: #274259;
+  color: white;
+  font-size: 1rem;
+  padding: 5px 20px;
+
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev {
+  margin-right: 15px;
+}
+
+.btn:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-width {
+  margin: auto;
+  padding: 10px;
+  width: 100vw;
+}
+
+.grab {
+  cursor: grab;
+  z-index: 10;
+}
+
+.name {
+  cursor: grab;
+  z-index: 10;
+  background-color: #274259;
+  padding: 0.5px;
+  border-radius: 5px;
+}
+
+
+/*# sourceMappingURL=/styles.956d002c.css.map */

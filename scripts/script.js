@@ -1,5 +1,4 @@
 // creat toggel access hidden pages if password is valid
-
 const input = document.querySelector("input");
 input.addEventListener("input", changePage);
 
@@ -10,6 +9,12 @@ let isSelected = document.getElementById("main");
 
 // Keeps JurassicPark audio from firing more than once every 30seconds
 let readyToPlay = true;
+function timmer() {
+  setTimeout(function () {
+    readyToPlay = true;
+  }, 15000);
+  // console.log("FIRE");
+}
 
 function changePage(e) {
   let pw = e.target.value.toLowerCase();
@@ -35,17 +40,14 @@ function changePage(e) {
     isSelected.classList.add("hidden");
     isSelected = document.getElementById("jurassicPark");
     isSelected.classList.remove("hidden");
-    let audio = new Audio("./public/audio/ahahah.mp3");
-    // Sets timeout to only allow the audio to play once every 30 seconds
-    let timmer = setTimeout(function () {
-      readyToPlay = true;
-    }, 30000);
 
-    if (readyToPlay) {
-      audio.play();
-      readyToPlay = false;
+    if (!readyToPlay) {
+      return;
+    } else {
+      const playPromise = document.querySelector("audio").play();
+      // playPromise();
     }
-
+    readyToPlay = false;
     timmer();
   } else {
     isSelected.classList.add("hidden");
@@ -54,9 +56,8 @@ function changePage(e) {
   }
 }
 
-// popmotion pysics for navigation
-
-const { styler, spring, listen, pointer, value } = window.popmotion;
+// popmotion psychics for navigation
+import { styler, spring, listen, pointer, value } from "popmotion";
 
 const ball = document.querySelector(".grab");
 const divStyler = styler(ball);
@@ -78,7 +79,7 @@ listen(document, "mouseup touchend").start(() => {
   }).start(ballXY);
 });
 
-// popmotion pysics for "Brandon LeBoeuf" (top left of page)
+// popmotion psychics for "Brandon LeBoeuf" (top left of page)
 
 const name = document.querySelector(".name");
 const nameStyler = styler(name);
