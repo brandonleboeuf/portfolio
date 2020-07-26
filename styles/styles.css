@@ -379,6 +379,23 @@ section {
   border-radius: 40px;
   box-shadow: 5.5px 5px 2px rgba(136, 136, 136, 0.5);
 }
+
+.resources-obj h2 {
+  padding: 0;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+
+.resources-obj h3 {
+  padding-top: 1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #777;
+}
+
+/* .resources-obj ul:last-child {
+  padding-bottom: 100px;
+} */
+
 .about-obj {
   background-color: rgba(255, 255, 255, 0.959);
   color: black;
@@ -397,8 +414,7 @@ section {
   margin-left: 30px;
 }
 
-.about-obj h2,
-.resources-obj h2 {
+.about-obj h2 {
   padding: 30px;
 }
 
