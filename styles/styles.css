@@ -70,7 +70,6 @@ footer a {
 
 #hero {
   position: relative;
-  margin-top: ;
   top: 70px;
   display: flex;
   flex-direction: row;
@@ -236,6 +235,14 @@ section {
   flex-direction: row;
   height: fit-content;
   padding: 50px 0;
+  /* border-bottom: 1px solid black; */
+}
+
+.underline {
+  border-bottom: 1px solid black;
+  height: 1px;
+  margin-bottom: 25px;
+  width: 80vw;
 }
 
 .recap {
@@ -250,13 +257,32 @@ section {
   text-emphasis: bold;
 }
 
+.recap h3 {
+  font-family: "Roboto", sans-serif;
+  text-emphasis: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  width: 180px;
+  margin-right: 3rem;
+}
+
 .campaign-title {
   font-family: "Rowdies", cursive;
+  border-bottom: 1px solid black;
+  width: 180px;
+  margin-right: 20px;
+  padding-top: 10px;
+}
+
+.more-info {
+  padding-top: 15px;
+  /* border-bottom: 1px solid black; */
 }
 
 .campaign {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .recap-content {
@@ -269,14 +295,22 @@ section {
 .recap-content p {
   font-family: "Rowdies", cursive;
   font-weight: 300;
-
   padding: 20px;
+}
+
+.pendor {
+  /* height: 600px; */
+  /* align-content: stretch; */
+  /* background-image: url("./img/PendorMap.jpg"); */
+  /* height: 80vw; */
+  width: 75vw;
+  /* min-width: 400px; */
 }
 
 #d_and_d img {
   max-height: 900px;
   min-height: 400;
-  max-width: 400px;
+  /* max-width: 400; */
   min-width: 150px;
   margin: 20px auto;
   border-radius: 10px;
