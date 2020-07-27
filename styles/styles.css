@@ -279,6 +279,13 @@ section {
   /* border-bottom: 1px solid black; */
 }
 
+.more-info h2 {
+  padding-top: 1rem;
+}
+
+.more-info li {
+  padding: 0.7rem;
+}
 .campaign {
   display: flex;
   flex-direction: row;
