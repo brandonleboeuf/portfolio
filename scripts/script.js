@@ -80,7 +80,7 @@ listen(document, "mouseup touchend").start(() => {
 
 // popmotion pysics for "Brandon LeBoeuf" (top left of page)
 
-const name = document.querySelector(".name");
+const name = document.querySelector(".logo");
 const nameStyler = styler(name);
 const nameXY = value({ x: 0, y: 0 }, nameStyler.set);
 

@@ -27,17 +27,28 @@ p {
 
 nav {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   width: 100vw;
-  padding: 0 20px;
+  padding: 0 10px;
   text-align: center;
   background-color: rgb(12, 12, 12);
   height: 70px;
   z-index: 100;
 }
 
+nav img {
+  height: 50px;
+  margin: 10px 0 0 1.5rem;
+  /* padding-left: 2rem; */
+  background-color: white;
+  border-radius: 15px;
+}
+
 nav ul {
-  text-align: right;
-  margin: 0 auto;
+  /* justify-self: right; */
+  /* text-align: right; */
+  /* margin: 0 auto; */
   height: 50px;
 }
 
@@ -50,7 +61,7 @@ footer li {
   line-height: 40px;
 }
 
-nav li:hover,
+nav a:hover,
 footer li:hover,
 footer a:hover {
   transform: scale(1.1);
@@ -139,9 +150,10 @@ section {
 }
 
 .content img {
-  border: 4px rgba(0, 0, 0, 0.5) solid;
+  /* border: 4px rgba(0, 0, 0, 0.5) solid; */
   border-radius: 2px;
   margin-right: 100px;
+  max-height: 600px;
 }
 
 #about {
@@ -341,7 +353,7 @@ section {
 
 .donut {
   height: 600px;
-  background-image: url(./img/parallel-universes-in-fiction-world-android-red-chocolate.jpg);
+  background-image: url(./img/donut.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -511,9 +523,6 @@ section {
 .name {
   cursor: grab;
   z-index: 10;
-  background-color: #274259;
-  padding: 0.5px;
-  border-radius: 5px;
 }
 
 .current-page {
