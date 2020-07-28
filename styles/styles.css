@@ -106,7 +106,7 @@ footer {
   text-align: center;
   background-color: #2a558c;
   color: white;
-  height: fit-content;
+  /* height: fit-content; */
   padding: 20px 0;
 }
 
@@ -157,7 +157,7 @@ section {
 }
 
 #about {
-  margin: 125px auto;
+  margin: 125px auto 50px auto;
   text-align: center;
   max-width: 1000px;
   min-width: 500px;
@@ -178,7 +178,7 @@ section {
   justify-content: center;
   flex-direction: column;
   justify-content: space-around;
-  transition: 1.5s;
+  transition: 1s;
   border: 1px solid black;
   overflow: hidden;
 }
@@ -219,7 +219,6 @@ section {
 
 #projects a:hover {
   background-color: rgba(0, 0, 0, 0.7);
-  /* transform: scale(0.2); */
   outline: thin;
 }
 
@@ -358,8 +357,8 @@ section {
   background-position: center;
 }
 .content {
-  transition: 1.5s;
-  padding: 100px 0;
+  transition: 1s;
+  padding: 20px 0;
 }
 
 .row {
@@ -453,12 +452,12 @@ section {
 }
 
 .fadeBlue:hover {
-  background-color: rgb(78, 148, 191);
+  background-color: rgba(78, 148, 191, 0.8);
   color: white;
 }
 
 .fadeGreen:hover {
-  background-color: rgb(95, 182, 217);
+  background-color: rgba(95, 182, 217, 0.3);
 }
 
 .gallery-img {
@@ -520,7 +519,7 @@ section {
   z-index: 10;
 }
 
-.name {
+.logo {
   cursor: grab;
   z-index: 10;
 }
