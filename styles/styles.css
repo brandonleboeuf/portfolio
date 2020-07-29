@@ -5,7 +5,7 @@
 }
 
 body {
-  padding: 0 40;
+  /* padding: 0 40; */
   margin: auto;
   font-family: "Roboto", sans-serif;
   user-select: none;
@@ -38,11 +38,6 @@ nav {
 }
 
 nav img {
-  height: 50px;
-  margin: 10px 0 0 1.5rem;
-  /* padding-left: 2rem; */
-  background-color: white;
-  border-radius: 15px;
 }
 
 nav ul {
@@ -143,6 +138,10 @@ footer h6 {
   padding: 20px 30px 0 30px;
   border-top: 1px rgb(209, 209, 209) solid;
 }
+
+#dimensions {
+}
+
 section {
   display: flex;
   justify-content: center;
@@ -172,10 +171,8 @@ section {
 #projects {
   padding: 50px 0;
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  justify-content: center;
   flex-direction: column;
   justify-content: space-around;
   transition: 1s;
@@ -225,9 +222,11 @@ section {
 .resume img {
   position: absolute;
   margin-top: 10px;
+  padding-left: 3rem;
   top: 25%;
   right: 50%;
-  width: 350px;
+  width: auto;
+  max-width: 350px;
   border: none;
   border-radius: 100%;
 }
@@ -243,7 +242,7 @@ section {
 
 .d_and_d {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
   height: fit-content;
   padding: 50px 0;
   /* border-bottom: 1px solid black; */
@@ -330,7 +329,7 @@ section {
   min-height: 400;
   /* max-width: 400; */
   min-width: 150px;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   border-radius: 10px;
 }
 
@@ -345,18 +344,20 @@ section {
 #donut {
   height: 100vh;
   padding: 50px 100px;
-  margin-bottom: 100px;
+  margin: 100px 0;
   justify-content: space-around;
   text-align: center;
 }
 
 .donut {
-  height: 600px;
+  height: 90vh;
   background-image: url(./img/donut.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 .content {
+  width: auto;
   transition: 1s;
   padding: 20px 0;
 }
@@ -510,7 +511,7 @@ section {
 
 .swiper-width {
   margin: auto;
-  padding: 10px;
+  padding: 5rem 10rem;
   width: 100vw;
 }
 
@@ -520,8 +521,15 @@ section {
 }
 
 .logo {
+  height: 50px;
+  margin: 10px 0 0 1.5rem;
+  /* padding-left: 2rem; */
+  background-color: white;
+  border-radius: 15px;
   cursor: grab;
   z-index: 10;
+  fill: white;
+  /* stroke: white; */
 }
 
 .current-page {
