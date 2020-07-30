@@ -13,45 +13,47 @@ let readyToPlay = true;
 
 function changePage(e) {
   let pw = e.target.value.toLowerCase();
+  let pwPick;
 
-  if (
-    pw === "d&d" ||
-    pw === "dnd" ||
-    pw === "dungeons and dragons" ||
-    pw === "dungeons & dragons"
-  ) {
-    isSelected.classList.add("hidden"); // Hides current page
-    isSelected = document.getElementById("d_and_d"); // Sets new page as isSelected
-    isSelected.classList.remove("hidden"); // Removes .hidden class
-  } else if (pw === "donut") {
-    isSelected.classList.add("hidden");
-    isSelected = document.getElementById("donut");
-    isSelected.classList.remove("hidden");
-  } else if (pw === "calc" || pw === "calculator") {
-    isSelected.classList.add("hidden");
-    isSelected = document.getElementById("calc");
-    isSelected.classList.remove("hidden");
-  } else if (pw === "jurassic park" || pw.length === 15) {
-    isSelected.classList.add("hidden");
-    isSelected = document.getElementById("jurassicPark");
-    isSelected.classList.remove("hidden");
-    let audio = new Audio("./public/audio/ahahah.mp3");
-    // Sets timeout to only allow the audio to play once every 30 seconds
-    let timmer = setTimeout(function () {
-      readyToPlay = true;
-    }, 30000);
-
-    if (readyToPlay) {
-      audio.play();
-      readyToPlay = false;
-    }
-
-    timmer();
-  } else {
-    isSelected.classList.add("hidden");
-    isSelected = document.getElementById("main");
-    isSelected.classList.remove("hidden");
+  if (pw.length === 15) {
+    pw = "jurassic park";
   }
+  
+  switch (pw) {
+    case "d&d": 
+    case "dungeons and dragons":
+    case "dungeons & dragons":
+      pwPick = document.getElementById("d_and_d"); // Sets new page as isSelected
+      break;
+    case "donut":
+      pwPick = document.getElementById("donut");
+      break;
+    case ("calc" || "calculator"):
+      pwPick = document.getElementById("calc");
+      break;
+    case "jurassic park":
+      pwPick = document.getElementById("jurassicPark");
+      let audio = new Audio("./public/audio/ahahah.mp3");
+      // Sets timeout to only allow the audio to play once every 30 seconds
+      function timmer(){
+        setTimeout(function () {
+          readyToPlay = true;
+        }, 30000);
+
+        if (readyToPlay) {
+          audio.play();
+          readyToPlay = false;
+        }
+      }
+
+      timmer();
+      break;
+    default:
+      pwPick = document.getElementById("main");
+  }
+  isSelected.classList.add("hidden"); 
+  isSelected = pwPick;
+  isSelected.classList.remove("hidden");
 }
 
 // popmotion pysics for navigation
