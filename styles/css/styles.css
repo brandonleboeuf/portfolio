@@ -93,8 +93,8 @@ footer a {
 
 footer {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: space-evenly;
   text-align: center;
   background-color: #2a558c;
   color: white;
@@ -105,6 +105,7 @@ footer {
 footer div {
   display: block;
   padding-bottom: 10px;
+  /* margin-bottom: 5px; */
 }
 
 footer a {
@@ -114,8 +115,9 @@ footer a {
 
 footer h5 {
   display: inline-block;
+  /* margin: 15px 0 0 0; */
   font-weight: thin;
-  padding: 0 20px;
+  padding: 10px 20px;
   transition: all 0.6s ease-in-out;
 }
 
@@ -136,7 +138,85 @@ footer h6 {
   border-top: 1px rgb(209, 209, 209) solid;
 }
 
-#dimensions {
+legend {
+  padding: 3px 6px;
+  
+}
+
+fieldset {
+  display: flex;
+  border: black solid 1px;
+  background-color: ;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  max-width: 70vw;
+}
+.lables {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 200px
+}
+
+#textContent {
+  border: none;
+}
+
+.label{
+  padding: 10px;
+  width: 150px;
+}
+.lable input {
+  
+}
+
+.output {
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+  margin: 10px;
+  padding: 4px;
+  width: 200px;
+}
+.form-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  margin: 20px auto;
+  height: fit-content;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.959);
+  color: black;
+  margin: 30px 10px;
+  padding: 0 30px 30px 30px;
+  height: fit-content;
+  border-radius: 40px;
+  box-shadow: 5.5px 5px 20px rgba(136, 136, 136, 0.5);
+  transition: all 0.6s ease-in-out;
+}
+
+.submit-btn {
+  padding: 5px;
+  border-radius: 40px;
+  box-shadow: 5px 4px 20px rgba(136, 136, 136, 0.5);
+  transition: all 0.6s ease-in-out;
+  float: right;
+}
+
+
+.submit-btn:hover {
+  background-color: rgba(149, 220, 238, 0.3);
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 section {
@@ -383,7 +463,6 @@ section {
   background-position: center;
   background-repeat: repeat-x;
   background-size: 400px;
-
   overflow: show;
   flex-wrap: wrap;
   max-width: 1000px;
@@ -403,8 +482,6 @@ section {
   transition: all 0.6s ease-in-out;
 }
 
-
-
 .item {
   text-decoration: none;
   display: flex;
@@ -421,9 +498,8 @@ section {
 }
 
 .resources-obj h2 {
-  padding: 0;
+  padding-bottom: 1rem;
   margin-top: 1.5rem;
-  padding-top: 1rem;
 }
 
 .resources-obj h3 {
