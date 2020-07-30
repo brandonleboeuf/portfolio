@@ -140,21 +140,26 @@ footer h6 {
 
 legend {
   padding: 3px 6px;
-  
+
 }
 
 fieldset {
   display: flex;
   border: black solid 1px;
-  background-color: ;
   border-radius: 10px;
   padding: 10px;
   margin: 20px;
   max-width: 70vw;
 }
+
 .lables {
   display: flex;
   flex-direction: column;
+}
+
+.lables a {
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .inputs {
@@ -170,9 +175,6 @@ fieldset {
 .label{
   padding: 10px;
   width: 150px;
-}
-.lable input {
-  
 }
 
 .output {
@@ -242,7 +244,9 @@ section {
 }
 
 #about p {
-  max-width: 80vw;
+  max-width: 700px;
+  margin-bottom: 3rem;
+  
 }
 
 #projects {

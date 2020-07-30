@@ -15,7 +15,7 @@ function changePage(e) {
   let pw = e.target.value.toLowerCase();
   let pwPick;
 
-  if (pw.length === 15) {
+  if (pw.length >= 15) {
     pw = "jurassic park";
   }
   
@@ -32,6 +32,7 @@ function changePage(e) {
       pwPick = document.getElementById("calc");
       break;
     case "jurassic park":
+    
       pwPick = document.getElementById("jurassicPark");
       let audio = new Audio("./public/audio/ahahah.mp3");
       // Sets timeout to only allow the audio to play once every 30 seconds
