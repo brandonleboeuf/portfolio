@@ -320,7 +320,7 @@ section {
 }
 
 
-#d_and_d {
+#d-and-d{
   background-image: linear-gradient(
     -80deg,
     rgba(0, 0, 0, 0.8),
@@ -329,16 +329,20 @@ section {
   padding-top: 50px;
 }
 
-#d_and_d img {
- 
-  /* max-width: 400; */
+.character-img {
   min-width: 150px;
   max-width: 500px;
-  /* margin: 20px auto; */
   border-radius: 10px;
 }
 
-.d_and_d {
+.pendor {
+  max-width: 80vw;
+  /* width: 90vw; */
+  border-radius: 10px;
+}
+
+
+.d-and-d {
   display: flex;
   justify-content: space-around;
   height: fit-content;
@@ -733,7 +737,3 @@ section {
   display: none;
 }
 
-.pendor {
-  max-width: 600px;
-  width: 75vw;
-}

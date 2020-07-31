@@ -23,7 +23,7 @@ function changePage(e) {
     case "d&d": 
     case "dungeons and dragons":
     case "dungeons & dragons":
-      pwPick = document.getElementById("d_and_d"); // Sets new page as isSelected
+      pwPick = document.getElementById("d-and-d"); // Sets new page as isSelected
       break;
     case "donut":
       pwPick = document.getElementById("donut");
