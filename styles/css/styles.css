@@ -139,11 +139,6 @@ footer h6 {
   border-top: 1px rgb(209, 209, 209) solid;
 }
 
-legend {
-  padding: 3px 6px;
-
-}
-
 fieldset {
   display: flex;
   flex-direction: column;
