@@ -758,6 +758,14 @@ footer .current-page {
     padding: 10px;
     margin: 10px;
   }
+
+  #donut {
+
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    text-align: center;
+  }
   
 }
 
