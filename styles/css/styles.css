@@ -41,16 +41,15 @@ nav {
 
 nav ul {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
-  margin: 1rem 0;
-  padding-left: 3rem;
-  padding-right: 1rem;
+  padding: 1rem 1rem 0 3rem
 }
 
 
 nav li,
 footer li {
+  display: flex;
   display: inline-block;
   font-size: 1.2rem;
   transition: all 0.6s ease-in-out;
@@ -726,7 +725,12 @@ section {
 
 .current-page {
   color: #777;
+  border-bottom: 2px solid #777;
   font-size: 1.1rem;
+}
+
+footer .current-page {
+  border-bottom: none;
 }
 
 .current-page:hover {
