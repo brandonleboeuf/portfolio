@@ -439,7 +439,7 @@ section {
 
 .donut {
   height: 90vh;
-  background-image: url(./img/donut.svg);
+  background-image: url(../img/donut.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -491,12 +491,18 @@ section {
   text-decoration: none;
   display: flex;
   justify-content: space-between;
+  transition: all 0.6s ease-in-out;
+}
+.item:hover {
+  background-color: rgba(128, 128, 128, .2);
+  border-radius: 3px;
+  
 }
 
 
 .item p {
   font-size: .85rem;
-  width: 150px;
+  max-width: 250px;
   flex-wrap: wrap;
   padding: 10px 10px;
   font-style: italic;
