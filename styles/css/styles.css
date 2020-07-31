@@ -152,7 +152,7 @@ fieldset {
   border-radius: 10px;
   padding: 10px;
   margin: 20px;
-  max-width: 70vw;
+  /* max-width: 70vw; */
 }
 
 /* .lables {
@@ -166,25 +166,26 @@ fieldset {
   width: 100vw;
 } */
 
-.lables a {
+.labels a {
   text-align: center;
   padding: 2rem 0;
 }
 
-.inputs {
-  display: flex;
-  flex-direction: column;
-  width: 200px
-}
+
 
 #textContent {
   border: none;
   max-width: 600px;
   width: 60vw
 }
-
 .label {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 150px
+}
+
+.label input {
+  padding: .2rem 10px;
   width: 150px;
 }
 
@@ -192,11 +193,6 @@ fieldset {
   font: 1rem 'Fira Sans', sans-serif;
 }
 
-input {
-  margin: 10px;
-  padding: 4px;
-  width: 200px;
-}
 .form-wraper {
   display: flex;
   justify-content: center;
@@ -204,6 +200,7 @@ input {
   padding: 100px 0;
   margin: 20px auto;
   height: fit-content;
+  max-width: 90vw;
 }
 
 .intro {
@@ -219,6 +216,8 @@ input {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(255, 255, 255, 0.959);
   color: rgb(40, 44, 52);
   margin: 30px 10px;
@@ -231,11 +230,24 @@ form {
 }
 
 .submit-btn {
+  
+  margin: 10px;
+  padding: 4px;
+  width: 200px;
+  clear: left;
+
+
   padding: 5px;
   border-radius: 40px;
   box-shadow: 5px 4px 20px rgba(136, 136, 136, 0.5);
   transition: all 0.6s ease-in-out;
-  float: right;
+  justify-self: flex-end;
+
+}
+
+.label input {
+  margin: 10px;
+  padding: 4px;
 }
 
 
@@ -517,6 +529,17 @@ section {
   form {
     padding: 5px;
   }
+
+  fieldset {
+    display: flex;
+    /* border: none; */
+    /* border-radius: 0; */
+    padding: 5px;
+    margin: 10px;
+    /* max-width: 70vw; */
+  }
+
+  .la
   
   }
 

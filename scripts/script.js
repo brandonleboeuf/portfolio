@@ -1,6 +1,6 @@
 // creat toggel access hidden pages if password is valid
 
-const input = document.querySelector("input");
+const input = document.getElementById("passwordInput");
 input.addEventListener("input", changePage);
 
 let isSelected = document.getElementById("main");
