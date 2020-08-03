@@ -18,9 +18,9 @@ function changePage(e) {
   if (pw.length >= 15) {
     pw = "jurassic park";
   }
-  
+
   switch (pw) {
-    case "d&d": 
+    case "d&d":
     case "dungeons and dragons":
     case "dungeons & dragons":
       pwPick = document.getElementById("d-and-d"); // Sets new page as isSelected
@@ -28,15 +28,14 @@ function changePage(e) {
     case "donut":
       pwPick = document.getElementById("donut");
       break;
-    case ("calc" || "calculator"):
+    case "calc" || "calculator":
       pwPick = document.getElementById("calc");
       break;
     case "jurassic park":
-    
       pwPick = document.getElementById("jurassicPark");
       let audio = new Audio("./public/audio/ahahah.mp3");
       // Sets timeout to only allow the audio to play once every 30 seconds
-      function timmer(){
+      function timmer() {
         setTimeout(function () {
           readyToPlay = true;
         }, 30000);
@@ -52,7 +51,7 @@ function changePage(e) {
     default:
       pwPick = document.getElementById("main");
   }
-  isSelected.classList.add("hidden"); 
+  isSelected.classList.add("hidden");
   isSelected = pwPick;
   isSelected.classList.remove("hidden");
 }
