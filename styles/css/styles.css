@@ -675,7 +675,7 @@ footer .current-page {
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 0 5px;
-    /* width: 70vw; */
+    max-width: 60vw;
   }
 
   .current-page {
