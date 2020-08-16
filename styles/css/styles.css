@@ -467,7 +467,6 @@ section {
 }
 .puppet {
   max-height: 700px;
-
 }
 .row {
   display: flex;
@@ -732,6 +731,15 @@ footer .current-page {
     /* width: 100px; */
     padding: 0;
     margin-top: 100px;
+  }
+
+  .row {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .puppet-wrap {
+    margin: 20px auto;
   }
 
   .d-and-d {
