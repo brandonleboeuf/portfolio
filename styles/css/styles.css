@@ -735,7 +735,7 @@ footer .current-page {
 
   .row {
     flex-direction: column;
-    padding: 0;
+    padding-bottom: 20px;
   }
 
   .puppet-wrap {
