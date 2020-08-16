@@ -452,18 +452,23 @@ section {
 
 .content {
   display: flex;
-  justify-content: space-evenly;
-  width: auto;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90vw;
+  min-width: 50vw;
   transition: 1s;
-  padding: 20px 0;
-  padding-top: 100px;
+  padding: 100px 0;
+
 }
 
 .content img {
   max-width: 30vw;
   padding-bottom: 25px;
 }
+.puppet {
+  max-height: 700px;
 
+}
 .row {
   display: flex;
   flex-direction: row;
@@ -556,6 +561,43 @@ section {
 
 .about-obj p {
   margin-left: 30px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 40px rgba(128, 128, 128, .5);
+}
+
+
+.skills h2 {
+  margin: 1.5rem auto;
+}
+
+.skill {
+  min-width:65px;
+  text-align: center;
+  align-content: center;
+}
+
+
+
+.skill h3 {
+  margin-top: 1rem;
+}
+
+.skills-grid {
+    display: grid;
+    column-gap: 3rem;
+    row-gap: 50px;
+    grid-template-columns: repeat(3,minmax(auto,100px));
+    place-items: center;
+    justify-items: center;
 }
 
 .about-obj h2 {
@@ -685,6 +727,7 @@ footer .current-page {
   .content {
     /* flex-direction: column; */
     padding: 100px 15px 30px 15px;
+    width:95vw;
   }
 
   .content img {
