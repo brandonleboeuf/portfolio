@@ -284,7 +284,9 @@ section {
   border: 1px solid rgb(40, 44, 52);
   overflow: hidden;
 }
-
+.calc-img {
+  max-width: 100px;
+}
 #projects ul {
   margin: 50px 5px;
   padding: 0 5px;
@@ -606,6 +608,15 @@ section {
     grid-template-columns: repeat(3,minmax(auto,100px));
     place-items: center;
     justify-items: center;
+}
+
+.projects-grid {
+  display: grid;
+  column-gap: 3rem;
+  row-gap: 100px;
+  grid-template-columns: repeat(3,minmax(auto,200px));
+  place-items: center;
+  justify-items: center;
 }
 
 .about-obj h2 {
