@@ -173,11 +173,27 @@ fieldset {
   display: flex;
   justify-content: center;
   align-items: center;
+  
   padding: 100px 0;
   margin: 0 auto;
   height: fit-content;
 
   background-color: rgba(203, 155, 82, 1);
+}
+
+.resources-about {
+  background-color: rgba(27, 79, 98, .7);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.resources-about p {
+  margin: 20px auto;
+  width: 800px;
+  max-width: 75vw;
 }
 
 .intro {
@@ -493,11 +509,8 @@ section {
 }
 
 .resources {
-  position: relative;
-  background-color: rgb(39, 66, 89);
-  padding: 50px;
-
-  height: fit-content;
+  background-color: rgba(27, 79, 98, .7);
+  margin-bottom: 70px;
 }
 
 .resource-blocks {
