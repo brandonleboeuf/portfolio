@@ -55,45 +55,30 @@
         </div>
 
         <form
-          action="mailto:brandon.leboeuf@gmail.com"
           name="contact"
           method="POST"
-          enctype="text/plain"
+          data-netlify="true"
         >
           <fieldset>
             <legend><i class="far fa-paper-plane"></i></legend>
             <div class="form-body">
               <div class="label">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" />
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" />
               </div>
               <div class="label">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName"/>
-              </div>
-              <div class="label">
-                <label for="email">Email</label>
+                <label for="email">Your Email:</label>
                 <input type="email" id="email" />
               </div>
               <fieldset>
                 <legend>Let's Talk</legend>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="70"
-                  rows="10"
-                >
-</textarea
+                <textarea name="message" id="message" cols="70" rows="10"
+                ></textarea
                 >
               </fieldset>
             </div>
           </fieldset>
-          <input
-            type="submit"
-            value="Send"
-            class="submit-btn"
-            
-          />
+          <button type="submit" class="submit-btn">Send</button>
         </form>
         <p>
           <i class="fas fa-exclamation-triangle"></i>(This page is in
