@@ -17,10 +17,7 @@
     <link rel="stylesheet" href="./styles/css/calculator.css" />
     <link href="./styles/css/styles.css" rel="stylesheet" type="text/css" />
     <link href="./styles/css/all.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;700&display=swap"
       rel="stylesheet"
@@ -39,10 +36,10 @@
   <body>
     <nav>
       <ul>
-        <li class="current-page">Home</li>
-        <li><a href="./resources.html">Resources</a></li>
+        <li><a href="#main">Home</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -51,36 +48,19 @@
         <h1>Brandon LeBoeuf</h1>
         <h2>Software Engineer</h2>
       </div>
-      <div id="password">
-        <label for="passwordInput">PASSWORD</label>
-        <input
-          type="text"
-          id="passwordInput"
-          name="passwordInput"
-          placeholder="||"
-        />
-      </div>
     </div>
 
     <main>
-      <section id="dimensions">
-        <section id="main" class="resume content fadeBlue">
-          <img
-            src="./styles/img/rsz_3profile_pic.jpg"
-            alt="picture of Brandon LeBoeuf"
-          />
-          <div class="about-obj grab">
-            <h2>About Me</h2>
-            <p>{</p>
-            <ul>
-              <li>name: 'Brandon LeBoeuf',</li>
-              <li>age: 34,</li>
-              <li>occupation: 'Junior Software Engineer',</li>
-              <li>location: 'Portland, OR'</li>
-            </ul>
-            <p>}</p>
-          </div>
+      
+        <section id="main" class="resume content">
           <div id="about">
+            <img
+              src="./styles/img/rsz_3profile_pic.jpg"
+              alt="picture of Brandon LeBoeuf"
+              loading="lazy"
+              class="animate-left"
+            />
+            <div class="crc-left"></div>
             <p>
               My name is Brandon LeBoeuf and I am a self taught frontend web developer. I'm based in Portland, Oregon and am looking for a full time developer role.
             </p>
@@ -91,804 +71,147 @@
               I primarily work with React, JavaScript, and CSS along with utilizing APIs, TDD, as well as contributing to opensource projects. You can usually find me trying to create or build something...whether it be brewing my own beer, playing piano, making bread or building web applications; I get joy from being creative and find reward in the growth/struggle!
             </p>
           </div>
-        </section>
-
-        <section id="d-and-d" class="dimensions hidden">
-          <div class="d-and-d">
-            <div class="resources-obj">
-              <h2>Dungeons and Dragons</h2>
-              <ul>
-                <li>name: 'Seoul',</li>
-                <li>race: Tabaxi</li>
-                <li>age: 34,</li>
-                <li>occupation: 'Sea Captain',</li>
-                <li>ship: 'Sea Captain',</li>
-                <li>class: Ranger,</li>
-              </ul>
-              <ul>
-                <h2>Spells</h2>
-                <h3>L1</h3>
-                <li>Fog Cloud</li>
-                <li>Hail of Thorns</li>
-                <li>Protect from Evil and Good</li>
-                <h3>L2</h3>
-                <li>Locate Object</li>
-                <li>Misty Step</li>
-                <li>Silence</li>
-                <li></li>
-              </ul>
+          <div class="skills">
+            <h2>Tools I Work With Daily</h2>
+            <div class="skills-grid animate-right">
+            <div class="skill">
+              <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 55">
+                <path d="M0 0H48.125L43.7479 49.4152L24.0098 55L4.38396 49.4129L0 0ZM16.1127 22.3438L15.581 16.115L38.6329 16.1219L39.16 10.1131L8.965 10.1063L10.5646 28.4625H31.4783L30.7313 36.3138L24.0625 38.1563L17.2906 36.3L16.8598 31.4646H10.8808L11.6371 41.0231L24.0625 44.346L36.3894 41.0392L38.0944 22.346H16.1127V22.3438Z" fill="#F06235" aria-label="I am proficient in using HTML5"></path>
+              </svg>
+              <h3>HTML</h3>
             </div>
-
-            <img
-              src="./styles/img/seoul.png"
-              alt="Tabaxi named Seoul"
-              class="character-img"
-            />
-          </div>
-
-          <div class="recap">
-            <div class="underline"></div>
-            <div class="campaign">
-              <div class="campaign-title">
-                <h2>8 Highsun 1493</h2>
-                <h3>The Unblinking Eye</h3>
-                <div class="more-info">
-                  <h3>1st Level</h3>
-                  <h3></h3>
-                </div>
-              </div>
-              <div class="recap-content">
-                <p>
-                  Great evil lies before and beyond The Veil, and Erekose
-                  Wavewalker may be the only one living who can cross the
-                  magical barrier to stop their apocalyptic reunion. Erekose
-                  approaches his trusted friend, Ryu, to form a crew to take him
-                  beyond The Veil and stop the calamity. Ryu has spent months
-                  searching for the shadowy figures in the vision sent by his
-                  goddess, Elhonna. At long last, Ryu, Seoul, Ki-smo, Shaedra,
-                  and Jess gather in the Karnosean port city of Nyaru to begin
-                  their journey across The Veil.
-                </p>
-
-                <p>
-                  However, the party's movements have not gone unnoticed, and
-                  members of the Unblinking Eye follow our heroes as they set
-                  out to rendezvous with Erekose at the docks. By the skilled
-                  blade of Shaedra, silver tongue of Jess, and a feeble attempt
-                  at intimidation from Ki-smo the party is able to escape and
-                  interrogate a poor young lackey (Trevor) of the Unblinking
-                  Eye. Seoul "takes care of" the boy, and the group scouts out
-                  the Eye's impressive flagship: the Whitecrest.
-                </p>
-
-                <p>
-                  Deciding they have met their match, our heroes retreat to the
-                  docks and find Erekose standing by with his boat, the Lookfar,
-                  magically folded up in a convenient, ornate wooden box. Two
-                  uneventful days pass as Erekose speeds their voyage by calling
-                  upon Kord, the god of Storms, to fill their sails. Erekose
-                  tells his crew about the evil creature Ralakor and his plan to
-                  use the Heart of the Swarm to wrest control of Shinar's mind
-                  flayers (illithid) from their Elder Brains. With such an army,
-                  Ralakor would enslave all sentient beings of Shinar and launch
-                  an invasion of the stars.
-                </p>
-                <p>
-                  We rejoin our heroes on the morning of 10 Highsun 1493 as the
-                  sun rises over the vast sea, illuminating the impenetrable,
-                  massive wall of mist and light: The Veil…
-                </p>
-              </div>
+            <div class="skill">
+              <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 55">
+                <path d="M0.75 0H48.875L44.4979 49.4152L24.7598 55L5.13167 49.4129L0.75 0ZM39.9146 10.1131L9.71042 10.1063L10.1985 16.115L33.4017 16.1196L32.8173 22.3438H17.6006L18.1506 28.2402H32.3177L31.479 36.3138L24.8102 38.1563L18.036 36.3L17.6052 31.4646H11.624L12.2885 40.299L24.8125 44.2017L37.1256 40.6954L39.9146 10.1154V10.1131Z" fill="#299EFA" aria-label="I am proficient in using CSS"></path>
+              </svg>
+              <h3>CSS</h3>
             </div>
-            <div class="campaign">
-              <div class="campaign-title">
-                <h2>12 Highsun 1493</h2>
-                <h3>How Many are We?</h3>
-                <div class="more-info">
-                  <h3>2nd Level</h3>
-                </div>
-              </div>
-              <div class="recap-content">
-                <p>
-                  Great evil lies before and beyond The Veil, and Erekose
-                  Wavewalker may be the only one living who can cross the
-                  magical barrier to stop their apocalyptic reunion. Erekose
-                  approaches his trusted friend, Ryu, to form a crew to take him
-                  beyond The Veil and stop the calamity. Ryu has spent months
-                  searching for the shadowy figures in the vision sent by his
-                  goddess, Elhonna. At long last, Ryu, Seoul, Ki-smo, Shaedra,
-                  and Jess gather in the Karnosean port city of Nyaru to begin
-                  their journey across The Veil.
-                </p>
-                <p>
-                  However, the party's movements have not gone unnoticed, and
-                  members of the Unblinking Eye follow our heroes as they set
-                  out to rendezvous with Erekose at the docks. By the skilled
-                  blade of Shaedra, silver tongue of Jess, and a feeble attempt
-                  at intimidation from Ki-smo the party is able to escape and
-                  interrogate a poor young lackey (Trevor) of the Unblinking
-                  Eye. Seoul "takes care of" the boy, and the group scouts out
-                  the Eye's impressive flagship: the Whitecrest.
-                </p>
-                <p>
-                  Deciding they have met their match, our heroes retreat to the
-                  docks and find Erekose standing by with his boat, the Lookfar,
-                  magically folded up in a convenient, ornate wooden box. Two
-                  uneventful days pass as Erekose speeds their voyage by calling
-                  upon Kord, the god of Storms, to fill their sails. Erekose
-                  tells his crew about the evil creature Ralakor and his plan to
-                  use the Heart of the Swarm to wrest control of Shinar's mind
-                  flayers (illithid) from their Elder Brains. With such an army,
-                  Ralakor would enslave all sentient beings of Shinar and launch
-                  an invasion of the stars.
-                </p>
-                <p>
-                  We rejoin our heroes on the morning of 12 Highsun 1493 in a
-                  small port town in The Southern Reach. The party has used the
-                  coin from Erekose to procure and provision a ship for their
-                  travels ahead, and they walk now to the docks to embark on
-                  their maiden voyage…
-                </p>
-              </div>
+            <div class="skill">
+              <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 60">
+                <path d="M0 0H60V60H0V0Z" fill="#F7DF1E"></path>
+                <path d="M15.7763 50.1404L20.3677 47.3616C21.2536 48.9321 22.0594 50.2611 23.9923 50.2611C25.845 50.2611 27.0134 49.5364 27.0134 46.7173V27.5459H32.6517V46.797C32.6517 52.6369 29.2284 55.2952 24.2339 55.2952C19.7234 55.2952 17.1052 52.9592 15.776 50.1399" fill="black"></path>
+                <path d="M35.7143 49.5361L40.3052 46.8781C41.5139 48.8517 43.0847 50.3016 45.8634 50.3016C48.1999 50.3016 49.6896 49.1335 49.6896 47.5224C49.6896 45.5892 48.1591 44.9044 45.5815 43.7771L44.1722 43.1724C40.1041 41.441 37.4058 39.266 37.4058 34.6746C37.4058 30.4456 40.6277 27.2234 45.6623 27.2234C49.2469 27.2234 51.8245 28.4721 53.677 31.7344L49.2867 34.5539C48.3199 32.8221 47.2732 32.1375 45.6621 32.1375C44.0107 32.1375 42.9635 33.1847 42.9635 34.5539C42.9635 36.2454 44.0107 36.9305 46.4271 37.9777L47.8366 38.5817C52.6296 40.636 55.328 42.7301 55.328 47.442C55.328 52.5171 51.3408 55.2959 45.9841 55.2959C40.7484 55.2959 37.3652 52.7989 35.7141 49.5364" fill="black" aria-label="I am proficient in using JavaScript" >
+              </svg>
+              <h3>JavaScript</h3>
             </div>
-            <div class="campaign hidden">
-              <div class="campaign-title">
-                <h2></h2>
-                <h3></h3>
-                <div class="more-info"></div>
-              </div>
-              <div class="recap-content">
-                <p></p>
-                <p></p>
-                <p></p>
-              </div>
+            <div class="skill">
+              <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 60 55">
+                <path d="M49.3308 17.8086C48.6923 17.5831 48.0483 17.3742 47.3996 17.1821C47.5086 16.7238 47.6089 16.271 47.6979 15.8262C49.1599 8.52152 48.2042 2.63676 44.9397 0.69922C41.8096 -1.15824 36.6908 0.778584 31.5211 5.40944C31.0116 5.86665 30.5134 6.33703 30.027 6.82014C29.7013 6.49889 29.37 6.18387 29.033 5.87525C23.6148 0.923804 18.184 -1.16306 14.923 0.780031C11.7958 2.64328 10.8698 8.17536 12.186 15.0981C12.317 15.7838 12.4648 16.4658 12.6295 17.1437C11.8607 17.3686 11.119 17.6079 10.4091 17.8626C4.0567 20.1422 0 23.7146 0 27.4201C0 31.2471 4.35505 35.0858 10.9713 37.4134C11.5077 37.6013 12.0486 37.7755 12.5934 37.9357C12.4164 38.6658 12.2593 39.4009 12.1223 40.14C10.8675 46.9426 11.8474 52.344 14.9661 54.1954C18.1873 56.1074 23.5937 54.1423 28.8579 49.4058C29.2848 49.0208 29.7022 48.6248 30.1099 48.2183C30.6367 48.7414 31.1775 49.2493 31.7318 49.7414C36.8312 54.2576 41.8673 56.0813 44.983 54.2248C48.2011 52.3073 49.2471 46.5048 47.8892 39.4453C47.7822 38.8922 47.6623 38.3419 47.5294 37.7948C47.9091 37.679 48.2818 37.5598 48.645 37.4358C55.5233 35.0904 59.9986 31.2983 59.9986 27.4201C59.9986 23.701 55.8109 20.1046 49.3308 17.8086V17.8086ZM47.839 34.9319C47.5109 35.0436 47.1744 35.1514 46.8312 35.2564C46.0719 32.7821 45.0472 30.1512 43.7931 27.4328C44.9898 24.7793 45.9751 22.182 46.7131 19.7239C47.3269 19.9068 47.9225 20.0995 48.4967 20.3029C54.0489 22.2703 57.4355 25.1788 57.4355 27.4201C57.4355 29.8072 53.778 32.9063 47.839 34.9319V34.9319ZM45.3749 39.9576C45.9753 43.0791 46.0609 45.9015 45.6632 48.108C45.306 50.0907 44.5874 51.4124 43.6987 51.9419C41.808 53.0684 37.7644 51.6041 33.4035 47.7416C32.888 47.2841 32.3849 46.8119 31.8949 46.3256C33.5856 44.4225 35.2752 42.2102 36.9242 39.7531C39.8248 39.4882 42.565 39.055 45.05 38.4637C45.1724 38.972 45.2811 39.4704 45.3749 39.9576V39.9576ZM20.4548 51.7472C18.6075 52.4185 17.1362 52.4378 16.2467 51.91C14.3542 50.7866 13.5674 46.4496 14.6406 40.6321C14.7682 39.9447 14.9142 39.261 15.0786 38.5819C17.5362 39.1416 20.2566 39.5439 23.1639 39.7866C24.8242 42.1909 26.5625 44.4008 28.3144 46.336C27.9421 46.7068 27.561 47.0681 27.1714 47.4196C24.8434 49.5139 22.5107 50.9999 20.4548 51.7472V51.7472ZM11.8005 34.9172C8.87487 33.8879 6.45876 32.5503 4.8027 31.0906C3.31445 29.779 2.5633 28.4766 2.5633 27.4201C2.5633 25.1713 5.82033 22.3031 11.2528 20.3538C11.9121 20.1174 12.602 19.8942 13.318 19.6848C14.069 22.1984 15.0538 24.8266 16.2423 27.4842C15.0383 30.1812 14.0394 32.8513 13.2813 35.3946C12.7839 35.248 12.2902 35.0888 11.8005 34.9172V34.9172ZM14.7015 14.5913C13.574 8.66023 14.3228 4.18617 16.2074 3.06326C18.2145 1.86725 22.653 3.57249 27.3312 7.84801C27.6363 8.12745 27.9364 8.41255 28.2314 8.70317C26.4882 10.6299 24.7658 12.8233 23.1203 15.2134C20.2985 15.4826 17.5974 15.9149 15.114 16.4941C14.961 15.8636 14.8235 15.2292 14.7015 14.5915V14.5913ZM40.5823 21.1691C39.9957 20.1263 39.3874 19.0965 38.7577 18.0807C40.672 18.3299 42.5062 18.6606 44.2286 19.0649C43.7116 20.7708 43.067 22.5542 42.3084 24.3828C41.7539 23.2998 41.1784 22.2284 40.5823 21.1691V21.1691ZM30.0281 10.5886C31.2103 11.9069 32.3943 13.3787 33.5589 14.9756C31.1965 14.8607 28.8301 14.8603 26.4676 14.9741C27.6333 13.3919 28.8275 11.9221 30.0281 10.5886ZM19.4063 21.1872C18.8176 22.238 18.2529 23.3027 17.7125 24.3806C16.9662 22.5586 16.3276 20.767 15.8061 19.0369C17.5179 18.6427 19.3435 18.3204 21.2456 18.0758C20.6089 19.0979 19.9956 20.1352 19.4063 21.187V21.1872ZM21.3002 36.9519C19.335 36.7262 17.4821 36.4205 15.7707 36.037C16.3004 34.276 16.9531 32.4463 17.7155 30.5852C18.258 31.6639 18.8251 32.7293 19.4163 33.7805C20.0243 34.8612 20.6538 35.9197 21.3002 36.9519ZM30.0989 44.4373C28.8839 43.0883 27.6722 41.5958 26.4889 39.9907C27.6378 40.037 28.8089 40.0607 29.9993 40.0607C31.2222 40.0607 32.4311 40.0324 33.621 39.9779C32.4527 41.612 31.2731 43.1066 30.0989 44.4373ZM42.3325 30.4902C43.1345 32.3717 43.8105 34.1918 44.3472 35.9226C42.6077 36.3313 40.7294 36.6603 38.7504 36.9047C39.3846 35.8699 39.9987 34.8223 40.5923 33.7624C41.1959 32.6851 41.7761 31.5941 42.3325 30.4902V30.4902ZM38.3722 32.4444C37.4633 34.0694 36.5034 35.6635 35.4939 37.2243C33.6652 37.3576 31.8325 37.4238 29.9993 37.4228C28.1321 37.4228 26.3159 37.363 24.5671 37.2462C23.5312 35.6891 22.553 34.0921 21.6344 32.4588H21.6346C20.7204 30.8342 19.8665 29.1744 19.0746 27.483C19.8644 25.7913 20.7158 24.1307 21.6269 22.5048L21.6267 22.505C22.5374 20.8787 23.5079 19.2886 24.5359 17.7381C26.3202 17.5992 28.1499 17.5268 29.9991 17.5268H29.9993C31.8569 17.5268 33.689 17.5999 35.4728 17.7398C36.4904 19.288 37.4547 20.8726 38.3637 22.4908C39.2778 24.1131 40.1405 25.7656 40.9502 27.4456C40.1488 29.1428 39.2889 30.8101 38.3722 32.4444V32.4444ZM43.6595 2.98461C45.6685 4.17725 46.4499 8.98661 45.1876 15.2935C45.107 15.6959 45.0165 16.1057 44.9181 16.5214C42.4286 15.9299 39.7256 15.4901 36.8956 15.2168C35.2471 12.8004 33.5387 10.6036 31.8239 8.70172C32.2733 8.25581 32.7334 7.82147 33.2038 7.39909C37.6334 3.43161 41.7733 1.86508 43.6595 2.98461V2.98461ZM29.9993 21.9056C32.9582 21.9056 35.357 24.3746 35.357 27.4201C35.357 30.4656 32.9582 32.9345 29.9993 32.9345C27.0404 32.9345 24.6416 30.4656 24.6416 27.4201C24.6416 24.3746 27.0404 21.9056 29.9993 21.9056V21.9056Z" fill="#00D8FF" aria-label="I am proficient in using React"></path>
+              </svg>
+              <h3>React</h3>
             </div>
-            <div class="campaign">
-              <div class="campaign-title">
-                <h2>12 Highsun 1493</h2>
-                <h3>How Many are We?</h3>
-                <div class="more-info">
-                  <h3>3rd Level</h3>
-                  <h2>SHIP:</h2>
-                  <h3>The Ragtag Mistress</h3>
-                  <h2>CREW:</h2>
-                  <ul>
-                    <li>Ol'Mac</li>
-                    <li>'boiō 1'</li>
-                    <li>'boiō 2'</li>
-                  </ul>
-                  <h3></h3>
-                  <h3></h3>
-                </div>
-              </div>
-              <div class="recap-content">
-                <p>
-                  Our heroes sets sail aboard The Ragtag Mistress with "Captain
-                  Dr." Seoul pointing the way and their new first mate, Ol' Mac,
-                  at the helm. After five days at sea the crew arrive in the
-                  port town of Haven on the isle of Hosk. They immediately
-                  proceed to the dock district to grab beers at the Busty Maid
-                  and Ryu draws the ire of a grumpy goliath with an aversion to
-                  dragonborn.
-                </p>
-                <p>
-                  Thanks to the watchful eye of Ki-Smo and the magical charms of
-                  Jess, our heroes dissolve the tensions long enough for the
-                  goliath to lead them to Beggar's Alley. Shaedra engages an old
-                  man in a lively discussion regarding the number of persons
-                  present, and gains access to a secret stronghold of the
-                  Waykeepers. Once inside, he learns that the ancient weapon
-                  they seek, Nerazim's Blade, was last seen in the possession of
-                  a red tiefling named Damaia (aka "Glory"). Damaia has turned
-                  herself over to the House of a Thousand Delights, run by a
-                  powerful djinn named Ezrekai.
-                </p>
-                <p>
-                  The crew returns to the Busty Maid to establish their plan,
-                  but have the peace interrupted by the angry goliath who by now
-                  has realized that magical wool had been pulled over his eyes.
-                  When the dust settles, our heroes are left with a dead
-                  goliath, a terrified blue tiefling woman, and a coin marking
-                  patronage at the House of a Thousand Delights.
-                </p>
-                <p>
-                  We rejoin our heroes on the evening of 17 Highsun 1493 with
-                  sunset approaching, and with it their deadline to return the
-                  tiefling to the House of a Thousand Delights…
-                </p>
-              </div>
+            <div class="skill">
+              <svg role="img" fill="none" viewBox="-10 0 60 60">
+                <path d="M10 60C15.52 60 20 55.52 20 50V40H10C4.48 40 0 44.48 0 50C0 55.52 4.48 60 10 60Z" fill="#0ACF83"></path>
+                <path d="M0 30C0 24.48 4.48 20 10 20H20V40H10C4.48 40 0 35.52 0 30Z" fill="#A259FF"></path>
+                <path d="M0 10C0 4.48 4.48 0 10 0H20V20H10C4.48 20 0 15.52 0 10Z" fill="#F24E1E"></path>
+                <path d="M20 0H30C35.52 0 40 4.48 40 10C40 15.52 35.52 20 30 20H20V0Z" fill="#FF7262"></path>
+                <path d="M40 30C40 35.52 35.52 40 30 40C24.48 40 20 35.52 20 30C20 24.48 24.48 20 30 20C35.52 20 40 24.48 40 30Z" fill="#1ABCFE" aria-label="I am proficient in using Figma"></path></svg>
+              <h3>Figma</h3>
             </div>
-            <div class="campaign">
-              <div class="campaign-title">
-                <h2>17 Highsun 1493</h2>
-                <h3>Un-Ending Joy</h3>
-                <div class="more-info">
-                  <h3>3rd Level</h3>
-                  <h3></h3>
-                </div>
-              </div>
-              <div class="recap-content">
-                <p>
-                  In the port city of Haven on the isle of Hosk the crew of the
-                  Ragtag Mistress follow in the footsteps of adventurers
-                  long-gone by splitting the party. Jess and Ki-Smo stay behind
-                  with their confused new charge, a blue tiefling woman named
-                  Joy, while Seoul, Ryu, and Shaedra head off to the mysterious
-                  House of a Thousand Delights.
-                </p>
-                <p>
-                  At the entrance to the House of a Thousand Delights our heroes
-                  are met by an air genasi named Tempest. He denies them entry,
-                  as there are no records of their membership, but offers an
-                  alternate deal for a transference of membership. The crew pays
-                  off the debt of the goliath they killed, Grom, and agrees to
-                  replace the lost client by securing a new one. Our heroes
-                  select a contract to procure the eye of a Spectator for Master
-                  Branheim Woolford, a master craftsman who requires this
-                  special component.
-                </p>
-                <p>
-                  The team reunites for a night's rest, only to have their
-                  evening's slumber interrupted by an unwelcome guest. A
-                  cloaked, hooded, black dragonborn with a gleaming red eye
-                  infiltrates their room under the cover of magical darkness and
-                  chaos ensues. When the dust settles Joy is found bleeding out
-                  in her bed while the dragonborn flees through the streets of
-                  Haven and disappears into the religious district. The combined
-                  healing powers of Jess, Ki-Smo, and Ryu stabilizes Joy long
-                  enough for our heroes to rush her to the care of healers at
-                  the temple of Ehlonna.
-                </p>
-                <p>
-                  With the dragonborn's trail gone cold and Joy's fate in the
-                  hands of the healers, the crew provisions for their mission
-                  and set out to track down the lair of the Spectator. We rejoin
-                  our heroes on the afternoon of 18 Highsun 1493 facing a cave
-                  opening blocked by a familiar barrier of pure red light...
-                </p>
-              </div>
+            <div class="skill">
+             
+              <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                <path
+                  d="M0 128v128h256V0H0v128zm84-35.5c5.9 3 11.5 9.3 13.4 15.4.9 2.6 1.8 10.7 2.1 18.6.9 21.6.7 21.6 9 .3 4.1-10.3 8.5-20.4 9.9-22.6 5.2-8.3 15.9-15.2 23.7-15.2 3.3 0 2.8-2.5 6.9 30.5 1.7 13.2 3.2 24.7 3.3 25.5.2.8 3-6.9 6.4-17.2 8.4-25.7 14-33.6 26.7-37.3 6.9-2.1 10-2 9.3.2-1.7 6.1-26.4 64.7-28.9 68.5-5.6 8.9-13.9 14.3-23.7 15.5-4.2.5-5 .3-5.4-1.3-.3-1.1-2-12.6-3.8-25.7-1.9-13-3.6-23.7-4-23.7-.3 0-2.8 5.7-5.4 12.7-2.6 7.1-6.2 15.4-7.9 18.7-5.7 11-15 18-25.6 19.3l-4.7.5-6.7-41.3c-3.7-22.8-7-42.3-7.3-43.3-.5-1.7-.1-1.8 3.7-1.2 2.3.3 6.3 1.7 9 3.1z" fill="#3546EF"/>
+              </svg>
+              <h3>Webflow</h3>
             </div>
-            <div class="campaign">
-              <div class="campaign-title">
-                <h2>18 Highsun 1493</h2>
-                <h3>Lair of the Spectator (Part 1)</h3>
-                <div class="more-info">
-                  <h3>3rd Level</h3>
-                  <h3></h3>
-                </div>
-              </div>
-              <div class="recap-content">
-                <p>
-                  In the wilderness beyond city of Haven, our heroes come to the
-                  lair of a Spectator and find the entryway barred by a familiar
-                  wall of pure red light. Unfortunately for our heroes, the
-                  statue guardians inside are also members of AA: Aggressive and
-                  Animated. A fast battle ensues during which Ki-smo and Ryu do
-                  some rock lifting exercises and Jess shows off the power of
-                  Sacred Flame. When the rock dust settles our heroes build a
-                  stone arch from the rubble to block the wall of light and gain
-                  entry to the Spectator’s lair.
-                </p>
-                <p>
-                  Shaedra anchors rope to help the team repel down to the cavern
-                  below, and thanks to a well-placed bedroll the whole team
-                  makes it down safely. Our heroes find themselves in a vast,
-                  cavernous room that once was a temple to a god known as The
-                  Traveler. Seoul navigates a labyrinth built in to the floor
-                  tiles and gains a boon from The Traveler, only to have it
-                  taken away again when he hurls a telescope-looking contraption
-                  containing an eyeball at the altar.
-                </p>
-                <p>
-                  Shaedra and Seoul both work at extracting the eyeballs from
-                  these contraptions and manage to stab one but extract the
-                  other. The ruined eyeball erupts in a flash of light that
-                  bounces around the room and causes ripples of color to cascade
-                  across a map of Pendor installed in the temple floor. About
-                  this time Ryu inspects the altar and finds a sigil of the dark
-                  god of undeath, the Whispered One. The back wall of the temple
-                  opens with an ominous rumbling of stone and an alien creature
-                  floats up from a hidden passageway beyond the wall. It turns
-                  the gaze of its many eyes upon the ragtag crew of interlopers
-                  and exclaims, “Why have you interfered? Identify yourselves,
-                  intruders!”
-                </p>
-                <p>
-                  We rejoin our heroes early in the evening of 18 Highsun 1493
-                  face-to-face with an aberration of the Far Realm: a Spectator…
-                </p>
-              </div>
+            <div class="skill">
+              <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 225">
+                <path d="M98.6 1.1C72.4 4.5 49.4 16.3 31 35.7c-49.4 52-37.8 135.6 24.1 173.1 31.8 19.3 71.5 21 105.8 4.6 63.6-30.4 83.6-111.9 41.2-168.1C177.9 13.1 137.9-3.9 98.6 1.1zm36.7 25.8c15.9 4.2 34.4 15.8 44.6 28l4.4 5.3-5.9 5.3-5.9 5.4-5.5-5.8c-13.4-14.3-27.6-21.6-46.4-24.1-14.3-2-31.5 1.6-44.4 9.2-8.7 5-22.1 18.9-27 27.8-2.3 4.1-4.2 8.2-4.2 9 0 1.8 91 93 92.8 93 2.3 0 12.6-5.7 18.9-10.4 11.9-9 20.7-22.1 25.7-38.3l.7-2.3-19.3-.2-19.3-.3v-16l28.3-.3 28.2-.2v4.3c0 9.6-3.9 24.3-9.3 35.2-10.5 21.3-31 38.6-53.7 45.5l-5.8 1.7-53.1-53.1L26 92.5l2.9-8.2c4.1-11.9 10.5-22.5 19-31.5C61.8 38 75.8 30.1 96.1 25.5c9-2.1 28.9-1.4 39.2 1.4zm-24.4 173.5c.2.5-2.6.5-6.5.1-40.1-4.3-71.5-32.6-79-71.3-.8-4.1-1.4-9.2-1.4-11.5v-4.2l43.2 43c23.8 23.7 43.4 43.4 43.7 43.9z"/ fill="#663499" aria-label="I am proficient in using Gatsby"></path>
+              </svg>
+              <h3>Gatsby</h3>
             </div>
-            <div class="campaign">
-              <div class="campaign-title">
-                <h2>18 Highsun 1493</h2>
-                <h3>Lair of the Spectator (Part 2)</h3>
-                <div class="more-info">
-                  <h3>3rd Level</h3>
-                  <h3></h3>
-                </div>
-              </div>
-              <div class="recap-content">
-                <p>
-                  In the wilderness beyond city of Haven, our heroes have delved
-                  into the lair of a Spectator who calls itself "Watcher 349".
-                  After a brief conversation with the many-eyed monstrosity, the
-                  party decides they have what they need and return to Haven
-                  with a Spectator eye.
-                </p>
-                <p>
-                  On their arrival, the party successfully bargains with Master
-                  Woolford to pose as a prospective patron in the House of a
-                  Thousand Delights for 1 week. During this time he has agreed
-                  to provide our heroes with inside information in exchange for
-                  splitting any costs incurred to maintain the ruse. The party
-                  rests and decides to venture into town to seek some
-                  entertainment as the House is closed for their day of rest.
-                </p>
-                <p>
-                  In Haven the adventurers come a cross a grand dueling
-                  tournament that has drawn spectators and competitors from all
-                  walks of life: peasants, merchants, nobles, clergy,
-                  mercenaries, and sponsored athletes. Among the crowd they spot
-                  a familiar air genasi, Tempest, accompanied by two large
-                  brutes and a female red tiefling: Damaia.
-                </p>
-                <p>
-                  Ki-smo concocts a plan to enter the duel as a contestant in
-                  the hopes of getting face time with Damaia and convince her to
-                  leave with them. However, the ragtag crew decides swifter
-                  action is necessary. Shaedra poisons a mug of ale with pale
-                  tincture to be delivered to Tempest, but the merchant chickens
-                  out and warns Tempest as he hands him the mug. Meanwhile,
-                  Shaedra and Seoul maneuver into position to sneak up upon
-                  their foes. With a few swift kicks, a punch, some daggers, a
-                  fog cloud spell, and a deafening thunderclap from Ryu the
-                  dueling arena erupts into a massive brawl.
-                </p>
-                <p>
-                  We rejoin our heroes early in the afternoon of 19 Highsun 1493
-                  in the midst of this chaos as Jess dives into the magical
-                  cloud of fog to convince Damaia to make an escape…
-                </p>
-              </div>
+            <div class="skill">
+              <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                <path d="M58.8684 27.3267L32.6719 1.1315C31.1641 -0.377168 28.7173 -0.377168 27.2077 1.1315L21.7678 6.57135L28.6685 13.4721C30.2721 12.9302 32.111 13.2937 33.3893 14.572C34.6737 15.8585 35.0346 17.7131 34.4796 19.3218L41.13 25.9724C42.739 25.4181 44.5955 25.7767 45.8805 27.0639C47.6766 28.8592 47.6766 31.769 45.8805 33.5655C44.0841 35.3622 41.1743 35.3622 39.3769 33.5655C38.0259 32.2131 37.6922 30.2292 38.3761 28.5649L32.1741 22.3628L32.1734 38.684C32.623 38.9063 33.0336 39.1999 33.3893 39.5535C35.1853 41.3488 35.1853 44.2588 33.3893 46.0567C31.5928 47.8525 28.6816 47.8525 26.8877 46.0567C25.0917 44.2588 25.0917 41.3491 26.8877 39.5538C27.3181 39.1232 27.8296 38.7821 28.3927 38.5504V22.0771C27.8288 21.847 27.317 21.5057 26.8877 21.0738C25.527 19.7149 25.1998 17.7182 25.897 16.0474L19.0945 9.24416L1.13203 27.2055C-0.377344 28.7156 -0.377344 31.1627 1.13203 32.6716L27.3291 58.8672C28.8373 60.3761 31.2837 60.3761 32.7937 58.8672L58.8682 32.7932C60.3771 31.2838 60.3771 28.8353 58.8682 27.3267" fill="#DE4C36" aria-label="I am proficient in using Git"></path>
+              </svg>
+              <h3>Git</h3>
             </div>
-            <div class="campaign hidden">
-              <div class="campaign-title">
-                <h2></h2>
-                <h3></h3>
-                <div class="more-info">
-                  <h2></h2>
-                  <h3></h3>
-                </div>
-              </div>
-              <div class="recap-content">
-                <p></p>
-                <p></p>
-                <p></p>
-              </div>
+            <div class="skill">
+              <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                <path d="M42.7192 59.6711C43.1985 59.858 43.7111 59.9443 44.2252 59.9246C44.7393 59.9048 45.2438 59.7795 45.7073 59.5563L58.1092 53.5889C58.7479 53.2814 59.2868 52.7998 59.664 52.1996C60.0411 51.5993 60.2411 50.9048 60.241 50.1959V9.73224C60.2411 9.02337 60.0411 8.32888 59.6639 7.72867C59.2868 7.12845 58.7479 6.6469 58.1092 6.33941L45.7076 0.371768C45.0068 0.0345642 44.2186 -0.0764627 43.4519 0.0540552C42.6853 0.184573 41.9782 0.550181 41.4284 1.10027L17.6866 22.7605L7.3449 14.9104C6.87841 14.5563 6.30267 14.3767 5.71758 14.4027C5.13249 14.4287 4.57497 14.6588 4.14175 15.0529L0.82498 18.0701C-0.268721 19.0648 -0.269902 20.7855 0.822145 21.7818L9.79073 29.9641L0.822145 38.146C-0.269902 39.1426 -0.268721 40.863 0.82498 41.858L4.14175 44.875C4.57494 45.2692 5.13245 45.4992 5.71754 45.5253C6.30263 45.5513 6.87838 45.3718 7.3449 45.0177L17.6866 37.1674L41.4284 58.8276C41.7955 59.1953 42.2351 59.4825 42.7192 59.6711V59.6711ZM45.191 16.2895L27.1763 29.9641L45.191 43.6384V16.2895V16.2895Z"fill="white"></path>
+                <path d="M58.1459 6.34796L45.7344 0.37205C45.0334 0.0345742 44.2449 -0.0766892 43.478 0.053657C42.711 0.184003 42.0035 0.549514 41.4534 1.09961L0.822512 38.1454C-0.270244 39.142 -0.268827 40.8624 0.825346 41.8573L4.14424 44.8743C4.57782 45.2686 5.13568 45.4987 5.72111 45.5247C6.30654 45.5508 6.88263 45.3712 7.34952 45.017L56.2783 7.89827C57.9198 6.65315 60.2776 7.82386 60.2776 9.88418V9.74008C60.2775 9.03135 60.0775 8.33702 59.7004 7.73694C59.3233 7.13686 58.7845 6.65541 58.1459 6.34796V6.34796Z" fill="#0065A9"></path>
+                <path d="M58.1459 53.5785L45.7344 59.5544C45.0334 59.8918 44.2449 60.0031 43.478 59.8727C42.711 59.7424 42.0035 59.3769 41.4534 58.8269L0.822512 21.7811C-0.270244 20.7848 -0.268827 19.0641 0.825346 18.0694L4.14424 15.0522C4.57785 14.658 5.13572 14.4279 5.72115 14.4019C6.30658 14.3759 6.88266 14.5555 7.34952 14.9097L56.2783 52.0282C57.9198 53.2733 60.2776 52.1026 60.2776 50.0421V50.1864C60.2775 50.8951 60.0774 51.5895 59.7004 52.1895C59.3233 52.7896 58.7845 53.2711 58.1459 53.5785V53.5785Z" fill="#007ACC"></path>
+                <path d="M45.6954 59.5592C44.9943 59.8964 44.2057 60.0075 43.4387 59.877C42.6717 59.7466 41.9641 59.381 41.4139 58.8309C42.8032 60.2199 45.1788 59.236 45.1788 57.2711V2.66288C45.1788 0.697997 42.8032 -0.285861 41.4139 1.10335C41.9641 0.553212 42.6716 0.187609 43.4386 0.0570997C44.2057 -0.0734092 44.9943 0.0376251 45.6954 0.374848L58.1048 6.34249C58.7438 6.64977 59.283 7.13124 59.6603 7.73147C60.0377 8.33171 60.2379 9.02631 60.2379 9.73532V50.1992C60.2379 51.646 59.4087 52.9651 58.1048 53.592L45.6954 59.5594V59.5592Z" fill="#1F9CF0"></path>
+                <path d="M42.7191 59.6704C43.1984 59.8573 43.711 59.9436 44.2251 59.9238C44.7392 59.9041 45.2437 59.7787 45.7073 59.5556L58.1088 53.588C58.7476 53.2806 59.2866 52.799 59.6638 52.1988C60.041 51.5986 60.241 50.9041 60.241 50.1952V9.73155C60.241 9.02268 60.041 8.32819 59.6638 7.72797C59.2867 7.12776 58.7478 6.6462 58.1091 6.33871L45.707 0.370837C45.0063 0.0336872 44.2181 -0.0773103 43.4515 0.0532065C42.6849 0.183723 41.9778 0.5493 41.4281 1.09934L17.6865 22.7598L7.34481 14.9097C6.87832 14.5556 6.30258 14.376 5.71749 14.402C5.1324 14.428 4.57488 14.6581 4.14166 15.0522L0.824888 18.0694C-0.268813 19.0641 -0.269994 20.7848 0.822054 21.7812L9.79064 29.9634L0.822054 38.1453C-0.269994 39.1419 -0.268813 40.8623 0.824888 41.8573L4.14166 44.8743C4.57485 45.2685 5.13236 45.4985 5.71745 45.5246C6.30254 45.5506 6.87829 45.3711 7.34481 45.017L17.6865 37.1667L41.4281 58.8269C41.7953 59.1946 42.2349 59.4818 42.7191 59.6704V59.6704ZM45.1909 16.2886L27.1762 29.9634L45.1909 43.6377V16.2888V16.2886Z" fill="url(#paint0_linear)" fill-opacity="0.25" aria-label="I am proficient in using VSCode"></path>
+              </svg>
+              <h3>VSCode</h3>
             </div>
-            <div class="campaign">
-              <div class="campaign-title">
-                <h2>19 Highsun 1493</h2>
-                <h3>Escaping the Brawl</h3>
-                <div class="more-info">
-                  <h3>4th Level</h3>
-                  <h3></h3>
-                </div>
-              </div>
-              <div class="recap-content">
-                <p>
-                  Brawl! The grand dueling tournament of Haven is thrown into
-                  chaos by our ragtag crew of adventurers. At the epicenter of
-                  the action Seoul summons a cloud of magical fog to provide
-                  cover for Jess to extract the one person with information on
-                  the whereabout of Nerazim's Blade: Damaia.
-                </p>
-                <p>
-                  Jess works her magical charms on the red tiefling woman and
-                  convinces her to leave with our heroes. Tempest and his guards
-                  are disoriented by the fog cloud and a well-placed silent
-                  image spell from Shaedra. Our heroes make their escape mostly
-                  unnoticed while the House of a Thousand Delights crew start a
-                  food fight and step in a bear trap in their confusion.
-                </p>
-                <p>
-                  The crew races through the maze of tents and carts of the
-                  dueling arena, evading Tempest's pursuit and dodging guard
-                  patrols. However, at the very edge of the arena they find
-                  their escape route blocked by a large crowd as the brawl
-                  spills into the streets. Jess and Ki-Smo find a large warhorse
-                  tied up outside a knight's tent, and use it to drive a wedge
-                  through the brawling masses. Ki-Smo charges the horse into the
-                  melee, sending bodies flying and trampling a few unfortunate
-                  souls beneath the hooves of the powerful steed. The rest of
-                  the crew escapes through the space left behind and retreat to
-                  the safe confines of the Ragtag Mistress.
-                </p>
-                <p>
-                  We rejoin our heroes late in the evening of 19 Highsun 1493 in
-                  the bay of Haven with a confused Damaia questioning the
-                  intentions of her new "friends"…
-                </p>
-              </div>
-            </div>
-            <div class="campaign">
-              <div class="campaign-title">
-                <h2>20 Highsun 1493</h2>
-                <h3>Nerazim's Blade Revealed</h3>
-                <div class="more-info">
-                  <h3>4th Level</h3>
-                  <h3></h3>
-                </div>
-              </div>
-              <div class="recap-content">
-                <p>
-                  Aboard The Ragtag Mistress our heroes convince their new
-                  friend, Damaia, to accompany them for a visit to the
-                  Waykeepers. During the night the ship is visited by an air
-                  elemental scouting out ships at port. The elemental does not
-                  attack the ship, but clearly someone is keeping an eye on the
-                  activity in the harbor.
-                </p>
-                <p>
-                  Ryu leads the visit to the Waykeepers and solicits the help of
-                  Gate Keeper Elara in identifying Damaia's magical blade. After
-                  some inspection, Elara confirms that it is, in fact, Nerazim's
-                  Blade. However, Damaia seems to have been placed under a curse
-                  that binds the sword to her. Elara suspects foul play on the
-                  part of a sea hag known as Auntie Agatha Mudwallow, and
-                  provides our heroes with a map to her lair.
-                </p>
-                <p>
-                  The crew stocks up on potions and capsules to breathe
-                  underwater at Gilmore's Glorious Goods, and set sail for the
-                  lair of Auntie Agatha. After two days at sea The Ragtag
-                  Mistress comes across flotsam strewn about from the remnants
-                  of a sea elf rafts. As they search the wreckage a black sail
-                  appears on the horizon.
-                </p>
-                <p>
-                  We rejoin our heroes late in the afternoon of 22 Highsun 1493
-                  as the other ship comes into view, boasting a hull covered in
-                  sun-bleached bones...
-                </p>
-              </div>
-            </div>
-            <div class="campaign">
-              <div class="campaign-title">
-                <h2>22 Highsun 1493</h2>
-                <h3>Of Talking Fish and Whale Sharks</h3>
-                <div class="more-info">
-                  <h3>4th Level</h3>
-                  <h3></h3>
-                </div>
-              </div>
-              <div class="recap-content">
-                <p>
-                  As the sun sets over the
-                  <span class="underline"> Eskellian Sea</span>, the crew of the
-                  The Ragtag Mistress spots a ship boasting a hull covered in
-                  sun-bleached bones. Shaedra recognizes the macabre décor, and
-                  warns the party that the ship belongs to the pirating orc
-                  nation he has encountered before. The party weighs anchor and
-                  rows ashore the small island near Auntie Agatha's underwater
-                  lair.
-                </p>
-                <p>
-                  Approaching the island, our heroes find the shore covered in
-                  the bodies of dead, rotting, mutated fish. Seoul picks one up
-                  as a prize, and is surprised by the voice of Auntie Agatha
-                  herself speak from its decaying mouth. The party barters with
-                  the old sea hag, and agrees to bring her the soul of one orc
-                  in return for information on the curse upon Damaia and her
-                  sword.
-                </p>
-                <p>
-                  The crew makes way back to the rowboat, but are startled by
-                  the rumble of thunder. Off in the distance they spot a ship
-                  pursuing the orc ship and recognize it as the Whitecrest,
-                  flagship of the Unblinking Eye. Our heroes concoct a daring
-                  plan to intercept the ships, and head back for the Mistress to
-                  join in on the action.
-                </p>
-                <p>
-                  On the approach, Ki-smo recruits the help of a friendly whale
-                  shark to give Shaedra a ride to the Whitecrest. After nearly
-                  loosing his footing while riding the shark, Shaedra manages to
-                  scale the flagship, kidnap a sailor, and whisk his prize off
-                  back to the sea. The rest of the party row to meet him under a
-                  hail of canon and gunfire, and extract their prize back to the
-                  Ragtag Mistress.
-                </p>
-                <p>
-                  After some interrogation, our heroes learn from the sailor
-                  that the Whitecrest is piloted by Captain Thelos who sails
-                  under the command of High Monitor Karrick, a high-ranking
-                  leader in the Unblinking Eye. This ship apparently found a way
-                  to cross the Veil and have been hot on the crew's pursuit
-                  since their crossing. Though not an orc, they figure this soul
-                  might do the trick to complete their bargain with Auntie
-                  Agatha, and they descend to her lair below the waves: a
-                  massive whale skeleton buried in the reef.
-                </p>
-                <p>
-                  We rejoin our heroes late in the evening of 22 Highsun 1493 in
-                  the lair of Auntie Agatha, who has been awaiting their arrival
-                  with great interest…
-                </p>
-              </div>
-            </div>
-            <div class="campaign hidden">
-              <div class="campaign-title">
-                <h2></h2>
-                <h3></h3>
-                <div class="more-info"></div>
-              </div>
-              <div class="recap-content">
-                <p></p>
-                <p></p>
-                <p></p>
-              </div>
-            </div>
-            <div class="campaign-title">
-              <h2>
-                Map of Pendor
-              </h2>
-              <img
-                class="pendor"
-                src="./styles/img/PendorMap.jpg"
-                alt="Map of the Islands of Pendor"
-              />
-            </div>
-            <div class="campaign">
-              <div class="campaign-title">
-                <h2>22 Highsun 1493</h2>
-                <h3>Auntie Agatha's Lair</h3>
-                <div class="more-info">
-                  <h3>4th Level</h3>
-                  <h3></h3>
-                </div>
-              </div>
-              <div class="recap-content">
-                <p>
-                  Our heroes descend below the waves to visit a sea hag, Auntie
-                  Agatha, who makes her lair amidst the skeleton of a long-dead
-                  ancient beast of the deep. Upon their arrival they present
-                  their prize: a captive sailor's soul in exchange for
-                  information about the magical blade bound to their friend
-                  Damaia. Agatha scoffs at their very-much-alive offering and
-                  goads them into murdering the poor sailor. She mocks their
-                  needless cruelty before turning her gaze to Damaia's sword.
-                </p>
-                <p>
-                  Agatha pours over the curved, black weapon and reads the
-                  ancient runes inscribed along its blade. She reveals that this
-                  is Nerazim's Blade, an ancient weapon of the Voidwalkers
-                  capable of severing the very tether that binds a soul to the
-                  Astral Plane. Damaia has no memory of how she came into
-                  possession of such a powerful artifact, but Agatha presents
-                  both a mystery and an answer. Agatha herself bound the sword
-                  to Damaia at the tiefling woman's request. She also holds a
-                  magical pipe that can re-enact the holder's most heroic memory
-                  in smoke. Damaia is eager to learn more of her past, and
-                  agrees to call upon the pipe's magic.
-                </p>
-                <p>
-                  As Damaia exhales the pipe's smoke, a dramatic battlefield
-                  unfolds before our heroes: dragonriders battle airborne foes
-                  while a massive, tentacled monster rips apart a large warship
-                  struggling for its life at sea. The vision zooms in on Damaia,
-                  riding on the back of a young dragon alongside a familiar face
-                  to Seoul: <span class="underline">his long-lost uncle</span>.
-                  As defeat draws nigh Damaia clenches her jaw, hands a necklace
-                  to Seoul's uncle with a wink, and backflips off the dragon
-                  toward the tentacled behemoth below. Damaia gracefully plunges
-                  through the air, Nerazim's Blade outstretched, and as she
-                  meets the great beast the vision dissipates in a blinding
-                  flash of light.
-                </p>
-                <p>
-                  Our heroes decide to maximize their visit to the sea hag, and
-                  ask her to release the blade's bond in exchange for agreeing
-                  that the blade's ownership shall pass to her in the event that
-                  <span class="underline">the entire party dies</span>. They
-                  also negotiate for Agatha to arrange a visit with the Oracle
-                  in exchange for delivering a pendant as a wedding present to
-                  Agatha's niece, Lady Sylvana Crowley in Port Last on the isle
-                  of Eskel.
-                </p>
-                <p>
-                  The crew of the Ragtag Mistress part from Agatha's lair ready
-                  to set sail, but find themselves betrayed! Unbeknownst to our
-                  heroes, the sea hag magically summoned High Monitor Karrick,
-                  leader of the Unblinking Eye's contingent that has crossed the
-                  Veil pursuing them. The party manages to hide atop a cliff
-                  face, overhear Karrick's exchange with Agatha, and learn that
-                  Erekose has been taken captive. Chaos erupts as our heroes get
-                  the drop on the powerful trio of the Unblinking Eye. Karrick
-                  and crew retreat behind rocks and magical defenses and Ryu is
-                  dropped unconscious by his wounds from the Unblinking Eye
-                  archer. Our heroes rush to their rowboat to escape while
-                  Karrick summons a magical teleportation circle. As the crew
-                  rows away, Karrick pauses long enough to call down a mighty
-                  blast of unholy light and severely wounds most of the party.
-                </p>
-                <p>
-                  We rejoin our heroes in the morning of 23 Highsun 1493 aboard
-                  the Ragtag Mistress, with Nerazim's Blade resting lightly in
-                  Jess's hand, and Erekose's capture and Agatha's betrayal
-                  weighing heavy on their hearts…
-                </p>
-              </div>
             </div>
           </div>
         </section>
-        <section id="donut" class="dimensions hidden">
-          <div>
-            <div class="donut"></div>
-          </div>
-          <h2>passwords</h2>
-          <ul>
-            <li>d&d</li>
-            <li>jurassic park</li>
-          </ul>
-        </section>
-        <section id="jurassicPark" class="dimensions hidden">
-          <div class="nedry">
-            <!-- credit goes to Mark Hjorth for this little gem! https://github.com/MarkHjorth/nedry -->
-            <img class="body" src="./styles/jurassicPark/body.png" />
-            <img class="head" src="./styles/jurassicPark/head.png" />
-            <img class="hand" src="./styles/jurassicPark/hand.png" />
-            <!--   -->
-          </div>
-        </section>
-        <section id="calc" class="dimensions hidden">
-          <h1>Let's call it... reverse engineering</h1>
-          <div class="calc-wrapper">
-            <section class="screen">
-              <div class="math-symbol"></div>
-              <div class="number">MATH TIME</div>
-            </section>
 
-            <section class="calc-buttons">
-              <div class="calc-button-row">
-                <button class="calc-button double">C</button>
-                <button class="calc-button">&larr;</button>
-                <button class="calc-button">&divide;</button>
-              </div>
-              <div class="calc-button-row">
-                <button class="calc-button">7</button>
-                <button class="calc-button">8</button>
-                <button class="calc-button">9</button>
-                <button class="calc-button">&times;</button>
-              </div>
-              <div class="calc-button-row">
-                <button class="calc-button">4</button>
-                <button class="calc-button">5</button>
-                <button class="calc-button">6</button>
-                <button class="calc-button">&minus;</button>
-              </div>
-              <div class="calc-button-row">
-                <button class="calc-button">1</button>
-                <button class="calc-button">2</button>
-                <button class="calc-button">3</button>
-                <button class="calc-button">&plus;</button>
-              </div>
-              <div class="calc-button-row">
-                <button class="calc-button triple">0</button>
-                <button class="calc-button">&equals;</button>
-              </div>
-            </section>
-          </div>
-        </section>
-      </section>
 
-      <section class="content row">
+      <section id="projects" class="content row animate-left">
         <div class="puppet-wrap">
           <img class="puppet" src="./styles/img/puppet.svg" />
         </div>
-        <div class="skills">
-          <h2>My Tool Box</h2>
-          <div class="skills-grid">
-          <div class="skill">
-            <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 55">
-              <path d="M0 0H48.125L43.7479 49.4152L24.0098 55L4.38396 49.4129L0 0ZM16.1127 22.3438L15.581 16.115L38.6329 16.1219L39.16 10.1131L8.965 10.1063L10.5646 28.4625H31.4783L30.7313 36.3138L24.0625 38.1563L17.2906 36.3L16.8598 31.4646H10.8808L11.6371 41.0231L24.0625 44.346L36.3894 41.0392L38.0944 22.346H16.1127V22.3438Z" fill="#F06235" aria-label="I am proficient in using HTML5"></path>
-            </svg>
-            <h3>HTML</h3>
+        <div id="projects" class="projects">
+          
+          <h2>Projects</h2>
+          <p class="projects-about">I've been very fortunate to work on some amazing projects and with some really great people.</p>
+          <ul>
+            <li>
+              <a href="https://www.realthread.com" target="_blank">realthread.com</a>
+              <p>An industry-leading printing company with a high traffic website and high conversion rate.</p> 
+              <p>I was hired to help build out the campaign page and to create features to help capture new clients. Was able to help increase sales by enhancing eCommerce functionality.</p> 
+            </li>
+            <li>
+            <a href="https://thefurrow.tv" target="_blank">thefurrow.tv</a>
+              <p>A top tier brand agency focusing on building animations and content creation.</p> 
+              <p>I worked on a team to update legacy code, implement new features, and secure all protected content. I helped to increase conversion rate and site traffic the implementation of new features and connecting content to social media.</p> 
+            </li>
+            <li>
+            <a href="https://www.cryptoratingcouncil.com/" target="_blank">cryptoratingcouncil.com</a>
+              <p>Cryptocurrency rating collective is comprised of the leading crypto businesses.</p> 
+              <p>Built the site from the ground up utilizing Webflow. Implemented a CMS to allow the client to dynamically adjust content.</p> 
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section >
+        <div id="code"class="examples-text">
+          <p>
+            Below are a few things I have worked on that you can interact with.
+          </p> 
+          <p>
+            See exaples of my code on my
+            <a href="https://github.com/brandonleboeuf" target="_blank"
+            ><i class="fab fa-github"></i
+            >Github</a> page.
+          </p>
+      </div>
+        <div class="codeSandbox">
+          <div>
+            <iframe src="https://codesandbox.io/embed/todo-list-er1zr?autoresize=1&fontsize=14&hidenavigation=1&&hidedevtools=1theme=dark&view=preview"
+              style="width:100%; height:600px; border:2.5px solid black; border-radius: 40px; overflow:hidden;"
+              title="todo-list"
+              allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+              sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+            ></iframe>
           </div>
-          <div class="skill">
-            <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 55">
-              <path d="M0.75 0H48.875L44.4979 49.4152L24.7598 55L5.13167 49.4129L0.75 0ZM39.9146 10.1131L9.71042 10.1063L10.1985 16.115L33.4017 16.1196L32.8173 22.3438H17.6006L18.1506 28.2402H32.3177L31.479 36.3138L24.8102 38.1563L18.036 36.3L17.6052 31.4646H11.624L12.2885 40.299L24.8125 44.2017L37.1256 40.6954L39.9146 10.1154V10.1131Z" fill="#299EFA" aria-label="I am proficient in using CSS"></path>
-            </svg>
-            <h3>CSS</h3>
+          <div>
+            <iframe src="https://codesandbox.io/embed/epic-shape-oezek?autoresize=1&fontsize=14&hidenavigation=1&&hidedevtools=1theme=dark&view=preview"
+              style="width:100%; height:600px; border:2.5px solid black; border-radius: 40px; overflow:hidden;"
+              title="epic-shape-oezek"
+             
+              loading="lazy"
+          ></iframe>
           </div>
-          <div class="skill">
-            <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 60">
-              <path d="M0 0H60V60H0V0Z" fill="#F7DF1E"></path>
-              <path d="M15.7763 50.1404L20.3677 47.3616C21.2536 48.9321 22.0594 50.2611 23.9923 50.2611C25.845 50.2611 27.0134 49.5364 27.0134 46.7173V27.5459H32.6517V46.797C32.6517 52.6369 29.2284 55.2952 24.2339 55.2952C19.7234 55.2952 17.1052 52.9592 15.776 50.1399" fill="black"></path>
-              <path d="M35.7143 49.5361L40.3052 46.8781C41.5139 48.8517 43.0847 50.3016 45.8634 50.3016C48.1999 50.3016 49.6896 49.1335 49.6896 47.5224C49.6896 45.5892 48.1591 44.9044 45.5815 43.7771L44.1722 43.1724C40.1041 41.441 37.4058 39.266 37.4058 34.6746C37.4058 30.4456 40.6277 27.2234 45.6623 27.2234C49.2469 27.2234 51.8245 28.4721 53.677 31.7344L49.2867 34.5539C48.3199 32.8221 47.2732 32.1375 45.6621 32.1375C44.0107 32.1375 42.9635 33.1847 42.9635 34.5539C42.9635 36.2454 44.0107 36.9305 46.4271 37.9777L47.8366 38.5817C52.6296 40.636 55.328 42.7301 55.328 47.442C55.328 52.5171 51.3408 55.2959 45.9841 55.2959C40.7484 55.2959 37.3652 52.7989 35.7141 49.5364" fill="black" aria-label="I am proficient in using JavaScript" >
-            </svg>
-            <h3>JavaScript</h3>
-          </div>
-          <div class="skill">
-            <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 60 55">
-              <path d="M49.3308 17.8086C48.6923 17.5831 48.0483 17.3742 47.3996 17.1821C47.5086 16.7238 47.6089 16.271 47.6979 15.8262C49.1599 8.52152 48.2042 2.63676 44.9397 0.69922C41.8096 -1.15824 36.6908 0.778584 31.5211 5.40944C31.0116 5.86665 30.5134 6.33703 30.027 6.82014C29.7013 6.49889 29.37 6.18387 29.033 5.87525C23.6148 0.923804 18.184 -1.16306 14.923 0.780031C11.7958 2.64328 10.8698 8.17536 12.186 15.0981C12.317 15.7838 12.4648 16.4658 12.6295 17.1437C11.8607 17.3686 11.119 17.6079 10.4091 17.8626C4.0567 20.1422 0 23.7146 0 27.4201C0 31.2471 4.35505 35.0858 10.9713 37.4134C11.5077 37.6013 12.0486 37.7755 12.5934 37.9357C12.4164 38.6658 12.2593 39.4009 12.1223 40.14C10.8675 46.9426 11.8474 52.344 14.9661 54.1954C18.1873 56.1074 23.5937 54.1423 28.8579 49.4058C29.2848 49.0208 29.7022 48.6248 30.1099 48.2183C30.6367 48.7414 31.1775 49.2493 31.7318 49.7414C36.8312 54.2576 41.8673 56.0813 44.983 54.2248C48.2011 52.3073 49.2471 46.5048 47.8892 39.4453C47.7822 38.8922 47.6623 38.3419 47.5294 37.7948C47.9091 37.679 48.2818 37.5598 48.645 37.4358C55.5233 35.0904 59.9986 31.2983 59.9986 27.4201C59.9986 23.701 55.8109 20.1046 49.3308 17.8086V17.8086ZM47.839 34.9319C47.5109 35.0436 47.1744 35.1514 46.8312 35.2564C46.0719 32.7821 45.0472 30.1512 43.7931 27.4328C44.9898 24.7793 45.9751 22.182 46.7131 19.7239C47.3269 19.9068 47.9225 20.0995 48.4967 20.3029C54.0489 22.2703 57.4355 25.1788 57.4355 27.4201C57.4355 29.8072 53.778 32.9063 47.839 34.9319V34.9319ZM45.3749 39.9576C45.9753 43.0791 46.0609 45.9015 45.6632 48.108C45.306 50.0907 44.5874 51.4124 43.6987 51.9419C41.808 53.0684 37.7644 51.6041 33.4035 47.7416C32.888 47.2841 32.3849 46.8119 31.8949 46.3256C33.5856 44.4225 35.2752 42.2102 36.9242 39.7531C39.8248 39.4882 42.565 39.055 45.05 38.4637C45.1724 38.972 45.2811 39.4704 45.3749 39.9576V39.9576ZM20.4548 51.7472C18.6075 52.4185 17.1362 52.4378 16.2467 51.91C14.3542 50.7866 13.5674 46.4496 14.6406 40.6321C14.7682 39.9447 14.9142 39.261 15.0786 38.5819C17.5362 39.1416 20.2566 39.5439 23.1639 39.7866C24.8242 42.1909 26.5625 44.4008 28.3144 46.336C27.9421 46.7068 27.561 47.0681 27.1714 47.4196C24.8434 49.5139 22.5107 50.9999 20.4548 51.7472V51.7472ZM11.8005 34.9172C8.87487 33.8879 6.45876 32.5503 4.8027 31.0906C3.31445 29.779 2.5633 28.4766 2.5633 27.4201C2.5633 25.1713 5.82033 22.3031 11.2528 20.3538C11.9121 20.1174 12.602 19.8942 13.318 19.6848C14.069 22.1984 15.0538 24.8266 16.2423 27.4842C15.0383 30.1812 14.0394 32.8513 13.2813 35.3946C12.7839 35.248 12.2902 35.0888 11.8005 34.9172V34.9172ZM14.7015 14.5913C13.574 8.66023 14.3228 4.18617 16.2074 3.06326C18.2145 1.86725 22.653 3.57249 27.3312 7.84801C27.6363 8.12745 27.9364 8.41255 28.2314 8.70317C26.4882 10.6299 24.7658 12.8233 23.1203 15.2134C20.2985 15.4826 17.5974 15.9149 15.114 16.4941C14.961 15.8636 14.8235 15.2292 14.7015 14.5915V14.5913ZM40.5823 21.1691C39.9957 20.1263 39.3874 19.0965 38.7577 18.0807C40.672 18.3299 42.5062 18.6606 44.2286 19.0649C43.7116 20.7708 43.067 22.5542 42.3084 24.3828C41.7539 23.2998 41.1784 22.2284 40.5823 21.1691V21.1691ZM30.0281 10.5886C31.2103 11.9069 32.3943 13.3787 33.5589 14.9756C31.1965 14.8607 28.8301 14.8603 26.4676 14.9741C27.6333 13.3919 28.8275 11.9221 30.0281 10.5886ZM19.4063 21.1872C18.8176 22.238 18.2529 23.3027 17.7125 24.3806C16.9662 22.5586 16.3276 20.767 15.8061 19.0369C17.5179 18.6427 19.3435 18.3204 21.2456 18.0758C20.6089 19.0979 19.9956 20.1352 19.4063 21.187V21.1872ZM21.3002 36.9519C19.335 36.7262 17.4821 36.4205 15.7707 36.037C16.3004 34.276 16.9531 32.4463 17.7155 30.5852C18.258 31.6639 18.8251 32.7293 19.4163 33.7805C20.0243 34.8612 20.6538 35.9197 21.3002 36.9519ZM30.0989 44.4373C28.8839 43.0883 27.6722 41.5958 26.4889 39.9907C27.6378 40.037 28.8089 40.0607 29.9993 40.0607C31.2222 40.0607 32.4311 40.0324 33.621 39.9779C32.4527 41.612 31.2731 43.1066 30.0989 44.4373ZM42.3325 30.4902C43.1345 32.3717 43.8105 34.1918 44.3472 35.9226C42.6077 36.3313 40.7294 36.6603 38.7504 36.9047C39.3846 35.8699 39.9987 34.8223 40.5923 33.7624C41.1959 32.6851 41.7761 31.5941 42.3325 30.4902V30.4902ZM38.3722 32.4444C37.4633 34.0694 36.5034 35.6635 35.4939 37.2243C33.6652 37.3576 31.8325 37.4238 29.9993 37.4228C28.1321 37.4228 26.3159 37.363 24.5671 37.2462C23.5312 35.6891 22.553 34.0921 21.6344 32.4588H21.6346C20.7204 30.8342 19.8665 29.1744 19.0746 27.483C19.8644 25.7913 20.7158 24.1307 21.6269 22.5048L21.6267 22.505C22.5374 20.8787 23.5079 19.2886 24.5359 17.7381C26.3202 17.5992 28.1499 17.5268 29.9991 17.5268H29.9993C31.8569 17.5268 33.689 17.5999 35.4728 17.7398C36.4904 19.288 37.4547 20.8726 38.3637 22.4908C39.2778 24.1131 40.1405 25.7656 40.9502 27.4456C40.1488 29.1428 39.2889 30.8101 38.3722 32.4444V32.4444ZM43.6595 2.98461C45.6685 4.17725 46.4499 8.98661 45.1876 15.2935C45.107 15.6959 45.0165 16.1057 44.9181 16.5214C42.4286 15.9299 39.7256 15.4901 36.8956 15.2168C35.2471 12.8004 33.5387 10.6036 31.8239 8.70172C32.2733 8.25581 32.7334 7.82147 33.2038 7.39909C37.6334 3.43161 41.7733 1.86508 43.6595 2.98461V2.98461ZM29.9993 21.9056C32.9582 21.9056 35.357 24.3746 35.357 27.4201C35.357 30.4656 32.9582 32.9345 29.9993 32.9345C27.0404 32.9345 24.6416 30.4656 24.6416 27.4201C24.6416 24.3746 27.0404 21.9056 29.9993 21.9056V21.9056Z" fill="#00D8FF" aria-label="I am proficient in using React"></path>
-            </svg>
-            <h3>React</h3>
-          </div>
-          <div class="skill">
-            <svg role="img" fill="none" viewBox="-10 0 60 60">
-              <path d="M10 60C15.52 60 20 55.52 20 50V40H10C4.48 40 0 44.48 0 50C0 55.52 4.48 60 10 60Z" fill="#0ACF83"></path>
-              <path d="M0 30C0 24.48 4.48 20 10 20H20V40H10C4.48 40 0 35.52 0 30Z" fill="#A259FF"></path>
-              <path d="M0 10C0 4.48 4.48 0 10 0H20V20H10C4.48 20 0 15.52 0 10Z" fill="#F24E1E"></path>
-              <path d="M20 0H30C35.52 0 40 4.48 40 10C40 15.52 35.52 20 30 20H20V0Z" fill="#FF7262"></path>
-              <path d="M40 30C40 35.52 35.52 40 30 40C24.48 40 20 35.52 20 30C20 24.48 24.48 20 30 20C35.52 20 40 24.48 40 30Z" fill="#1ABCFE" aria-label="I am proficient in using Figma"></path></svg>
-            <h3>Figma</h3>
-          </div>
-          <div class="skill">
-           
-            <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-              <path
-                d="M0 128v128h256V0H0v128zm84-35.5c5.9 3 11.5 9.3 13.4 15.4.9 2.6 1.8 10.7 2.1 18.6.9 21.6.7 21.6 9 .3 4.1-10.3 8.5-20.4 9.9-22.6 5.2-8.3 15.9-15.2 23.7-15.2 3.3 0 2.8-2.5 6.9 30.5 1.7 13.2 3.2 24.7 3.3 25.5.2.8 3-6.9 6.4-17.2 8.4-25.7 14-33.6 26.7-37.3 6.9-2.1 10-2 9.3.2-1.7 6.1-26.4 64.7-28.9 68.5-5.6 8.9-13.9 14.3-23.7 15.5-4.2.5-5 .3-5.4-1.3-.3-1.1-2-12.6-3.8-25.7-1.9-13-3.6-23.7-4-23.7-.3 0-2.8 5.7-5.4 12.7-2.6 7.1-6.2 15.4-7.9 18.7-5.7 11-15 18-25.6 19.3l-4.7.5-6.7-41.3c-3.7-22.8-7-42.3-7.3-43.3-.5-1.7-.1-1.8 3.7-1.2 2.3.3 6.3 1.7 9 3.1z" fill="#3546EF"/>
-            </svg>
-            <h3>Webflow</h3>
-          </div>
-          <div class="skill">
-            <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 225">
-              <path d="M98.6 1.1C72.4 4.5 49.4 16.3 31 35.7c-49.4 52-37.8 135.6 24.1 173.1 31.8 19.3 71.5 21 105.8 4.6 63.6-30.4 83.6-111.9 41.2-168.1C177.9 13.1 137.9-3.9 98.6 1.1zm36.7 25.8c15.9 4.2 34.4 15.8 44.6 28l4.4 5.3-5.9 5.3-5.9 5.4-5.5-5.8c-13.4-14.3-27.6-21.6-46.4-24.1-14.3-2-31.5 1.6-44.4 9.2-8.7 5-22.1 18.9-27 27.8-2.3 4.1-4.2 8.2-4.2 9 0 1.8 91 93 92.8 93 2.3 0 12.6-5.7 18.9-10.4 11.9-9 20.7-22.1 25.7-38.3l.7-2.3-19.3-.2-19.3-.3v-16l28.3-.3 28.2-.2v4.3c0 9.6-3.9 24.3-9.3 35.2-10.5 21.3-31 38.6-53.7 45.5l-5.8 1.7-53.1-53.1L26 92.5l2.9-8.2c4.1-11.9 10.5-22.5 19-31.5C61.8 38 75.8 30.1 96.1 25.5c9-2.1 28.9-1.4 39.2 1.4zm-24.4 173.5c.2.5-2.6.5-6.5.1-40.1-4.3-71.5-32.6-79-71.3-.8-4.1-1.4-9.2-1.4-11.5v-4.2l43.2 43c23.8 23.7 43.4 43.4 43.7 43.9z"/ fill="#663499" aria-label="I am proficient in using Gatsby"></path>
-            </svg>
-            <h3>Gatsby</h3>
-          </div>
-          <div class="skill">
-            <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-              <path d="M58.8684 27.3267L32.6719 1.1315C31.1641 -0.377168 28.7173 -0.377168 27.2077 1.1315L21.7678 6.57135L28.6685 13.4721C30.2721 12.9302 32.111 13.2937 33.3893 14.572C34.6737 15.8585 35.0346 17.7131 34.4796 19.3218L41.13 25.9724C42.739 25.4181 44.5955 25.7767 45.8805 27.0639C47.6766 28.8592 47.6766 31.769 45.8805 33.5655C44.0841 35.3622 41.1743 35.3622 39.3769 33.5655C38.0259 32.2131 37.6922 30.2292 38.3761 28.5649L32.1741 22.3628L32.1734 38.684C32.623 38.9063 33.0336 39.1999 33.3893 39.5535C35.1853 41.3488 35.1853 44.2588 33.3893 46.0567C31.5928 47.8525 28.6816 47.8525 26.8877 46.0567C25.0917 44.2588 25.0917 41.3491 26.8877 39.5538C27.3181 39.1232 27.8296 38.7821 28.3927 38.5504V22.0771C27.8288 21.847 27.317 21.5057 26.8877 21.0738C25.527 19.7149 25.1998 17.7182 25.897 16.0474L19.0945 9.24416L1.13203 27.2055C-0.377344 28.7156 -0.377344 31.1627 1.13203 32.6716L27.3291 58.8672C28.8373 60.3761 31.2837 60.3761 32.7937 58.8672L58.8682 32.7932C60.3771 31.2838 60.3771 28.8353 58.8682 27.3267" fill="#DE4C36" aria-label="I am proficient in using Git"></path>
-            </svg>
-            <h3>Git</h3>
-          </div>
-          <div class="skill">
-            <svg role="img" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-              <path d="M42.7192 59.6711C43.1985 59.858 43.7111 59.9443 44.2252 59.9246C44.7393 59.9048 45.2438 59.7795 45.7073 59.5563L58.1092 53.5889C58.7479 53.2814 59.2868 52.7998 59.664 52.1996C60.0411 51.5993 60.2411 50.9048 60.241 50.1959V9.73224C60.2411 9.02337 60.0411 8.32888 59.6639 7.72867C59.2868 7.12845 58.7479 6.6469 58.1092 6.33941L45.7076 0.371768C45.0068 0.0345642 44.2186 -0.0764627 43.4519 0.0540552C42.6853 0.184573 41.9782 0.550181 41.4284 1.10027L17.6866 22.7605L7.3449 14.9104C6.87841 14.5563 6.30267 14.3767 5.71758 14.4027C5.13249 14.4287 4.57497 14.6588 4.14175 15.0529L0.82498 18.0701C-0.268721 19.0648 -0.269902 20.7855 0.822145 21.7818L9.79073 29.9641L0.822145 38.146C-0.269902 39.1426 -0.268721 40.863 0.82498 41.858L4.14175 44.875C4.57494 45.2692 5.13245 45.4992 5.71754 45.5253C6.30263 45.5513 6.87838 45.3718 7.3449 45.0177L17.6866 37.1674L41.4284 58.8276C41.7955 59.1953 42.2351 59.4825 42.7192 59.6711V59.6711ZM45.191 16.2895L27.1763 29.9641L45.191 43.6384V16.2895V16.2895Z"fill="white"></path>
-              <path d="M58.1459 6.34796L45.7344 0.37205C45.0334 0.0345742 44.2449 -0.0766892 43.478 0.053657C42.711 0.184003 42.0035 0.549514 41.4534 1.09961L0.822512 38.1454C-0.270244 39.142 -0.268827 40.8624 0.825346 41.8573L4.14424 44.8743C4.57782 45.2686 5.13568 45.4987 5.72111 45.5247C6.30654 45.5508 6.88263 45.3712 7.34952 45.017L56.2783 7.89827C57.9198 6.65315 60.2776 7.82386 60.2776 9.88418V9.74008C60.2775 9.03135 60.0775 8.33702 59.7004 7.73694C59.3233 7.13686 58.7845 6.65541 58.1459 6.34796V6.34796Z" fill="#0065A9"></path>
-              <path d="M58.1459 53.5785L45.7344 59.5544C45.0334 59.8918 44.2449 60.0031 43.478 59.8727C42.711 59.7424 42.0035 59.3769 41.4534 58.8269L0.822512 21.7811C-0.270244 20.7848 -0.268827 19.0641 0.825346 18.0694L4.14424 15.0522C4.57785 14.658 5.13572 14.4279 5.72115 14.4019C6.30658 14.3759 6.88266 14.5555 7.34952 14.9097L56.2783 52.0282C57.9198 53.2733 60.2776 52.1026 60.2776 50.0421V50.1864C60.2775 50.8951 60.0774 51.5895 59.7004 52.1895C59.3233 52.7896 58.7845 53.2711 58.1459 53.5785V53.5785Z" fill="#007ACC"></path>
-              <path d="M45.6954 59.5592C44.9943 59.8964 44.2057 60.0075 43.4387 59.877C42.6717 59.7466 41.9641 59.381 41.4139 58.8309C42.8032 60.2199 45.1788 59.236 45.1788 57.2711V2.66288C45.1788 0.697997 42.8032 -0.285861 41.4139 1.10335C41.9641 0.553212 42.6716 0.187609 43.4386 0.0570997C44.2057 -0.0734092 44.9943 0.0376251 45.6954 0.374848L58.1048 6.34249C58.7438 6.64977 59.283 7.13124 59.6603 7.73147C60.0377 8.33171 60.2379 9.02631 60.2379 9.73532V50.1992C60.2379 51.646 59.4087 52.9651 58.1048 53.592L45.6954 59.5594V59.5592Z" fill="#1F9CF0"></path>
-              <path d="M42.7191 59.6704C43.1984 59.8573 43.711 59.9436 44.2251 59.9238C44.7392 59.9041 45.2437 59.7787 45.7073 59.5556L58.1088 53.588C58.7476 53.2806 59.2866 52.799 59.6638 52.1988C60.041 51.5986 60.241 50.9041 60.241 50.1952V9.73155C60.241 9.02268 60.041 8.32819 59.6638 7.72797C59.2867 7.12776 58.7478 6.6462 58.1091 6.33871L45.707 0.370837C45.0063 0.0336872 44.2181 -0.0773103 43.4515 0.0532065C42.6849 0.183723 41.9778 0.5493 41.4281 1.09934L17.6865 22.7598L7.34481 14.9097C6.87832 14.5556 6.30258 14.376 5.71749 14.402C5.1324 14.428 4.57488 14.6581 4.14166 15.0522L0.824888 18.0694C-0.268813 19.0641 -0.269994 20.7848 0.822054 21.7812L9.79064 29.9634L0.822054 38.1453C-0.269994 39.1419 -0.268813 40.8623 0.824888 41.8573L4.14166 44.8743C4.57485 45.2685 5.13236 45.4985 5.71745 45.5246C6.30254 45.5506 6.87829 45.3711 7.34481 45.017L17.6865 37.1667L41.4281 58.8269C41.7953 59.1946 42.2349 59.4818 42.7191 59.6704V59.6704ZM45.1909 16.2886L27.1762 29.9634L45.1909 43.6377V16.2888V16.2886Z" fill="url(#paint0_linear)" fill-opacity="0.25" aria-label="I am proficient in using VSCode"></path>
-            </svg>
-            <h3>VSCode</h3>
-          </div>
-      
-        
+          <div>
+            <iframe src="https://codesandbox.io/embed/infinite-scroll-7k6l7?autoresize=1&fontsize=14&hidenavigation=1&&hidedevtools=1theme=dark&view=preview"
+              style="width:100%; height:600px; border:2.5px solid black; border-radius: 40px; overflow:hidden;"
+              title="Infinite Scroll"
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
       </section>
      
 
-      <div id="projects" class="fadeBlue">
-        <h2>Projects</h2>
-        <ul>
-          <li><a class="thunderdog" target="_blank">ThunderDog</a></li>
-          <li>
-            <a
-              class="realthread"
-              href="https://www.realthread.com/git "
-              target="_blank"
-              >Realthread</a
-            >
-          </li>
-          <li>
-            <a class="furrow" href="https://theFurrow.tv" target="_blank"
-              >theFurrow.tv</a
-            >
-          </li>
-          <li>
-            <a
-              class="crypto"
-              href="https://www.cryptoratingcouncil.com/"
-              target="_blank"
-              >CryptoRatingCouncil</a
-            >
-          </li>
-        </ul>
-      </div>
+     
     </main>
     <div class="swiper-width">
       <div class="swiper-container">
@@ -928,6 +251,41 @@
         <div class="swiper-button-prev"></div>
       </div>
     </div>
+    <section id="contact"class="form-wraper">
+      <div class="intro">
+        <p>
+          Please reach out if you have questions about my work, my process, or
+          are interested in possibly working together.
+        </p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:Brandon.LeBoeuf@gmail.com" target="_blank"
+          >brandon.leboeuf@gmail.com</a
+        >
+      </div>
+
+      <form name="contact" method="POST" data-netlify="true">
+        <fieldset>
+          <legend><i class="far fa-paper-plane"></i></legend>
+          <div class="form-body">
+            <div class="label">
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="label">
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" name="email"/>
+            </div>
+            <fieldset>
+              <legend>Let's Talk</legend>
+              <textarea name="message" id="message" cols="70" rows="10"
+              ></textarea
+              >
+            </fieldset>
+          </div>
+        </fieldset>
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+    </section>
 
     <footer>
       <div>
@@ -935,7 +293,7 @@
           <li class="current-page">Home</li>
           <li><a href="./resources.html">Resources</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="mailto:Brandon.LeBoeuf@gmail.com" target="_blank">Contact</a></li>
         </ul>
       </div>
       <h4>Follow Me</h4>
@@ -967,8 +325,8 @@
     </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="./scripts/swiper.js"></script>
-    <script src="https://unpkg.com/popmotion@8.5.0 /dist/popmotion.global.min.js"></script>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/calculator.js"></script>
+   
+    <!-- <script src="scripts/script.js"></script>
+    <script src="scripts/calculator.js"></script> -->
   </body>
 </html>
