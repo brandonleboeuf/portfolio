@@ -14,6 +14,7 @@ html {
 }
 
 
+
 main {
   position: relative;
   top: 60px
@@ -110,6 +111,8 @@ footer a {
   background-color: #274259;
   padding: 60px;
 }
+
+
 
 #hero a {
   display: inline-block;
@@ -266,9 +269,9 @@ form {
 }
 
 .submit-btn:hover {
-  background-color: rgba(42, 85, 140, 1);
+  background-color: rgba(42, 85, 140, .5);
   color: white;
-  /* transform: scale(1.1); */
+
   cursor: pointer;
 }
 
@@ -290,7 +293,16 @@ form {
   max-width: 70vw;
 }
 
+input:focus {
+  outline: none;
+}
 
+textarea {
+  border: none;
+}
+textarea:focus {
+  outline: none;
+}
 
 section {
   display: flex;
@@ -681,6 +693,7 @@ section {
   }
 }
 
+
 @keyframes slidein-right {
   from {
     margin-right: -600px;
@@ -966,6 +979,10 @@ footer .current-page {
     background-color: #274259;
     padding: 60px;
   }
+  
+
+
+
 
   form {
     padding: 5px;
