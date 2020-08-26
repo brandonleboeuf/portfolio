@@ -901,7 +901,8 @@ footer .current-page {
   }
 
   .skills {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 75vw;
   }
   
   .row {
@@ -913,7 +914,7 @@ footer .current-page {
   .skills-grid {
     column-gap: 5px;
     row-gap: auto;
-    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
     justify-items: center;
 }
