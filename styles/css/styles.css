@@ -865,6 +865,7 @@ footer .current-page {
 
 .codeSandbox {
   display: grid;
+  overflow: hidden;
   justify-content: space-between;
   padding: 50px 0;
   margin: 50px auto;
