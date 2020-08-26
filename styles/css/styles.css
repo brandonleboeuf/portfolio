@@ -318,6 +318,7 @@ section {
 .examples-text {
   margin: 0 auto;
   text-align: center;
+  max-width: 95vw;
   width: 500px;
   /* font-size: 1.2rem; */
   padding: 15px;
@@ -377,7 +378,7 @@ section {
   padding-top: 10px;
 }
 #projects p {
-  padding-bottom: 5px;
+  padding-bottom: 1rem;
 }
 
 #projects li {
@@ -675,7 +676,7 @@ section {
   padding: 1rem 3rem 3rem 3rem;
   border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 2px 2px 40px rgba(128, 128, 128, .5);
+  box-shadow: 2px 15px 40px rgba(128, 128, 128, .5);
   
 }
 
@@ -889,6 +890,8 @@ footer .current-page {
   .codeSandbox {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    align-self: center;
   }
 
   .codeSandbox div {
@@ -898,10 +901,12 @@ footer .current-page {
   .content {
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
   }
 
   .skills {
-    margin: 0 auto;
+    margin: 20px auto;
+    text-align: center;
     max-width: 75vw;
   }
   
@@ -917,6 +922,10 @@ footer .current-page {
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     justify-items: center;
+}
+
+.content {
+  margin: 0;
 }
 
   #password {
