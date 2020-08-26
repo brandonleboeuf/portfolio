@@ -891,12 +891,13 @@ footer .current-page {
   .codeSandbox {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin: 0;
     align-self: center;
   }
 
   .codeSandbox div {
-    margin-right: 10px 0;
+    /* margin-right: 10px; */
     overflow: hidden;
   }
 
@@ -925,7 +926,7 @@ footer .current-page {
   }
 
   .skills-grid {
-    column-gap: 5px;
+    column-gap: 3px;
     row-gap: auto;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
