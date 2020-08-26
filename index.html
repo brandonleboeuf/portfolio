@@ -283,8 +283,11 @@
       const header = document.querySelector("#header");
 
       const headroom = new Headroom(header, {
-        tolerance : 25,
-        offset: 205,
+        tolerance : {
+          up : 5,
+          down : 0
+        }
+        
       });
       headroom.init();
     </script>
