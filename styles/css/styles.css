@@ -879,6 +879,7 @@ footer .current-page {
   margin: 0 50px;
   justify-items: center;
   overflow: hidden;
+  max-width: 90vw;
   width: 400px;
   /* margin: 0 auto; */
   border-radius: 40px;
