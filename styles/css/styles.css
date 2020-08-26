@@ -863,9 +863,11 @@ footer .current-page {
 } */
 
 .codeSandbox {
+  display: grid;
+  justify-content: space-between;
   padding: 50px 0;
   margin: 50px auto;
-  display: grid;
+  width: 100vw;
   column-gap: auto;
   row-gap: 40px;
   grid-template-columns: repeat(3,minmax(200px,500px))
@@ -899,7 +901,7 @@ footer .current-page {
   }
 
   .skills {
-    margin: 40px auto 10px auto;
+    margin: 0;
   }
   
   .row {
@@ -908,6 +910,13 @@ footer .current-page {
 }
 
 @media only screen and (max-width: 750px) {
+  .skills-grid {
+    column-gap: 5px;
+    row-gap: auto;
+    grid-template-columns: repeat(3 1fr);
+    place-items: center;
+    justify-items: center;
+}
 
   #password {
     margin: 20px 0 0 0;
