@@ -34,21 +34,22 @@
     <title>Brandon LeBoeuf - Web Developer based in Portland, OR</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#main">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#code">Code</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div id="hero">
+    <header id="header" class="headroom">
       <div>
         <h1>Brandon LeBoeuf</h1>
         <h2>Software Engineer</h2>
       </div>
-    </div>
+      <nav >
+        <ul>
+          <li><a href="#main">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </header>
+   
 
     <main>
       
@@ -68,7 +69,7 @@
               I love to learn and am continuously pushing myself to grow as a software engineer. I have over a decade of experience in both managing and training teams of 40+ people and have learned how to successfully navigate difficult situations. These past rolls have allowed me to gain the experience in developing my ability to see from different clients' perspectives and find ways to manage and address their needs.
             </p>
             <p>
-              I primarily work with React, JavaScript, and CSS along with utilizing APIs, TDD, as well as contributing to opensource projects. You can usually find me trying to create or build something...whether it be brewing my own beer, playing piano, making bread or building web applications; I get joy from being creative and find reward in the growth/struggle!
+              I primarily work with React, JavaScript, and CSS as well as utilizing APIs, TDD, and contributing to opensource projects. You can usually find me trying to create or build something...whether it be brewing my own beer, playing piano, making bread or building web applications; I get joy from being creative and find reward in the growth/struggle!
             </p>
           </div>
           <div class="skills">
@@ -155,34 +156,33 @@
           <ul>
             <li>
               <a href="https://www.realthread.com" target="_blank">realthread.com</a>
-              <p>An industry-leading printing company with a high traffic website and high conversion rate.</p> 
-              <p>I was hired to help build out the campaign page and to create features to help capture new clients. Was able to help increase sales by enhancing eCommerce functionality.</p> 
+              <p>Industry-leading printing company with a high traffic site who are driven to make quality custom t-shirts that feature compelling messages and beautiful designs.</p> 
+              <p>I was hired to help build out the campaign page and to create features to help capture new clients and drive e-commerce sales.</p> 
             </li>
             <li>
             <a href="https://thefurrow.tv" target="_blank">thefurrow.tv</a>
-              <p>A top tier brand agency focusing on building animations and content creation.</p> 
-              <p>I worked on a team to update legacy code, implement new features, and secure all protected content. I helped to increase conversion rate and site traffic the implementation of new features and connecting content to social media.</p> 
+              <p>Creatives intent on bringing brands and stories to life. They believe in building beautiful, entertaining, and clean content by mixing creativity with what is concrete.</p> 
+              <p>I worked on a team to update legacy code, implement new features, and ensure all protected content remained secure.</p> 
             </li>
             <li>
             <a href="https://www.cryptoratingcouncil.com/" target="_blank">cryptoratingcouncil.com</a>
-              <p>Cryptocurrency rating collective is comprised of the leading crypto businesses.</p> 
-              <p>Built the site from the ground up utilizing Webflow. Implemented a CMS to allow the client to dynamically adjust content.</p> 
+              <p>A diverse group of leading crypto businesses committed to the responsible growth and maturation of cryptocurrency markets and related financial infrastructure and trading services.</p> 
+              <p>I designed and built the site from the ground up. Used webflow to implemented a custom CMS to allow the client to dynamically add and mantain content.</p> 
             </li>
           </ul>
         </div>
       </section>
-      <section >
-        <div id="code"class="examples-text">
+      <section id="code">
+        <div class="examples-text">
           <p>
-            Below are a few things I have worked on that you can interact with.
-          </p> 
-          <p>
-            See examples of my code on my
+           Here are a few examples of my code that you <br/> can interact with.
+          
+            See more examples on my <br/> 
+            <i class="fab fa-github"></i>
             <a href="https://github.com/brandonleboeuf" target="_blank"
-            ><i class="fab fa-github"></i
             >Github</a> page.
           </p>
-      </div>
+        </div>
         <div class="codeSandbox">
           <div>
             <iframe src="https://codesandbox.io/embed/todo-list-er1zr?autoresize=1&fontsize=14&hidenavigation=1&&hidedevtools=1theme=dark&view=preview"
@@ -209,45 +209,8 @@
           </div>
         </div>
       </section>     
-    </main>
-    <div class="swiper-width">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <img
-            src="./styles/img/swiperGallery/codeExample.png"
-            alt="Examples of JavaScript and HTML"
-            class="swiper-slide"
-          />
-          <img
-            src="./styles/img/swiperGallery/crc_about.png"
-            alt="Example of CryptoRatingCouncil.com page"
-            class="swiper-slide"
-          />
-          <img
-            src="./styles/img/swiperGallery/crc_asset.png"
-            alt="Example of the CryptoRatingCouncil.com Asset page"
-            class="swiper-slide"
-          />
-          <img
-            src="./styles/img/swiperGallery/crc_faq.png"
-            alt="Example of the CryptoRatingCouncil.com FAQ page"
-            class="gallery-img"
-          />
-          <img
-            src="./styles/img/swiperGallery/realthread.png"
-            alt="Example of realthread.com page"
-            class="swiper-slide"
-          />
-          <img
-            src="./styles/img/swiperGallery/thefurrow.png"
-            alt="Example of theFurrow.tv page"
-            class="swiper-slide"
-          />
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </div>
+    
+    
     <section id="contact"class="form-wraper">
       <div class="intro">
         <p>
@@ -274,26 +237,17 @@
             </div>
             <fieldset>
               <legend>Let's Talk</legend>
+              <label for="message" ></label>
               <textarea name="message" id="message" cols="70" rows="10"
-              ></textarea
-              >
+              ></textarea>
             </fieldset>
           </div>
         </fieldset>
         <button type="submit" class="submit-btn">Send</button>
       </form>
     </section>
-
+  
     <footer>
-      <div>
-        <ul>
-          <li class="current-page">Home</li>
-          <li><a href="./resources.html">Resources</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="mailto:Brandon.LeBoeuf@gmail.com" target="_blank">Contact</a></li>
-        </ul>
-      </div>
-      <h4>Follow Me</h4>
       <div>
         <h5>
           <a href="mailto:Brandon.LeBoeuf@gmail.com"
@@ -319,11 +273,20 @@
       <div id="copyright">
         <h6>Copyright © 2020 Brandon Eugene LeBoeuf. All rights reserved.</h6>
       </div>
+      
     </footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="./scripts/swiper.js"></script>
-   
-    <!-- <script src="scripts/script.js"></script>
-    <script src="scripts/calculator.js"></script> -->
+  </main>
+    <!-- <script src="./scripts/headroom.js"></script> -->
+    <script src="./scripts/nav.js"></script>
+    <script src="https://unpkg.com/headroom.js"></script>
+    <script>
+      const header = document.querySelector("#header");
+
+      const headroom = new Headroom(header, {
+        tolerance : 25,
+        offset: 205,
+      });
+      headroom.init();
+    </script>
   </body>
 </html>
