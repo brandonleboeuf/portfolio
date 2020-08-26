@@ -10,9 +10,9 @@ html {
   /* padding-top: 100px; */
 }
 
-#code {
+/* #code {
   margin-right: 40px;
-}
+} */
 
 main {
   position: relative;
@@ -342,7 +342,7 @@ section {
 #about {
   position: relative;
   max-width: 800px;
-  /* font-size: 20px; */
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -866,25 +866,24 @@ footer .current-page {
 .codeSandbox {
   display: grid;
   overflow: hidden;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 50px 0;
-  margin: 50px auto;
-  width: 100vw;
+  max-width: 100vw;
   column-gap: auto;
   row-gap: 40px;
-  grid-template-columns: repeat(3,minmax(200px,500px))
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .codeSandbox div {
   display: flex;
-  margin: 0 50px;
-  justify-items: center;
+  /* margin: 0 50px; */
+  justify-items: space-between;
   overflow: hidden;
   max-width: 90vw;
   width: 400px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   border-radius: 40px;
-  box-shadow: 5.5px 5px 20px rgba(136, 136, 136, 0.5);
+  /* box-shadow: 5.5px 5px 20px rgba(136, 136, 136, 0.5); */
 }
 
 
@@ -918,6 +917,12 @@ footer .current-page {
 }
 
 @media only screen and (max-width: 750px) {
+  #code {
+    width:95vw;
+    margin:0;
+    overflow: hidden;
+  }
+
   .skills-grid {
     column-gap: 5px;
     row-gap: auto;
@@ -1020,6 +1025,7 @@ footer .current-page {
   }
 
   #about {
+    font-size: inherit;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
