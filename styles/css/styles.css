@@ -864,7 +864,9 @@ iframe {
   width:100%; 
   height:600px; 
   border:2.5px solid black; 
-  border-radius: 40px; 
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
   overflow:hidden;
 }
 
@@ -884,7 +886,9 @@ iframe {
   max-width: 90vw;
   width: 400px;
   margin: 20px auto;
-  border-radius: 40px;
+ -webkit-border-radius: 40px;
+ -moz-border-radius: 40px;
+ border-radius: 40px;
 }
 
 
