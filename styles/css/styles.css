@@ -912,7 +912,7 @@ iframe {
   }
 
   calc {
-    display: none;
+    display: hidden;
   }
 
   sbox {
