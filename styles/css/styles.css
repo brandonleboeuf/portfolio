@@ -886,6 +886,7 @@ iframe {
   max-width: 90vw;
   width: 400px;
   margin: 20px auto;
+  border: 3px solid black;
  -webkit-border-radius: 40px;
  -moz-border-radius: 40px;
  border-radius: 40px;
@@ -916,7 +917,6 @@ iframe {
 
   sbox {
     height:400px;
-
   }
 
 
