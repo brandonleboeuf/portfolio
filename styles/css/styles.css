@@ -902,7 +902,7 @@ iframe {
   }
 
   .codeSandbox div {
-    /* margin-right: 10px; */
+    padding: 5px;
     overflow: hidden;
   }
 
@@ -930,8 +930,7 @@ iframe {
 
   iframe {
     width:90%;
-    height: 500px;
-    overflow: hidden;
+    height: 450px;
   }
 
   #calc {
