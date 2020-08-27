@@ -905,6 +905,7 @@ iframe {
     /* height: fit-content; */
     overflow: hidden;
     height: 620px;
+    width:420px;
   }
 
   .content {
