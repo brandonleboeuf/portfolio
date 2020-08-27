@@ -976,9 +976,17 @@ iframe {
     width: 100%;
   }
 
-  /* .examples-text {
-    width: 100vw;
-  } */
+  .examples-text {
+    width: 100%;
+    max-width: 100%;
+    margin:10px;
+    padding: 0;
+  }
+  .examples-text p {
+    width: 100%;
+    margin: 0;
+    padding:  5px;
+  }
 
   #code {
     margin:0;
@@ -1122,17 +1130,7 @@ iframe {
 
 @media only screen and (max-width: 475px) {
 
-  .examples-text {
-    width: 100%;
-    max-width: 100%;
-    margin:10px;
-    padding: 0;
-  }
-  .examples-text p {
-    width: 100%;
-    margin: 0;
-    padding:  5px;
-  }
+
 
   .intro p {
     padding: 5px;
