@@ -881,14 +881,13 @@ iframe {
 
 .codeSandbox div {
   display: flex;
-  /* margin: 0 50px; */
+
   justify-items: space-between;
   overflow: hidden;
   max-width: 90vw;
   width: 400px;
   margin: 20px auto;
   border-radius: 40px;
-  /* box-shadow: 5.5px 5px 20px rgba(136, 136, 136, 0.5); */
 }
 
 
