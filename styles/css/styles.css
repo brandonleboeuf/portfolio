@@ -880,9 +880,6 @@ iframe {
 }
 
 .codeSandbox div {
-  display: flex;
-
-  justify-items: space-between;
   overflow: hidden;
   max-width: 90vw;
   width: 400px;
@@ -906,6 +903,7 @@ iframe {
     overflow: hidden;
     height: 620px;
     width:420px;
+    z-index: 2;
   }
 
   .content {
