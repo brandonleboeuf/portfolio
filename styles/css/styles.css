@@ -545,11 +545,6 @@ section {
   border-radius: 100%;
 }
 
-.resume {
-  /* position: relative;
-  top: 70px; */
-}
-
 .content {
   /* position: relative; */
   display: flex;
@@ -891,7 +886,7 @@ iframe {
   overflow: hidden;
   max-width: 90vw;
   width: 400px;
-  margin: 0 auto;
+  margin: 20px auto;
   border-radius: 40px;
   /* box-shadow: 5.5px 5px 20px rgba(136, 136, 136, 0.5); */
 }
@@ -975,6 +970,10 @@ iframe {
     padding: 0;
   }
  
+  .resume {
+    margin-top: 25px;
+  }
+
   nav ul {
     display: grid;
     grid-column: 2;
