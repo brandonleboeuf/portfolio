@@ -5,6 +5,14 @@ html {
   scroll-behavior: smooth;
 }
 
+nav a,
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+
 #main, #projects, #code, #contact {
   scroll-snap-stop: always;
   /* padding-top: 100px; */
@@ -104,13 +112,7 @@ footer a:hover,
   text-decoration: underline;
 }
 
-nav a,
-footer a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  transition: 1s;
-}
+
 
 .crc-left {
   -webkit-shape-outside: circle(50%);
