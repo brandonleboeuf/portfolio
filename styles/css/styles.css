@@ -903,9 +903,9 @@ iframe {
 
   .codeSandbox div {
     padding: 5px;
-    height: fit-content;
+    /* height: fit-content; */
     overflow: hidden;
-    height: 600px;
+    height: 500px;
   }
 
   .content {
