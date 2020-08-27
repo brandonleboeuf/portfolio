@@ -1131,7 +1131,11 @@ iframe {
   .examples-text p {
     width: 100%;
     margin: 0;
-    padding: 10px;
+    padding:  5px;
+  }
+
+  .intro p {
+    padding: 5px;
   }
 }
 
