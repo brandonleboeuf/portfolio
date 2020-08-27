@@ -969,7 +969,11 @@ iframe {
   }
 
   .intro {
-    width: 90vw;
+    width: 100%;
+  }
+
+  .intro p {
+    width: 100%;
   }
 
   /* .examples-text {
