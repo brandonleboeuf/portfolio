@@ -968,6 +968,14 @@ iframe {
     margin-top: 125px;
   }
 
+  .intro {
+    width: 90vw;
+  }
+
+  /* .examples-text {
+    width: 100vw;
+  } */
+
   #code {
     margin:0;
     overflow: hidden;
@@ -1105,6 +1113,21 @@ iframe {
     margin: 0;
     justify-content: space-around;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+
+  .examples-text {
+    width: 100%;
+    max-width: 100%;
+    margin:0;
+    padding: 0;
+  }
+  .examples-text p {
+    width: 100%;
+    margin: 0;
+    padding: 0 2px;
   }
 }
 
