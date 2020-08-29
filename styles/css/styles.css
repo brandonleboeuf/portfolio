@@ -32,7 +32,7 @@ body {
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   color: rgb(40, 44, 52);
-  user-select: none;
+  /* user-select: none; */
   scroll-padding-top: 65px;
 }
 
