@@ -90,8 +90,6 @@ nav ul {
   transform: translateY(-100%);
 }
 
-
-
 nav li,
 footer li {
   display: flex;
@@ -949,18 +947,23 @@ iframe {
 /* TEST */
 
 @media only screen and (max-width: 850px) {
+nav a:hover,
+footer li:hover,
+footer a:hover {
+  transform: none;
+}
   main {
     /* margin-top: 50px; */
     top:75px;
   }
   header {
     height:75px;
-    padding: 0 5px;
+    padding: 0 15px;
     /* font-size: .8rem; */
   }
   header h1 {
-    font-size: 1rem;
-    padding-right: 1rem;
+    font-size: 1.5rem;
+    
   }
   header h2 {
     display: none;
