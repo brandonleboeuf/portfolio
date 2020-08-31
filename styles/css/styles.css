@@ -91,6 +91,7 @@ nav ul {
 }
 
 
+
 nav li,
 footer li {
   display: flex;
@@ -948,6 +949,38 @@ iframe {
 /* TEST */
 
 @media only screen and (max-width: 850px) {
+  main {
+    /* margin-top: 50px; */
+    top:75px;
+  }
+  header {
+    height:75px;
+    padding: 0 5px;
+    /* font-size: .8rem; */
+  }
+  header h1 {
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+  header h2 {
+    display: none;
+  }
+  header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  header li {
+    font-size: .8rem;
+    line-height: 1rem;
+    /* padding: 5px; */
+  }
   .codeSandbox {
     display: flex;
     flex-direction: column;
@@ -964,9 +997,7 @@ iframe {
 }
 
 @media only screen and (max-width: 750px) {
-  main {
-    margin-top: 125px;
-  }
+ 
 
   .intro {
     width: 100%;
@@ -1015,12 +1046,7 @@ iframe {
     margin-top: 25px;
   }
 
-  nav ul {
-    display: grid;
-    grid-column: 2;
-    margin: 0;
-  }
-
+ 
   textarea {
     max-width: 70vw;
   }
