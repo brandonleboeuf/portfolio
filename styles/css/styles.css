@@ -5,7 +5,7 @@ html {
   scroll-behavior: smooth;
 }
 
-nav a,
+nav a, header a,
 footer a {
   display: inline-block;
   text-decoration: none;
@@ -1086,14 +1086,13 @@ footer a:hover {
 @media only screen and (max-width: 475px) {
 
   .examples-text {
-    width: 100%;
-    max-width: 100%;
-    margin:10px;
+    max-width: 95%;
+    margin: 10px auto;
     padding: 0;
   }
   .examples-text p {
-    width: 100%;
-    margin: 0;
+    
+ 
     padding:  5px;
   }
 
