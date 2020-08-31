@@ -893,6 +893,7 @@ iframe {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
+    margin: 0;
   }
 
   .skills {
@@ -985,10 +986,6 @@ footer a:hover {
     justify-items: center;
 }
 
-  .content {
-    margin: 0;
-  }
-
   #password {
     margin: 20px 0 0 0;
     display: block;
@@ -1057,7 +1054,6 @@ footer a:hover {
   }
 
   #about {
-    font-size: .9rem;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -1066,6 +1062,7 @@ footer a:hover {
   #about p {
     padding-bottom: 0;
     margin: 15px 0 0 0;
+    font-size: .9rem;
   }
 
   form {
