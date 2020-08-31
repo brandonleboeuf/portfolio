@@ -1081,24 +1081,30 @@ footer a:hover {
     justify-content: space-around;
     text-align: center;
   }
-}
-
-@media only screen and (max-width: 475px) {
-
   .examples-text {
     max-width: 95%;
     margin: 10px auto;
     padding: 0;
   }
+  
   .examples-text p {
-    
- 
     padding:  5px;
   }
 
   .intro p {
     padding: 5px;
   }
+}
+
+@media only screen and (max-width: 475px) {
+  .examples-text {
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 0 10px;
+  }
+  
+  
+  
 }
 
 .hidden {
