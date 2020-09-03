@@ -1,8 +1,8 @@
 
-// window.addEventListener("load", checkWindowSize)
-// window.addEventListener("resize", checkWindowSize)
+window.addEventListener("load", checkWindowSize)
+window.addEventListener("resize", checkWindowSize)
 
-let mql = window.matchMedia('(max-width: 600px)')
+// let mql = window.matchMedia('(max-width: 600px)')
 
 const header = document.getElementById("header")
 const menuBtns = document.getElementById("menuBtns")
@@ -10,7 +10,7 @@ const button = document.getElementById("main-menu-toggle")
 button.addEventListener('click', toggleBtn)
 
 function checkWindowSize() {
-  if (mql) {
+  if (window.matchMedia('(max-width: 600px)')) {
     
     createHeadroom()
     // IF NOT MOBILE: Deactivates bubbling for mobile menu
