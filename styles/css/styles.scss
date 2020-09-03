@@ -664,10 +664,6 @@ iframe {
     }
   }
 
- 
-}
-
-@media only screen and (max-width: 750px) {
   #main-menu-toggle {
     height: 100%;
     display: block;
@@ -675,7 +671,9 @@ iframe {
     top: 30px;
     right: 15px;
   }
+}
 
+@media only screen and (max-width: 750px) {
   .intro {
     width: 100%;
 
@@ -787,7 +785,6 @@ iframe {
     position: fixed;
     top: 0;
   }
-
 }
 
 @media only screen and (max-width: 475px) {

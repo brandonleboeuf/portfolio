@@ -600,8 +600,7 @@ footer a:hover {
     width: 420px;
     z-index: 2;
   }
-}
-@media only screen and (max-width: 750px) {
+
   #main-menu-toggle {
     height: 100%;
     display: block;
@@ -609,7 +608,8 @@ footer a:hover {
     top: 30px;
     right: 15px;
   }
-
+}
+@media only screen and (max-width: 750px) {
   .intro {
     width: 100%;
   }
