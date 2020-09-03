@@ -609,7 +609,8 @@ iframe {
 
   main {
     top:0;
-    margin: 0 15px
+    margin: 0 15px;
+    width: 95vw;
   }
 
   header {
@@ -660,7 +661,7 @@ iframe {
     div {
       overflow: hidden;
       height: 550px;
-      max-width:420px;
+      max-width:85vw;
       min-width: 350px;
       z-index: 2;
     }
@@ -671,7 +672,7 @@ iframe {
     display: block;
     position: absolute;
     top: 30px;
-    right: 15px;
+    right: 13px;
   }
 }
 
