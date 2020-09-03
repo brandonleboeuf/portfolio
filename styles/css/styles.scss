@@ -577,6 +577,8 @@ iframe {
   .content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0 20px;
     margin: 100px auto;
   }
@@ -586,10 +588,15 @@ iframe {
     text-align: center;
     max-width: 75vw;
   }
+
+  .resume {
+    margin: 0 auto;
+  }
   
   .row {
     align-items: center;
   }
+
 }
 
 
@@ -669,9 +676,6 @@ iframe {
 }
 
 @media only screen and (max-width: 750px) {
-
- 
-
   .intro {
     width: 100%;
 
