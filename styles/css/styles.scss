@@ -660,7 +660,8 @@ iframe {
     div {
       overflow: hidden;
       height: 550px;
-      width:420px;
+      max-width:420px;
+      min-width: 350px;
       z-index: 2;
     }
   }
