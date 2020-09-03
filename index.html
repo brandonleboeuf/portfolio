@@ -28,19 +28,27 @@
   </head>
   <body>
     <section id="top"></section>
-    <header id="header" class="headroom">
-      <div>
+    <header id="header" class="headroom dropEnabled">
+      <div class="drop">
         <h1><a href="#top">Brandon LeBoeuf</a></h1>
         <h2>Software Engineer</h2>
       </div>
-      <nav >
-        <ul class="diditwork">
+      <nav id="drop" class="drop">
+        <ul id="menuBtns">
           <li><a href="#top">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#code">Code</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <a href="#main-menu"
+      id="main-menu-toggle"
+      class="menu-toggle"
+      aria-label="Open main menu"
+    >
+    <span class="sr-only">Open main menu</span>
+    <span class="fa fa-bars" aria-hidden="true"></span>
+   </a>
     </header>
     <main> 
         <section id="main" class="resume content">
@@ -253,7 +261,8 @@
   </main>
   
     <script src="https://unpkg.com/headroom.js"></script>
-    <script>
+    <script src="./scripts/dropdown.js"></script>
+    <!-- <script>
       const header = document.querySelector("#header");
 
       const headroom = new Headroom(header, {
@@ -264,7 +273,7 @@
         
       });
       headroom.init();
-    </script>
+    </script> -->
   </body>
 </html>
 
