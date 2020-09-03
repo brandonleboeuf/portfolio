@@ -1,6 +1,6 @@
 
 window.addEventListener("load", checkWindowSize)
-window.addEventListener("resize", checkWindowSize)
+// window.addEventListener("resize", checkWindowSize)
 
 const header = document.getElementById("header")
 const menuBtns = document.getElementById("menuBtns")
