@@ -8,29 +8,39 @@ const button = document.getElementById("main-menu-toggle")
 button.addEventListener('click', toggleBtn)
 
 function checkWindowSize() {
-  if (window.matchMedia("(min-width: 750px)").matches) {
+  if (window.matchMedia("(min-width: 751px)").matches) {
+
+    function createHeadroom() {
+      const headroom = new Headroom(header, {
+        tolerance : {
+          up : 5,
+          down : 0
+        }
+      });
+      headroom.init();
+    } 
     
     createHeadroom()
     // IF NOT MOBILE: Deactivates bubbling for mobile menu
     menuBtns.removeEventListener('click', toggleBtn, true)
 
   } else {
-    
+    header.classList.remove('headroom')
     // IF MOBILE: Initiates bubbling to close menu
     menuBtns.addEventListener('click', toggleBtn, true)
     toggleBtn();
   }
 }
 
-function createHeadroom() {
-  const headroom = new Headroom(header, {
-    tolerance : {
-      up : 5,
-      down : 0
-    }
-  });
-  headroom.init();
-} 
+// function createHeadroom() {
+//   const headroom = new Headroom(header, {
+//     tolerance : {
+//       up : 5,
+//       down : 0
+//     }
+//   });
+//   headroom.init();
+// } 
 
 // Opens and Closes mobile menu
 function toggleBtn() {
