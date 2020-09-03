@@ -10,7 +10,7 @@ const button = document.getElementById("main-menu-toggle")
 button.addEventListener('click', toggleBtn)
 
 function checkWindowSize() {
-  if (window.matchMedia('(min-width: 800px)')) {
+  if (window.matchMedia("(max-width: 750px)").matches) {
     
     createHeadroom()
     // IF NOT MOBILE: Deactivates bubbling for mobile menu
