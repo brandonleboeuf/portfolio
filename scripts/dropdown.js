@@ -47,4 +47,5 @@ function toggleBtn() {
   const menu = document.getElementById("drop")
   menu.classList.toggle("dropMenuTog")
   button.classList.toggle("menuDrop")
+  // button.classList.toggle("fa-rotate-90")
 }

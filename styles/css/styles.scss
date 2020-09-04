@@ -673,6 +673,12 @@ iframe {
     position: absolute;
     top: 30px;
     right: 13px;
+
+    
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+    
   }
 }
 
@@ -829,4 +835,10 @@ iframe {
 }
 .menuDrop {
   color: black;
+  
+  &:hover {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+  }
 }
