@@ -555,6 +555,11 @@ iframe {
   }
 }
 
+.puppet-wrap {
+  display: flex;
+  align-items: center;
+}
+
 
 /* @media only screen and (max-width: 11) */
 
@@ -736,6 +741,8 @@ iframe {
   }
 
   .puppet-wrap {
+    display: flex;
+    align-items: center;
     margin: 20px auto;
   }
 

@@ -506,6 +506,11 @@ iframe {
   border-radius: 40px;
 }
 
+.puppet-wrap {
+  display: flex;
+  align-items: center;
+}
+
 /* @media only screen and (max-width: 11) */
 @media only screen and (max-width: 1240px) {
   .codeSandbox {
@@ -610,6 +615,9 @@ footer a:hover {
     position: absolute;
     top: 30px;
     right: 13px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
   }
 }
 @media only screen and (max-width: 750px) {
@@ -659,6 +667,8 @@ footer a:hover {
   }
 
   .puppet-wrap {
+    display: flex;
+    align-items: center;
     margin: 20px auto;
   }
 
@@ -749,6 +759,11 @@ footer a:hover {
 }
 .menuDrop {
   color: black;
+}
+.menuDrop:hover {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=styles.css.map */
