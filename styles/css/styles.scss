@@ -6,8 +6,19 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 1em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: hsl(271, 60%, 60%);
+  }
 }
 
 nav {
