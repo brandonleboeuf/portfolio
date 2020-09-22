@@ -621,7 +621,7 @@ footer a:hover {
     display: block;
     position: absolute;
     top: 38px;
-    right: 13px;
+    right: 25px;
   }
 }
 @media only screen and (max-width: 750px) {
