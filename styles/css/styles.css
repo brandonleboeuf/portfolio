@@ -622,9 +622,6 @@ footer a:hover {
     position: absolute;
     top: 30px;
     right: 13px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
   }
 }
 @media only screen and (max-width: 750px) {
@@ -766,11 +763,6 @@ footer a:hover {
 }
 .menuDrop {
   color: black;
-}
-.menuDrop:hover {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -691,9 +691,9 @@ iframe {
     right: 13px;
 
     
-      transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
+      // transform: rotate(45deg);
+      // -webkit-transform: rotate(45deg);
+      // -ms-transform: rotate(45deg);
     
   }
 }
@@ -854,11 +854,11 @@ iframe {
 .menuDrop {
   color: black;
   
-  &:hover {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-  }
+  // &:hover {
+  //   transform: rotate(45deg);
+  //   -webkit-transform: rotate(45deg);
+  //   -ms-transform: rotate(45deg);
+  // }
 }
 
 // a[href^=http]:hover {
