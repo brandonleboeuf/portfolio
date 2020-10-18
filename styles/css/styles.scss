@@ -281,17 +281,32 @@ form {
   flex-direction: column;
 }
 
+.input_feilds, select {
+  display: flex;
+  max-width: 500px;
+  margin: 0 10px;
+}
+
+.input_feilds {
+  width: 100%
+}
 .label {
   display: block;
   flex-direction: column;
-  width: 150px;
+  // width: 150px;
 
-  input {
+  input, select {
     margin: 10px;
     padding: 4px;
     width: 225px;
     max-width: 70vw;
+    
   }
+      ::placeholder { 
+        color: grey;
+        opacity: 1;
+        font-style: italic;
+      }
 }
 
 
