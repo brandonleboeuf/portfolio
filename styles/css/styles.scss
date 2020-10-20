@@ -281,17 +281,32 @@ form {
   flex-direction: column;
 }
 
+.input_feilds, select {
+  display: flex;
+  max-width: 500px;
+  margin: 0 10px;
+}
+
+.input_feilds {
+  // width: 100%
+}
 .label {
   display: block;
   flex-direction: column;
-  width: 150px;
+  // width: 150px;
 
-  input {
+  input, select {
     margin: 10px;
     padding: 4px;
-    width: 225px;
-    max-width: 70vw;
+    max-width: 225px;
+    width: 90%;
+    
   }
+      ::placeholder { 
+        color: grey;
+        opacity: 1;
+        font-style: italic;
+      }
 }
 
 
@@ -548,11 +563,15 @@ iframe {
   display: grid;
   overflow: hidden;
   justify-content: space-evenly;
-  padding: 50px 0;
+  padding: 50px 50px;
+  // margin: 0 5px;
   max-width: 100vw;
-  column-gap: auto;
+  column-gap: 5px;
   row-gap: 40px;
   grid-template-columns: repeat(3, 1fr);
+  // transform: rotate(-5deg);
+
+
 
   div {
     overflow: hidden;
@@ -563,6 +582,16 @@ iframe {
    -webkit-border-radius: 40px;
    -moz-border-radius: 40px;
    border-radius: 40px;
+  }
+
+  img {
+    max-width: 450px;
+    box-shadow: 6px 11px 15px #80808066;
+    transition: 1.2s;
+
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 }
 
