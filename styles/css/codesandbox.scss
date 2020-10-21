@@ -1,0 +1,74 @@
+.codeSandbox {
+  display: grid;
+  overflow: hidden;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  max-width: 100vw;
+  column-gap: auto;
+  row-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+
+  div {
+    overflow: hidden;
+    max-width: 90vw;
+    width: 400px;
+    margin: 20px auto;
+    border: 3px solid black;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+  }
+}
+
+
+@media only screen and (max-width: 1240px) {
+  .codeSandbox {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .codeSandbox {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-self: center;
+
+    div {
+      overflow: hidden;
+      height: 550px;
+      max-width:85vw;
+      min-width: 350px;
+      z-index: 2;
+    }
+  }
+}
+
+
+
+/* OLD CODESANDBOX 10.20.2020 */
+ /* <div class="codeSandbox">
+ <div>
+   <iframe class="sbox" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts" src="https://codesandbox.io/embed/todo-list-er1zr?autoresize=1&codemirror=1&fontsize=12&hidenavigation=1&theme=dark&view=preview" title="todo-list"></iframe>
+ </div>
+ <div>
+   <iframe class="sbox" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts" src="https://codesandbox.io/embed/calculator-oezek?autoresize=1&codemirror=1&fontsize=12&hidenavigation=1&theme=dark&view=preview" title="Calculator"></iframe>
+ </div>
+ <div>
+   <iframe class="sbox" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts" src="https://codesandbox.io/embed/infinite-scroll-7k6l7?autoresize=1&codemirror=1&fontsize=12&hidenavigation=1&theme=dark&view=preview" title="Infinite Scroll"></iframe>
+ </div>
+</div> */
+
+
+// OLD BIO
+
+// <p>
+//   My name is Brandon LeBoeuf and I am a self-taught front-end web developer. I'm based in Portland, Oregon, and am looking for a full-time developer role.
+// </p>
+// <p>
+//   I love to learn and am continuously pushing myself to grow as a software engineer. I have over a decade of experience in both managing and training teams of 40+ people and have learned how to successfully navigate difficult situations. These past roles have allowed me to gain experience in developing my ability to see from different perspectives and find ways to manage and address individual needs.</p>
+// <p>
+//   I primarily work with React, JavaScript, and CSS as well as utilizing APIs, TDD, and contributing to opensource projects. You can usually find me trying to create or build something... whether it be brewing my own beer, playing piano, making bread, or building web applications; I get joy from being creative and find reward in the growth/struggle!
+// </p>
