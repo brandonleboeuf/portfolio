@@ -53,11 +53,11 @@ footer a {
 
   font-style: italic;
   span {
+    font-style: normal;
     font-weight: bold;
     color:hsl(337, 70%, 60%);
     border-bottom: 3px solid hsl(337, 70%, 60%);
-    text-shadow: 1px 1px hsla(337, 70%, 60%, .2);
-    
+    // text-shadow: 1px 1px hsla(337, 70%, 60%, .2);
   }
   
   a {

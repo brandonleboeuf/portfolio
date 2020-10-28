@@ -42,10 +42,10 @@ footer a {
   font-style: italic;
 }
 .cta span {
+  font-style: normal;
   font-weight: bold;
   color: #e05288;
   border-bottom: 3px solid #e05288;
-  text-shadow: 1px 1px rgba(224, 82, 136, 0.2);
 }
 .cta a {
   text-decoration: none;
