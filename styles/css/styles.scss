@@ -669,10 +669,16 @@ iframe {
     transform: none;
   }
 
+  .skills {
+    margin: 0;
+    text-align: center;
+    max-width: 95vw;
+  }
+
   main {
     top:0;
-    margin: 0 15px;
-    width: 95vw;
+    // margin: 0;
+    // width: 95vw;
   }
 
   header {
@@ -715,8 +721,9 @@ iframe {
   .codeSandbox {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 5px;
     align-self: center;
+    padding: 0 10px;
 
     div {
       overflow: hidden;
