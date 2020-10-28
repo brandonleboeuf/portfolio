@@ -43,8 +43,9 @@ footer a {
 }
 .cta span {
   font-weight: bold;
-  text-decoration: underline;
   color: #e05288;
+  border-bottom: 3px solid #e05288;
+  text-shadow: 1px 1px rgba(224, 82, 136, 0.2);
 }
 .cta a {
   text-decoration: none;
