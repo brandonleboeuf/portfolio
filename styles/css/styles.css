@@ -45,7 +45,6 @@ footer a {
   font-style: normal;
   font-weight: bold;
   color: #e05288;
-  border-bottom: 3px solid #e05288;
 }
 .cta a {
   text-decoration: none;
@@ -132,7 +131,7 @@ footer a:hover,
 .crc-left {
   -webkit-shape-outside: circle(50%);
   shape-outside: circle(50%);
-  width: 400px;
+  width: 370px;
   height: 325px;
   float: left;
 }

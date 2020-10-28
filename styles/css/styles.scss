@@ -56,7 +56,7 @@ footer a {
     font-style: normal;
     font-weight: bold;
     color:hsl(337, 70%, 60%);
-    border-bottom: 3px solid hsl(337, 70%, 60%);
+    // border-bottom: 4px solid hsl(337, 70%, 60%);
     // text-shadow: 1px 1px hsla(337, 70%, 60%, .2);
   }
   
@@ -149,7 +149,7 @@ footer a:hover,
 .crc-left {
   -webkit-shape-outside: circle(50%);
   shape-outside: circle(50%);
-  width: 400px;
+  width: 370px;
   height: 325px;
   float: left;
 }
