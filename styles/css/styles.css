@@ -38,18 +38,7 @@ footer a {
   scroll-snap-stop: always;
 }
 
-.cta {
-  font-style: italic;
-}
-.cta span {
-  font-style: normal;
-  font-weight: bold;
-  color: #e05288;
-}
-.cta a {
-  text-decoration: none;
-  color: inherit;
-}
+
 
 main {
   position: relative;
@@ -242,7 +231,6 @@ form {
 
 .submit-btn {
   margin: 10px;
-  padding: 10px;
   width: 200px;
   height: 40px;
   clear: left;
@@ -256,10 +244,59 @@ form {
   border: none;
 }
 .submit-btn:hover {
-  background-color: rgba(44, 118, 214, 0.5);
+  box-shadow: 0 4px 20px 0 rgba(245, 101, 65, 0.9);
+  /* background-color: rgba(245, 101, 65, 1); */
+  border: 1px solid rgb(255, 166, 0);
+  
   color: white;
   cursor: pointer;
 }
+
+.cta {
+  font-style: italic;
+}
+.cta span {
+  font-style: normal;
+  font-weight: bold;
+  color: #e05288;
+}
+.cta a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta-div {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.cta-btn {
+  margin-left: 260px;
+  padding: 8px;
+  border-radius: 20px;
+  border: 2px solid #e05288;
+  color: #e05288;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.cta-btn:hover {
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  box-shadow: 0 4px 10px 0 rgba(245, 101, 65, 0.9);
+  color: white;
+  background-color: #e05288;
+  cursor: pointer;
+}
+
+
 
 .form-body {
   display: flex;
@@ -602,6 +639,10 @@ footer a:hover {
 
   main {
     top: 0;
+  }
+
+  .cta-btn {
+    margin: 0;
   }
 
   header {
