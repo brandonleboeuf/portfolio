@@ -285,9 +285,11 @@ form {
 }
 
 
-.cta-btn:hover {
+
+
+/* .cta-btn:hover {
   text-decoration: none;
-}
+} */
 
 .cta-btn:hover {
   box-shadow: 0 4px 10px 0 rgba(245, 101, 65, 0.9);
@@ -295,6 +297,10 @@ form {
   background-color: #e05288;
   cursor: pointer;
 }
+/* 
+.cta- > a {
+  text-decoration: none;
+} */
 
 
 
@@ -350,6 +356,15 @@ section {
   padding: 15px;
   line-height: 1.5rem;
 }
+
+.examples-text-services {
+  margin: 40px 0 20px 0;
+  text-align: left;
+  /* max-width: 95vw; */
+  /* width: 475px; */
+  /* padding: 15px; */
+  line-height: 1.5rem;
+}
 .examples-text p {
   margin-top: 1rem;
 }
@@ -360,13 +375,22 @@ section {
   color: inherit;
 }
 
-.examples-text::after, .intro::after {
+.examples-text::after,.intro::after {
   content: "";
   display: block;
   width: 64px;
   height: 4px;
   background: #e0ddda;
   margin: 18px auto 0;
+}
+
+.examples-text-services::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  background: #e0528869;
+  margin: 18px 0 0 0;
 }
 
 #about {
@@ -396,6 +420,14 @@ section {
   transition: 1s;
   line-height: 1.5rem;
 }
+
+.projects-services{
+  max-width: 700px;
+  padding: 50px 20px;
+  box-shadow: 10px 5px 50px 15px rgb(155 92 214 / 0.15);
+  border-radius: 10px;
+
+}
 .projects p:first-of-type {
   padding-top: 10px;
 }
@@ -408,13 +440,15 @@ section {
 .projects h2 {
   font-size: 1.9rem;
 }
-.projects a {
+
+.projects-title {
   text-decoration: underline;
   font-weight: bold;
   color: black;
   font-size: 1.2rem;
   transition: all 0.6s ease-in-out;
 }
+
 .projects li:first-of-type {
   margin-top: 20px;
 }
@@ -837,6 +871,11 @@ footer a:hover {
 }
 .menuDrop {
   color: black;
+}
+.services-page {
+  margin-left: 0;
+  color: #e05288;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
