@@ -610,6 +610,7 @@ iframe {
 }
 .codeSandbox img {
   max-width: 450px;
+  width: 90vw;
   box-shadow: 6px 11px 15px #80808066;
   transition: 1.2s;
 }
@@ -670,11 +671,15 @@ footer a:hover {
   .skills {
     margin: 0;
     text-align: center;
-    max-width: 95vw;
+    max-width: 90vw;
   }
 
   main {
     top: 0;
+  }
+
+  .content {
+    padding: 0;
   }
 
   .cta-btn {
@@ -762,11 +767,12 @@ footer a:hover {
   }
 
   .projects {
-    padding: 0;
+    padding: 25px;
   }
 
   .resume {
     margin-top: 45px;
+    padding: 25px
   }
 
   textarea {
