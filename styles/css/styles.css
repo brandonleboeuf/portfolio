@@ -49,6 +49,7 @@ body {
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   color: #282c34;
+  scroll-behavior: smooth;
   scroll-padding-top: 65px;
 }
 
@@ -613,6 +614,7 @@ iframe {
   width: 90vw;
   box-shadow: 6px 11px 15px #80808066;
   transition: 1.2s;
+  margin: 10px 0;
 }
 .codeSandbox img:hover {
   transform: scale(1.1);
