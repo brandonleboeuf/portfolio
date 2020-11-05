@@ -617,7 +617,8 @@ iframe {
   margin: 10px 0;
 }
 .codeSandbox img:hover {
-  transform: scale(1.1);
+  transform: rotate(3deg) translateX(10px);
+  /* transform: translateX(10px); */
 }
 
 .puppet-wrap {
