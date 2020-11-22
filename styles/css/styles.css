@@ -587,12 +587,28 @@ section {
     opacity: 0;
   }
 }
+
 @keyframes slidein-right {
   from {
     margin-right: -600px;
     opacity: 0;
     visibility: hidden;
   }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    /* visibility: hidden; */
+  }
+}
+
+.fadein {
+  animation-name: fadein;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
 }
 .animate-left {
   animation-name: slidein-left;
