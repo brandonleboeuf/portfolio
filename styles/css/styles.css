@@ -534,7 +534,7 @@ section {
   justify-content: space-around;
   min-width: 50vw;
   transition: 1s;
-  margin: 50px;
+  margin: 150px 50px;
 }
 
 .puppet {
