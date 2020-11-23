@@ -318,7 +318,7 @@ form {
 }
 
 .cta-btn {
-  margin-left: 260px;
+  /* margin-left: 260px; */
   padding: 8px;
   border-radius: 20px;
   border: 2px solid #e05288;
@@ -338,7 +338,7 @@ form {
 } */
 
 .cta-btn:hover {
-  box-shadow: 0 4px 10px 0 rgba(245, 101, 65, 0.9);
+  box-shadow: 0 4px 10px 0 rgba(128, 128, 128, .35);
   color: white;
   background-color: #e05288;
   cursor: pointer;
