@@ -187,26 +187,31 @@ footer div {
 footer a {
   color: aliceblue;
   text-decoration: none;
-}
-footer h4 {
-  margin: 20px 0 15px 0;
-}
-footer h5 {
   display: inline-block;
   font-weight: thin;
   padding: 10px 20px;
   transition: all 0.6s ease-in-out;
 }
-footer h5:hover {
+footer h4 {
+  margin: 20px 0 15px 0;
+}
+footer h5 {
+  font-size: 12px;
+  /* margin: 5px 0; */
+}
+footer a:hover {
   transform: scale(1.1);
 }
 footer h6 {
+  margin-top: 20px;
   font-size: 0.5rem;
   color: #d1d1d1;
 }
 
 #copyright {
   margin: 0 auto;
+  display: flex;
+  /* flex-direction: column; */
   font-family: "Open Sans", sans-serif;
   max-width: 80vw;
   padding: 20px 30px 0 30px;
