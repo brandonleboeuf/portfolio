@@ -64,7 +64,7 @@ body {
 }
 
 .hero_div {
-  max-width: 400px;
+  max-width: 450px;
   margin:300px auto 0 auto;
 }
 
@@ -325,7 +325,7 @@ form {
 .cta-btn {
   /* margin-left: 260px; */
   padding: 8px;
-  border-radius: 20px;
+  border-radius: 5px;
   border: 2px solid #e05288;
   color: #e05288;
   font-weight: bold;
