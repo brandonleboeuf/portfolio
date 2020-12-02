@@ -666,9 +666,10 @@ iframe {
   overflow: hidden;
   justify-content: space-evenly;
   padding: 50px 50px;
-  width: 100vw;
+  text-align: center;
+  /* width: 95vw; */
   /* max-width: 1000px; */
-  column-gap: 5px;
+  /* column-gap: 5px; */
   row-gap: 40px;
   grid-template-columns: repeat(3, 1fr);
 }
