@@ -38,6 +38,9 @@ footer a {
   scroll-snap-stop: always;
 }
 
+#code {
+  margin: 150px 0;
+}
 
 
 main {
@@ -567,9 +570,9 @@ section {
   height: 550px;
   width: 450px;
   padding: 1rem 3rem 3rem 3rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 5px;
-  box-shadow: 2px 15px 40px rgba(128, 128, 128, 0.5);
+  box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.25);
 }
 .skills h2 {
   margin: 2rem auto 3rem auto;
