@@ -720,7 +720,7 @@ iframe {
 }
 .codeSandbox img:hover {
   /* opacity: .2; */
-  transform: scale(1.1);
+  transform: scale(1.07);
   /* transform: rotate(3deg) translateX(10px); */
   /* transform: translateX(10px); */
 }
