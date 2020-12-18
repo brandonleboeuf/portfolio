@@ -987,6 +987,12 @@ iframe {
     margin: 10px auto;
     padding: 0 10px;
   }
+  .hero_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 53px;
+  }
 }
 .hidden {
   display: none;
