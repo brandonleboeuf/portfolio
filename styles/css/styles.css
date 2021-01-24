@@ -1092,3 +1092,12 @@ iframe {
     margin-top: 25px;
   }
 }
+
+iframe {
+  max-width: 375px;
+  width: 40vw;
+  max-height: 516px;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
