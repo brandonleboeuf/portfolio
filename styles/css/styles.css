@@ -665,8 +665,6 @@ section {
   justify-items: center;
 }
 
-
-
 .codeSandbox {
   display: grid;
   align-items: center;
@@ -718,7 +716,7 @@ section {
   max-width: 450px;
   width: 90vw;
   box-shadow: 6px 11px 15px #80808066;
-  transition: 1.2s;
+  transition: all 0.2s ease-in-out;
   margin: 10px 0;
   opacity: 1;
 }
@@ -736,7 +734,6 @@ section {
 
 /* @media only screen and (max-width: 11) */
 @media only screen and (max-width: 1240px) {
-
   .codeSandbox {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -990,7 +987,6 @@ section {
   }
 }
 @media only screen and (max-width: 475px) {
-  
   #copyright {
     flex-direction: column-reverse;
   }
@@ -1100,4 +1096,3 @@ section {
     margin-top: 25px;
   }
 }
-
